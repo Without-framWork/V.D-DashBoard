@@ -1,0 +1,343 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <div class="item-box">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-group">
+            <label>الفرع</label>
+            <select class="form-control">
+              <option>الفرع</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-group">
+            <label> الادارة التابعة لها</label>
+            <select class="form-control">
+              <option>الادارة التابعة لها</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion">
+    <div class="card">
+      <div class="card-header mt-5" id="headingOne">
+        <h2 class="mb-0">
+          <button
+            class="btn btn-link btn-block"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            aria-expanded="true"
+            aria-controls="collapseOne"
+          >
+            ايام الحضور <i class="icon-arrow-down rotate-icon"></i>
+          </button>
+        </h2>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="collapse show"
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+          <div class="row">
+            <div class="col-md-12">
+              <ul>
+                <li>
+                  <input type="checkbox" id="ch_1" name="ch_1" />
+                  <label for="ch_1"> السبت الاول من كل شهر </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <h6>تحديد ايام الاسبوع</h6>
+                </div>
+                <div class="col-md-4">
+                  <h6>عدد ساعات العمل</h6>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_2" name="ch_2" />
+                      <label for="ch_2"> السبت</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_7" name="ch_7" />
+                      <label for="ch_7"> الاحد </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_5" name="ch_5" />
+                      <label for="ch_5"> الثلاثاء </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_6" name="ch_6_" />
+                      <label for="ch_6"> الاثنين </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group ">
+
+                      <select class="form-control">
+                        <option> معاد الحضور</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              
+              
+            </div>
+
+            <div class="col-md-3">
+              <button type="button" class="btn-main btn-block btn-disactive">
+                اضافة فتره جديدة
+              </button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header mt-5" id="headingTwo">
+        <h2 class="mb-0">
+          <button
+            class="btn btn-link btn-block"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="true"
+            aria-controls="collapseTwo"
+          >
+					محددات الحضور <i class="icon-arrow-down rotate-icon"></i>
+          </button>
+        </h2>
+      </div>
+
+      <div
+        id="collapseTwo"
+        class="collapse show"
+        aria-labelledby="headingTwo"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+       
+         <div class="row">
+					<div class="col-md-4">
+							<div class="form-group">
+								<label >الفرع</label>
+								<select class="form-control">
+									<option>اختيار الفرع</option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label >محددات الحضور</label>
+								<select class="form-control">
+									<option> اختر</option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+					</div>
+					<div class="col-md-4">
+					
+							<div class="form-group">
+								<label>الوردية</label>
+								<select class="form-control">
+									<option>اختر وردية</option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+					</div>
+				 </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header mt-5" id="headingThere">
+        <h2 class="mb-0">
+          <button
+            class="btn btn-link btn-block"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseThere"
+            aria-expanded="true"
+            aria-controls="collapseThere"
+          >
+					مواقع الحضور والانصراف <i class="icon-arrow-down rotate-icon"></i>
+          </button>
+        </h2>
+      </div>
+
+      <div
+        id="collapseThere"
+        class="collapse show"
+        aria-labelledby="headingThere"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+       
+         <div class="row">
+					<div class="col-md-4">
+							<div class="form-group">
+								<label >الفرع</label>
+								<select class=" form-control  js-example-placeholder-single js-states">
+									<option>اختيار الفرع</option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label > المشروع</label>
+								<select class="form-control">
+									<option> المشروع</option>
+									<option></option>
+									<option></option>
+									<option></option>
+								</select>
+							</div>
+					</div>
+					<div class="col-md-4">
+					
+						<div class="form-group">
+							<label>الموقع</label>
+							<div class="form-group">
+								<input
+									type="text"
+									class="form-control"
+									id="detect_location"
+									name="detect_location"
+									placeholder=" الموقع "
+								/>
+								<i class="icon-location-add"></i>
+							</div>
+				 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	</div>
+	</div>
+	<button type="button" class="btn-main float-left ">
+		حفظ	</button>
+</main>
+
+{% endblock %}

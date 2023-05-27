@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <!-- meta-tags -->
+    <meta charset="utf-8" >
+    <meta http-equiv="x-ua-compatible" content="ie=edge" >
+    <title></title>
+    <meta name="description" content="Lorem description" >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <meta name="format-detection" content="telephone=no" >
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="assets/css/all.css" > -->
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    >
+
+    <!-- owl.carousel-css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" >
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" >
+
+    <!-- select2.css -->
+    <link rel="stylesheet" href="assets/css/select2.min.css" >
+
+    <!-- animation.css -->
+    <link rel="stylesheet" href="assets/css/animate.css" >
+
+    <!-- parsley.css -->
+    <link rel="stylesheet" href="assets/css/parsley.css" >
+
+    <!-- daterangepicker.css -->
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" >
+
+    <!-- tempusdominus-bootstrap.css -->
+    <link
+      rel="stylesheet"
+      href="assets/css/tempusdominus-bootstrap-4.min.css"
+    >
+    <!-- dateable.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css" >
+
+    <!-- bootstrap-4 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="assets/css/custom-select2.css">
+
+
+    <!-- bootstrap-rtl -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-rtl.css" />  -->
+
+    <!-- bootstrap-rlt -->
+
+    <!-- main.style -->
+    <link rel="stylesheet" href="assets/css/main.css"  >
+
+
+    <!-- main-rtl.style -->
+    <!-- <link rel="stylesheet" href="assets/css/main-rtl.css" /> -->
+  </head>
+  <body>
+      <header>
+  <div class="header-content">
+    <div class="navbar-right">
+      <h1>التقرير البياني</h1>
+    </div>
+    <div class="navbar-left">
+      <div class="user-ntf">
+        <span class="icon-ntf">
+          <span
+            ><img src="assets/images/notification.svg" alt="notification"
+          /></span>
+          <!-- <ul class="ntf-menu">
+            <h4>الإشعارات</h4>
+            <li class="ntf-item">
+              <p class="ntf-desc">
+                تم توصيل طلبك بنجاح .. نتمنى ان تكون تجربه سعيدة مع سنقر .. هيا
+                اطلب من سنقر ما تريد
+              </p>
+              <span class="ntf-time">الآن</span>
+              <i class="ntf-status"></i>
+            </li>
+            <li class="ntf-item">
+              <p class="ntf-desc">
+                تم توصيل طلبك بنجاح .. نتمنى ان تكون تجربه سعيدة مع سنقر .. هيا
+                اطلب من سنقر ما تريد
+              </p>
+              <span class="ntf-time">الآن</span>
+              <i class="ntf-status"></i>
+            </li>
+          </ul> -->
+        </span>
+      </div>
+      <div class="user-avatar">
+        <img src="assets/images/avatar.png" alt="avatar image" />
+
+        <span>اهلا، سعد</span>
+
+        <ul class="user-menu">
+          <li>
+            <a href="#">تسجيل الخروج</a>
+          </li>
+        </ul>
+        <i class="icon-arrow-down"></i>
+      </div>
+    </div>
+  </div>
+</header>
+ <div class="main-sidebar">
+  <nav>
+    <a href="/">
+      <figure class="sidebar-logo">
+        <img src="assets/images/logo.png" alt="logo" />
+        <figcaption>بوابة الموظف</figcaption>
+      </figure>
+    </a>
+    <ul>
+      <li><a class="active" href="/index.html">التقرير البياني </a></li>
+      <li><a href="#">ملفاتي</a></li>
+
+      <li>
+        <a href="#" class="data-btn">
+          مكتبة البيانات
+          <i class="icon-arrow-down one"></i>
+        </a>
+        <ul class="data-show">
+          <li>
+            <a href="#" class="structure-btn">
+              الهيكل التنظيمي
+              <i class="icon-arrow-down two"></i>
+            </a>
+            <ul class="structure-show">
+              <li><a href="/empty-branche.html">الفروع</a></li>
+              <li><a href="/administration.html">الادارة والاقسام</a></li>
+              <li>
+                <a href="#" class="employees-btn">
+                  الموظفين
+                  <i class="icon-arrow-down there"></i>
+                </a>
+                <ul class="employees-show">
+                  <li><a href="#">التسلسل الوظيفي</a></li>
+                  <li><a href="#">بيانات الموظفين</a></li>
+                </ul>
+                <a href="#" class="departure-btn">
+                  الحضور والانصراف <i class="icon-arrow-down four"></i>
+                </a>
+                <ul class="departure-show">
+                  <li><a href="#"> محددات الحضور</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">مكتبة النماذج</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<main class="main-content">
+  <div class="branch-select p-3 bg-gary">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="buttons-area">
+          <button type="submit" class="btn-main btn-block">
+           <i class="icon-add"></i> اضافة ادارة جديدة
+          </button>
+          <button type="submit" class="btn-main btn-block">
+            <i class="icon-setting"></i> اعدادات الادارة
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <button type="submit" class="btn-main btn-ghost float-left mt-5">
+          <i class="icon-filter-square"></i>تعديل
+        </button>
+      </div>
+    </div>
+
+    <table class="table table-style table-responsive-md">
+      <thead>
+        <tr>
+          <th scope="col">اسم الادارة</th>
+          <th scope="col">نوع الفرع </th>
+          <th scope="col">المدير المسؤول </th>
+          <th scope="col">عدد الاقسام</th>
+          <th scope="col">عدد الموظفين </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr><tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+
+    <!-- jquery-main -->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+
+    <!-- jquery-main -->
+
+    <!-- select2-js -->
+    <script src="assets/js/select2.min.js"></script>
+
+    <!-- parsley.min.js -->
+    <!-- <script src="assets/js/parsley.min.js"></script> -->
+
+    <!-- .owl.carousel-js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap-4-js -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- moment.min.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <!-- .daterangepicker.js -->
+    <script src="assets/js/daterangepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script ></script>
+    
+  
+
+
+    <!-- tempusdominus-bootstrap-js -->
+    <script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- jquery.repeater -->
+    <script src="assets/js/jquery.repeater.min.js"></script>
+    
+
+    <!-- .dateable.js -->
+    <script src="assets/js/datatables.js"></script>
+
+    <!-- <script src="assets/js/jszip.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+
+    <!-- main.js -->
+    <script src="assets/js/main.js"></script>
+
+   
+
+  </body>
+</html>

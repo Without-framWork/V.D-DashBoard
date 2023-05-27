@@ -1,0 +1,37 @@
+.empty-massage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  margin-bottom: 42px;
+  max-width: 360px;
+  text-align: center;
+  img {
+    margin-bottom: 40px;
+  }
+  figcaption {
+    font-size: 32px;
+    line-height: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+.item-box {
+  max-width: 712px;
+  // text-align: center;
+  ul {
+    // text-align: right;
+  }
+  .form-head {
+    max-width: 636px;
+    display: flex;
+  }
+  .btn-main {
+    display: block;
+    margin: 0 auto;
+  }
+}

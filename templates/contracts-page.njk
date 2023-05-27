@@ -1,0 +1,74 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  {% include "templates/components/search/contractes-page.njk" %}
+
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="contract-cases">
+        <h2 class="title">حالات العقود</h2>
+        <li>
+          <span class="operation-status confirmed-status">ساري</span>
+          <span class="contract-number confirmed-status">12</span>
+        </li>
+        <li>
+          <span class="operation-status open-status">متأخر</span>
+          <span class="contract-number open-status">12</span>
+        </li>
+        <li>
+          <span class="operation-status cancelled-status">متوقف</span>
+          <span class="contract-number cancelled-status">12</span>
+        </li>
+        <li>
+          <span class="operation-status completed-status">منتهي</span>
+          <span class="contract-number completed-status">12</span>
+        </li> 
+      </ul>
+    </div>
+    <div class="col-md-4 mt-5 text-left">
+      <button type="submit" class="btn-main btn-ghost ml-3" >  <i class="icon-filter-square"></i> فلتر    </button>
+      <button type="submit" class="btn-main btn-ghost btn-disable  ml-3">  <i class="icon-trash"></i>  حذف </button>
+      <button type="submit" class="btn-main btn-ghost" >  <i class="icon-edit"></i> تعديل</button>
+    </div>
+  </div>
+
+  <table class="table table-style table-responsive-md mt-5 bg-gary">
+    <thead>
+      <tr>
+        <th scope="col">رقم العقد</th>
+        <th scope="col">نوع العقد</th>
+        <th scope="col">اسم العميل</th>
+        <th scope="col">تليفون العميل</th>
+        <th scope="col">مدة العقد</th>
+        <th scope="col">تاريخ انتهاء العقد</th>
+        <th scope="col">المهندس المسؤول</th>
+        <th scope="col">الملف</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in range(0,12) -%}
+
+      <tr>
+        <th scope="row">25443211</th>
+        <td>عقد البنية التحتية</td>
+
+        <td>جدة</td>
+
+        <td>0124356789</td>
+        <td>جدة</td>
+
+        <td>20 يوم</td>
+        <td>محمد عبدالعزيز</td>
+        <td><a href="#"> <i class="icon-folder-open"></i></a></td>
+      </tr>
+
+      {%- endfor %}
+    </tbody>
+  </table>
+        <a href="#" class="view-all">عرض الكل</a>
+
+</main>
+
+{% endblock %}

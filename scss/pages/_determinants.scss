@@ -1,0 +1,46 @@
+.accordion {
+  .card-header {
+    background-color: #f8f8f8;
+    border-radius: $main-border-radius;
+    border-bottom: 0;
+    -webkit-border-radius: $main-border-radius;
+    -moz-border-radius: $main-border-radius;
+    -ms-border-radius: $main-border-radius;
+    -o-border-radius: $main-border-radius;
+}
+  .btn-link {
+    font-size: 18px;
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    text-align: right;
+    &:not(.collapsed) .rotate-icon {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+}
+    &:focus {
+      outline: 0;
+    }
+
+    i {
+			float: left;
+    }
+  }
+
+  .card {
+    border: 0;
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  h6{
+    font-size: 16px;
+    font-weight: 700;
+
+  }
+}

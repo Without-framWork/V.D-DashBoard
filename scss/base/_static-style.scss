@@ -1,0 +1,50 @@
+//main-content
+
+
+.main-content {
+  .main-Carousel {
+    max-width: 100%;
+  }
+  margin-right: 240px;
+  margin-top: 100px;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  
+}
+//main-sidebar
+.sidebar-log{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: $white-color;
+	img{
+		width: 39px;
+		height: 34px;
+		margin-bottom: 5px;
+
+	}
+	&:hover{
+		color: $white-color;
+	}
+
+
+}
+.title {
+	font-size: 18px;
+	font-weight: bold;
+	color: $main-color;
+	text-align: right;
+
+}
+.border{
+	height: 4px;
+	background-color: $main-color;
+	margin: 30px 20px;
+}
+header  ,.btn-main{
+	i {
+    position: relative;
+    top: 5px;
+  }
+}

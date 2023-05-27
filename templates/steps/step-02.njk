@@ -1,0 +1,314 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %}
+
+<main class="main-content">
+  <div class="wizard">
+    <div class="wizard-inner">
+      <div class="connecting-line"></div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a
+            href="#step1"
+            data-toggle="tab"
+            aria-controls="step1"
+            role="tab"
+            aria-expanded="true"
+            ><span class="round-tab">1 <i>البيانات الشخصية </i> </span>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a
+            href="#step2"
+            data-toggle="tab"
+            aria-controls="step2"
+            role="tab"
+            aria-expanded="false"
+            ><span class="round-tab">2 <i>البيانات الاكاديمية</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"
+            ><span class="round-tab">3 <i> البيانات الوظيفية </i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"
+            ><span class="round-tab">4 <i> البيانات المالية والاجازات</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"
+            ><span class="round-tab">5 <i> سياسة الحضور</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"
+            ><span class="round-tab">6 <i> حفظ</i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form role="form" action="#">
+      <div class="tab-content" id="main_form">
+        <div class="tab-pane" role="tabpanel" id="step1"></div>
+        <div class="tab-pane active" role="tabpanel" id="step2">
+          <h2 class="title">البيانات الاكاديمية</h2>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> الجامعة </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=" الجامعة"
+                />
+              </div>
+              <div class="form-group">
+                <label> تاريخ الشهادة </label>
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker4"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker4"
+                      placeholder="تاريخ الشهادة"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker4"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> المؤهل </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=" المؤهل "
+                />
+                <div class="choose-image">
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" class="picture-src" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span> حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="add-icon">
+                      <span class="icon-add"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> التخصص </label>
+                <input type="text" class="form-control" placeholder=" التخصص" />
+              </div>
+
+              <div class="form-group"></div>
+            </div>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <h2 class="title mb-0">الخبرات</h2>
+            </div>
+            <div class="col-md-6 text-left">
+              <button type="button" class="btn-main t">
+                <i class="icon-add"></i> اضافة خبرة
+              </button>
+            </div>
+          </div>
+
+          <div class="row pb-5">
+            <table class="table table-style table-responsive-md bg-gary">
+              <thead>
+                <tr>
+                  <th scope="col">اسم الشركة</th>
+                  <th scope="col">المسمى الوظيفي</th>
+                  <th scope="col">الفترة من\الى</th>
+                  <th scope="col">السنوات</th>
+                  <th scope="col">شهادة خبره</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">شركة الاتحاد</th>
+                  <td>مهندس معماري</td>
+                  <td>01/2022 - 02/2023</td>
+
+                  <td>2</td>
+                  <td>
+                    <ul class="setting-list setting-list-two">
+                      <li>
+                        <a href="#"><i class="icon-note-text"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-note-text"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td>
+                    <ul class="setting-list">
+                      <li>
+                        <a href="#"><i class="icon-edit"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-trash"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">شركة الاتحاد</th>
+                  <td>مصمم</td>
+                  <td>01/2022 - 02/2023</td>
+
+                  <td>4</td>
+                  <td>
+                    <ul class="setting-list setting-list-two">
+                      <li>
+                        <a href="#"><i class="icon-note-text"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-note-text"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td>
+                    <ul class="setting-list">
+                      <li>
+                        <a href="#"><i class="icon-edit"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-trash"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <h2 class="title mb-0">الدورات والكورسات الذاتية</h2>
+            </div>
+            <div class="col-md-6 text-left">
+              <button type="button" class="btn-main t">
+                <i class="icon-add"></i> اضافة دورة
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <table class="table table-style table-responsive-md bg-gary">
+              <thead>
+                <tr>
+                  <th scope="col">اسم الدورة</th>
+                  <th scope="col">مدة الدورة</th>
+                  <th scope="col">جهة الاعتماد</th>
+                  <th scope="col">تاريخ الحصول</th>
+                  <th scope="col">شهادة الدورة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">شركة الاتحاد</th>
+                  <td>مهندس معماري</td>
+                  <td>كورسيرا</td>
+
+                  <td>01/2022</td>
+                  <td>
+                    <ul class="setting-list setting-list-two">
+                     
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/images/attached-photo.svg"
+                            alt="attached-photo"
+                        /></a>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td>
+                    <ul class="setting-list">
+                      <li>
+                        <a href="#"><i class="icon-edit"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-trash"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">شركة ابعاد</th>
+                  <td>مصمم</td>
+                  <td>وزارة الاتصالات</td>
+
+                  <td>01/2022</td>
+                  <td>
+                    <ul class="setting-list setting-list-two">
+                     
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/images/attached-photo.svg"
+                            alt="attached-photo"
+                        /></a>
+                      </li>
+                    </ul>
+                  </td>
+
+                  <td>
+                    <ul class="setting-list">
+                      <li>
+                        <a href="#"><i class="icon-edit"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="icon-trash"></i></a>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="border-line"></div>
+          <ul class="wizard-btn">
+            <li>
+              <button type="button" class="btn-main prev-step">رجوع</button>
+            </li>
+
+            <li>
+              <button type="button" class="btn-main next-step">التالي</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="step3"></div>
+        <div class="tab-pane" role="tabpanel" id="step4"></div>
+        <div class="tab-pane" role="tabpanel" id="step5"></div>
+        <div class="tab-pane" role="tabpanel" id="step6"></div>
+      </div>
+    </form>
+  </div>
+</main>
+
+{% endblock %}

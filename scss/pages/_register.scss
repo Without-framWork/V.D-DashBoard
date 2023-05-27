@@ -1,0 +1,92 @@
+.main-page {
+  padding: 120px 0;
+  .bg-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  h1 {
+    font-size: 42px;
+    color: $main-color;
+  }
+}
+.form-style {
+  background-color: $white-color;
+  position: relative;
+  z-index: 999999;
+  width: 470px;
+  margin: auto;
+  padding: 50px 90px;
+  margin-bottom: 150px;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+
+  figure {
+    text-align: center;
+    img{
+      width: 100px;
+      height: 64px;
+      object-fit: cover;
+
+    }
+  }
+}
+.form-head {
+  margin-bottom: 76px;
+}
+.form-content {
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
+.copyright {
+  font-size: 16px;
+  color: $white-color;
+  position: relative;
+}
+
+.massage-code {
+  color: $main-color;
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: $main-color;
+    }
+  }
+}
+//error-code
+.error-code {
+  .otp-inputs {
+    margin-bottom: 0 !important;
+  }
+  .otp-inputs input {
+    color: $red-color !important;
+    border-color: $red-color !important;
+  }
+  p {
+    text-align: center;
+  }
+ 
+}
+.error-massage {
+  text-align: right;
+  color: $red-color;
+  font-weight: bold;
+  padding: 5px 20px 5px  0px ;
+}
+.icon-sms{
+  position: absolute;
+  top: 11px;
+  right: 6px;
+}

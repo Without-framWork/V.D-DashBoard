@@ -1,0 +1,241 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        الادارات
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-02"
+        data-toggle="tab"
+        href="#content-02"
+        role="tab"
+        aria-controls="content-02"
+        aria-selected="true"
+        >الاقسام
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-03"
+        data-toggle="tab"
+        href="#content-03"
+        role="tab"
+        aria-controls="content-03"
+        aria-selected="true"
+        >المسمى الوظيفي
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-04"
+        data-toggle="tab"
+        href="#content-04"
+        role="tab"
+        aria-controls="content-04"
+        aria-selected="true"
+        >الدور الوظيفي
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-05"
+        data-toggle="tab"
+        href="#content-05"
+        role="tab"
+        aria-controls="content-05"
+        aria-selected="true"
+      >
+        مستويات الموظفين
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-07"
+        data-toggle="tab"
+        href="#content-06"
+        role="tab"
+        aria-controls="content-06"
+        aria-selected="true"
+      >
+        مكان التواجد
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <div class="buttons-area">
+        <button type="submit" class="btn-main btn-block">
+           <i class="icon-add"></i> اضافة ادارة جديدة
+        </button>
+        <button type="submit" class="btn-main btn-block">
+          <i class="icon-setting"></i>  اعدادات الادارة
+        </button>
+      </div>
+
+      <table class="table table-style table-responsive-md">
+        <thead>
+          <tr>
+            <th scope="col">رقم</th>
+            <th scope="col">اسم الفرع</th>
+            <th scope="col">نوع الفرع</th>
+            <th scope="col">الموقع</th>
+            <th scope="col">عدد الادارات</th>
+            <th scope="col">عدد الموظفين</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0,10) -%}
+
+          <tr>
+            <th scope="row">1</th>
+            <td>مكتب ابعاد الرؤية للاستشارات الهندسية</td>
+            <td>رئيسي</td>
+
+            <td>الرياض</td>
+            <td>10</td>
+
+            <td>20</td>
+          </tr>
+
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      <div class="buttons-area">
+        <button type="submit" class="btn-main mr-4">
+          <i class="icon-add"></i>اضافة قسم</button>
+      </div>
+
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <select
+                  class="form-control"
+                  id="name_branch"
+                  name="name_branch"
+                >
+                  <option>اسم القسم  </option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <select
+                  class="form-control"
+                  id="name_manager"
+                  name="name_manager"
+                >
+                  <option>  اسم المسؤول</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border"></div>
+      <div class="row">
+    
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <select
+                  class="form-control"
+                  id="name_manager"
+                  name="name_manager"
+                >
+                  <option>   الخدمات التي يقدمها القسم</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <button type="submit" class="btn-main mr-4">
+                <i class="icon-add"></i>اضافة قسم</button>
+
+            </div>
+          </div>
+        
+        </div>
+      </div>
+      
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-03"
+      role="tabpanel"
+      aria-labelledby="tab-03"
+    >
+      ...
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-04"
+      role="tabpanel"
+      aria-labelledby="tab-04"
+    >
+      ...
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-05"
+      role="tabpanel"
+      aria-labelledby="tab-05"
+    >
+      ...
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-06"
+      role="tabpanel"
+      aria-labelledby="tab-06"
+    ></div>
+  </div>
+</main>
+
+{% endblock %}

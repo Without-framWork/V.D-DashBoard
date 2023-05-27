@@ -1,0 +1,55 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <div class="branch-select p-3 bg-gary">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="buttons-area">
+          <button type="submit" class="btn-main btn-block">
+           <i class="icon-add"></i> اضافة ادارة جديدة
+          </button>
+          <button type="submit" class="btn-main btn-block">
+            <i class="icon-setting"></i> اعدادات الادارة
+          </button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <button type="submit" class="btn-main btn-ghost float-left mt-5">
+          <i class="icon-filter-square"></i>تعديل
+        </button>
+      </div>
+    </div>
+
+    <table class="table table-style table-responsive-md">
+      <thead>
+        <tr>
+          <th scope="col">اسم الادارة</th>
+          <th scope="col">نوع الفرع </th>
+          <th scope="col">المدير المسؤول </th>
+          <th scope="col">عدد الاقسام</th>
+          <th scope="col">عدد الموظفين </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(0,10) -%}
+
+        <tr>
+          <th scope="row">ادارة الرخص</th>
+          <td> رئيسي   </td>
+          <td>الرياض</td>
+
+          <td>10</td>
+          <td>20</td>
+
+          <td><a href="#"><i class="icon-arrow-left"></i></a></td>
+        </tr>
+
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</main>
+
+{% endblock %}

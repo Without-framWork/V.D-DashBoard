@@ -1,0 +1,152 @@
+.choose-image {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.picture {
+  max-width: 100%;
+  height: 60px;
+  border: 1px dashed $gray;
+  color: #ffffff;
+  border-radius: 15px;
+  // padding: 30px;
+  overflow: hidden;
+}
+
+.picture-src {
+  height: 100%;
+  width: 100%;
+}
+.select-image {
+  cursor: pointer;
+  display: block;
+
+  width: 100%;
+  p {
+    font-size: 16px;
+    color: $gray;
+
+    font-weight: bold;
+  }
+  .add-icon {
+    .i {
+      color: #c2c2c2;
+      font-size: 40px;
+    }
+  }
+}
+
+.select-image {
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+
+  width: 100%;
+  // margin: 80px 0;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #c2c2c2;
+    margin-bottom: 2px;
+
+    font-weight: 400;
+  }
+  span {
+    font-size: 12px;
+    color: $gray !important;
+  }
+  span:before {
+    color: $main-color;
+    font-size: 20px;
+    position: absolute;
+    top: 8px !important;
+    right: 90px !important;
+  }
+}
+.setting-list-two {
+  img{
+    margin-left: 0 !important;
+  }
+  li:nth-child(2) a i:before {
+    color: $main-color !important;
+  }
+  li:first-child a i:before {
+    color: $main-color !important;
+  }
+}
+#step4 {
+  input[type="checkbox"] {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+.dues {
+  padding: 20px;
+  max-width: 50%;
+
+  .row:first-child,
+  .row:nth-child(2) {
+    background-color: $light-gray;
+    border-radius: $main-border-radius;
+    -webkit-border-radius: $main-border-radius;
+    -moz-border-radius: $main-border-radius;
+    -ms-border-radius: $main-border-radius;
+    -o-border-radius: $main-border-radius;
+    padding: 20px;
+  }
+  .row:first-child {
+    margin-bottom: 20px;
+  }
+}
+.login-settings {
+  max-width: 450px;
+  text-align: center;
+
+  margin: 120px auto;
+  background-color: $light-gray;
+  padding: 30px 15px;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+
+  h2 {
+    font-size: 16px;
+    font-weight: 700px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .form-group {
+    text-align: right;
+    i {
+      top: 36px;
+    }
+  }
+}
+.data-box {
+  background-color: $light-gray;
+  padding: 20px;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+  margin-bottom: 30px;
+  h6 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+.data-titel {
+  font-size: 14px;
+  font-weight: 400;
+}
+.data-content {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}

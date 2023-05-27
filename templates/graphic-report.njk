@@ -1,0 +1,315 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "page" %} {% include "templates/components/header.njk" %}
+
+<main class="main-content">
+  <div class="row">
+    <div class="col-md-4">
+      <section class="single-order">
+        <div class="store-box">
+            <span class="order-no">فاتورة رقم#32226545
+            </span>
+            
+          <ul class="store-info">
+            <li><i class="fas fa-hashtag"></i>#4035552</li>
+            <li>
+              <i class="fas fa-box-open"></i>
+              طلب مكتوب
+            </li>
+            <li>
+              <i class="fas fa-store"></i>
+              الشبكشي للخضار
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              01020332115
+            </li>
+            <li><i class="fas fa-percent"></i>NAJEZ</li>
+            <li>-50 EGP</li>
+          </ul>
+          <span class="store-note">
+            <i class="fas fa-clipboard"></i>
+            ملاحظة:بالله ابعتلى الزبادى في الخلاطه على نار هادية</span
+          >
+        </div>
+      </section>
+    </div>
+    <div class="col-md-4">
+      <section class="single-order">
+        <div class="client-box">
+          <ul class="client-info">
+            <li>
+              <i class="fas fa-user"></i>
+              محمد خالد
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              010203040506
+            </li>
+            <li>
+              <i class="fas fa-sync-alt"></i>
+              <a href="">ناجح (2) </a>
+              <a href="">ملغي (3)</a>
+            </li>
+            <li>
+              <i class="fas fa-clipboard-list"></i>
+              <a href="">ملاحظات (3)</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-4">
+      <div class="options-btns">
+        <div class="row">
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-comments"></i>مراسله العميل
+            </button>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-bell"></i>ارسال اشعار العميل
+            </button>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-notes-medical"></i>انشاء تذكرة
+            </button>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-sync-alt"></i>تغير مرحله الطلب
+            </button>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-comment"></i>اضافه ملاحظة
+            </button>
+          </div>
+          <div class="col-md-6">
+            <div class="order-time">
+              <h5>مده الطلب</h5>
+              <span class="actual-time">00:45:30</span>
+              <h5>مده التاخير</h5>
+              <span class="delay-time">00:15:30</span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-motorcycle"></i>اضافه طيار
+            </button>
+            <button type="submit" class="btn btn-primary btn-shadow">
+              <i class="fas fa-clipboard-list"></i>سجل الطلب
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="single-order">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="order-box">
+                        <span class="order-no">فاتورة رقم#32226545
+                        </span>
+                        <table class="table order-table">
+                                <thead>
+                                        <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">كود الصنف</th>
+                                                <th scope="col">اسم الصنف</th>
+                                                <th scope="col">الوزن</th>
+                                                <th scope="col">السعر</th>
+                                                <th scope="col">العدد</th>
+                                                <th scope="col">الاجمالى</th>
+                                                <th scope="col">المستحق من العميل</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <th scope="row">1</th>
+                                                <td>#3225</td>
+                                                <td>رز الاسره</td>
+                                                <td>1كيلو</td>
+                                                <td>10</td>
+                                                <td>2</td>
+                                                <td>20</td>
+                                                <td>22</td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">2</th>
+                                                <td>#3225</td>
+                                                <td>بيبسي</td>
+                                                <td>قطعة</td>
+                                                <td>7</td>
+                                                <td>1</td>
+                                                <td>7</td>
+                                                <td>8</td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">3</th>
+                                                <td>#3225</td>
+                                                <td>لحوم</td>
+                                                <td>نصف كيلو</td>
+                                                <td>100</td>
+                                                <td>2</td>
+                                                <td>100</td>
+                                                <td>110</td>
+                                        </tr>
+
+                                        <tfoot>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>عدد الأصناف</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>4</td>
+                                                        <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>المستحق للمحل
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>127</td>
+                                                        <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>المستحق من العميل
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>-</td>
+                                                        <td>140</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>الخصم</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>تكلفه التوصيل
+                                                        </td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>-</td>
+                                                        <td>25</td>
+                                                </tr>
+
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>المدفوع مسيبقا</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+
+                                                        <td>الضريبة</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>0</td>
+                                                        <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>المطلوب الاجمالى</td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td>-</td>
+                                                        <td>165</td>
+                                                </tr>
+
+                                        </tfoot>
+
+                                </tbody>
+                        </table>
+                        <div class="row">
+                            <div class="col-md-3 offset-md-4">
+                                <div class="pilot-box">
+                                <ul class="pilot-list">
+                                        <li>
+                                                <a href="">254</a>
+                                        </li>
+                                        <li>
+                                                <a href="">224</a>
+                                        </li>
+                                        <li>
+                                                <a href="">253</a>
+                                        </li>
+                                        <li>
+                                                <a href="">244</a>
+                                        </li>
+                                        <li>
+                                                <a href="">254</a>
+                                        </li>
+                                        <li>
+                                                <a href="">224</a>
+                                        </li>
+                                        <li>
+                                                <a href="">253</a>
+                                        </li>
+                                        <li>
+                                                <a href="">244</a>
+                                        </li>
+                                </ul>
+                                <ul class="pilot-info">
+                                        <li>
+                                                <i class="fas fa-motorcycle"></i>
+                                                يوسف عبد النبى
+                                        </li>
+                                        <li>
+                                                <a href="">
+                                                        <i class="fas fa-phone"></i>
+                                                </a>
+                                                <a href="">
+                                                        <i class="fas fa-comments"></i>
+                                                </a>
+
+                                                30جنية
+                                        </li>
+                                        <li>وقت الاستلام:
+                                                <span>10:01:23</span></li>
+                                        <li>وقت التسليم:
+                                                <span>10:01:23</span></li>
+                                        <li>مدة الطلب :
+                                                <span>60 دقيقة</span></li>
+                                        <li>حالة :
+                                                <span>متأخر</span></li>
+
+                                </ul>
+                                <div class="pilot-btns">
+                                        <button type="submit" class="btn btn-primary">تسجيل مكافأه</button>
+                                        <button type="submit" class="btn btn-primary">تسجيل خصم</button>
+                                </div>
+
+                        </div></div>
+                        </div>
+                        <div class="text-left mb-10">
+                                <button type="submit" class=" btn-print btn btn-primary btn-print">طباع الفاتورة</button>
+
+                        </div>
+                </div> 
+
+        </div>
+
+</div>
+  </section> -->
+</main>
+
+{% endblock %}

@@ -1,0 +1,107 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <form class="p-5" action="#">
+    <div class="row">
+      <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-4">
+             <div class="form-group">
+                <select
+                  class="form-control"
+                  id="choose_main_branch"
+                  name="choose_main_branch"
+                >
+                  <option>      اختيار الفرع الرئيسي</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="administration_name"
+                name="administration_name"
+                placeholder="   الادارة "
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+               <div class="form-group">
+                <select
+                  class="form-control"
+                  id="managing_director"
+                  name="managing_director"
+                >
+                  <option>      المدير المسؤول</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn-main btn-block">بحث</button>
+      </div>
+    </div>
+  </form>
+  <form class="bg-gary p-5" action="#">
+    <h2 class="title">اضافة اقسام الادارة</h2>
+
+    <div class="row">
+      <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+                <select
+                  class="form-control"
+                  id="main_branch"
+                  name="main_branch"
+                >
+                  <option>     الفرع الرئيسي </option>
+                  <option></option
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="number_sections"
+                name="number_sections"
+                placeholder=" عدد الاقسام  "
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="License_management"
+                name="License_management"
+                placeholder="  ادارة الرخص "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1">
+        <button type="submit" class="btn-main btn-block">حفظ</button>
+      </div>
+    </div>
+  </form>
+</main>
+
+{% endblock %}

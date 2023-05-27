@@ -1,0 +1,280 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %}
+
+<main class="main-content">
+  <div class="wizard">
+    <div class="wizard-inner">
+      <div class="connecting-line"></div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a
+            href="#step1"
+            data-toggle="tab"
+            aria-controls="step1"
+            role="tab"
+            aria-expanded="true"
+            ><span class="round-tab">1 <i>البيانات الشخصية </i> </span>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a
+            href="#step2"
+            data-toggle="tab"
+            aria-controls="step2"
+            role="tab"
+            aria-expanded="false"
+            ><span class="round-tab">2 <i>البيانات الاكاديمية</i></span>
+          </a>
+        </li>
+        <li role="presentation"  class="active">
+          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"
+            ><span class="round-tab">3 <i> البيانات الوظيفية </i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"
+            ><span class="round-tab">4 <i> البيانات المالية والاجازات</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"
+            ><span class="round-tab">5 <i> سياسة الحضور</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"
+            ><span class="round-tab">6 <i> حفظ</i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form role="form" action="#">
+      <div class="tab-content" id="main_form">
+        <div class="tab-pane" role="tabpanel" id="step1"></div>
+        <div class="tab-pane" role="tabpanel" id="step2">
+      
+        </div>
+        <div class="tab-pane  active" role="tabpanel" id="step3">
+
+
+          <h2 class="title"> معلومات العقد</h2>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label> المسمى الوظيفي </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>المسمى الوظيفي</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> الفرع </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>الفرع</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>  تاريخ البدء </label>
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker4"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker4"
+                  placeholder=" تاريخ البدء"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker4"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>  تاريخ الالتحاق </label>
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker12"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker12"
+                  placeholder="  تاريخ الالتحاق"
+
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker12"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> العملة </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>العملة</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label> الجنس </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>المستوى الوظيفي</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> الادارة التابعة لها </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>الادارة التابعة لها</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> تاريخ الانتهاء  </label>
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker4"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker4"
+                  placeholder="  تاريخ الانتهاء "
+
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker4"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>  تاريخ انتهاء الاختيار </label>
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker12"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker12"
+                  placeholder="  تاريخ انتهاء الاختيار  "
+
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker12"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> دورة القبض </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>دورة القبض</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label> نوع الوظيفة </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>نوع الوظيفة</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label> الادارة الفرعية </label>
+            <div class="form-group">
+              <select class="form-control">
+                <option>الادارة الفرعية</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="border-line"></div>
+      
+
+
+        </div>
+        <div class="tab-pane" role="tabpanel" id="step4"></div>
+        <div class="tab-pane" role="tabpanel" id="step5"></div>
+        <div class="tab-pane" role="tabpanel" id="step6"></div>
+      </div>
+    </form>
+  </div>
+</main>
+
+{% endblock %}

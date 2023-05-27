@@ -1,0 +1,65 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <section class="item-box">
+    <form id="branch-form" class="p-4 bg-gary" action="#">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="main_branch">الفرع الرئيسي</label>
+            <select class="form-control" id="main_branch" name="main_branch">
+              <option>تعديل الفرع الرئيسي</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="branch_statu">الحالة</label>
+            <select class="form-control" id="branch_statu" name="branch_statu">
+              <option>نشط</option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="title">تحديد الخصائص</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="ch_1" name="ch_1" />
+          <label for="ch_1"> مشاركة العملاء بين الفروع</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ch_2" name="ch_2" />
+          <label for="ch_2"> مشاركة الخدمات بين الفروع</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ch_3" name="ch_3" />
+          <label for="ch_3"> مشاركة الخدمات بين الفروع</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ch_4" name="ch_4" />
+          <label for="ch_4"> مشاركة الاوراق النظامية </label>
+        </li>
+        <li>
+          <input type="checkbox" id="ch_5" name="ch_5" />
+          <label for="ch_5"> مشاركة الية الحضور بين الفروع </label>
+        </li>
+        <li>
+          <input type="checkbox" id="ch_6" name="ch_6_" />
+          <label for="ch_6"> مشاركة اسماء المديرين بين الفروع</label>
+        </li>
+      </ul>
+    </form>
+    <button type="submit" form="branch-form" class="btn-main mt-4">حفظ</button>
+  </section>
+</main>
+
+{% endblock %}

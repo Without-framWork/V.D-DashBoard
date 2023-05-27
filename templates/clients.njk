@@ -1,0 +1,103 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  {% include "templates/components/search/contractes-search.njk" %}
+
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        العملاء</a
+      >
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    
+    <div
+      class="tab-pane fade show active"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <div class="buttons-area">
+        <button
+          type="button"
+          class="btn-main btn-block"
+          data-toggle="modal" data-target="#myModal"
+        >
+          <i class="icon-add"></i>
+          اضافة عميل جديد
+        </button>
+        <button type="submit" class="btn-main btn-block">
+          <i class="icon-edit"></i>
+
+          تعديل بيانات عميل
+        </button>
+      </div>
+
+      <table class="table table-style table-responsive-md">
+        <thead>
+          <tr>
+            <th scope="col">رقم</th>
+            <th scope="col">اسم المالك</th>
+            <th scope="col">رقم التليفون</th>
+            <th scope="col">البريد الالكتروني</th>
+            <th scope="col">رقم الهوية</th>
+            <th scope="col">الفرع</th>
+            <th scope="col">حالة العميل</th>
+            <th scope="col">اسم الوكيل</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0,6) -%}
+
+          <tr>
+            <th scope="row">1</th>
+            <td class="customer-name"><a href="#">محمد عبدالعزيز</a></td>
+            <td>+966 543 23456 53</td>
+            <td>youremail@domain.com</td>
+            <td>256 565 5655444</td>
+            <td>
+              <a>الرياض</a>
+            </td>
+            <td>
+              <p class="operation-status confirmed-status">ساري</p>
+            </td>
+
+            <td>محمد عبدالعزيز</td>
+          </tr>
+          <tr>
+            <th scope="row">1</th>
+            <td class="customer-name"><a href="#">محمد عبدالعزيز</a></td>
+            <td>+966 543 23456 53</td>
+            <td>youremail@domain.com</td>
+            <td>256 565 5655444</td>
+            <td>
+              <a>الرياض</a>
+            </td>
+            <td>
+              <p class="operation-status cancelled-status">منتهي</p>
+            </td>
+
+            <td>محمد عبدالعزيز</td>
+          </tr>
+
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <a href="#" class="view-all">عرض الكل</a>
+  </div>
+  
+</main>
+
+{% endblock %}

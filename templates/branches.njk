@@ -1,0 +1,116 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        id="tab-01"
+        data-toggle="tab"
+        href="#content-01"
+        role="tab"
+        aria-controls="content-01"
+        aria-selected="true"
+      >
+        الفروع
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-03"
+        data-toggle="tab"
+        href="#content-03"
+        role="tab"
+        aria-controls="content-03"
+        aria-selected="true"
+        >الادارة والاقسام
+      </a>
+    </li>
+
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        id="tab-04"
+        data-toggle="tab"
+        href="#content-04"
+        role="tab"
+        aria-controls="content-04"
+        aria-selected="true"
+      >
+        الموظفين
+      </a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div
+      class="tab-pane fade show active position-relative"
+      id="content-01"
+      role="tabpanel"
+      aria-labelledby="tab-01"
+    >
+      <div class="buttons-area">
+        <a  href="/add-branch.html" class="btn-main btn-block">
+          <i class="icon-add"></i> اضافة فرع جديد
+        </a>
+        <a  href="/branch-settings.html" class="btn-main btn-block">
+          <i class="icon-setting"></i> اعدادات الفروع
+        </a>
+      </div>
+
+      <table class="table table-style table-responsive-md">
+        <thead>
+          <tr>
+            <th scope="col">رقم</th>
+            <th scope="col">اسم الفرع</th>
+            <th scope="col">نوع الفرع</th>
+            <th scope="col">الموقع</th>
+            <th scope="col">مدير الفرع</th>
+            <th scope="col">رقم التليفون</th>
+            <th scope="col">البريد الالكتروني</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0,15) -%}
+
+          <tr>
+            <th scope="row">1</th>
+            <td>مكتب ابعاد الرؤية للاستشارات الهندسية</td>
+            <td>رئيسي</td>
+
+            <td>الرياض</td>
+            <td>سعد مشعل</td>
+
+            <td>رقم التليفون</td>
+            <td>youremail@domain.com</td>
+          </tr>
+
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-02"
+      role="tabpanel"
+      aria-labelledby="tab-02"
+    >
+      ...
+    </div>
+    <div
+      class="tab-pane fade"
+      id="content-03"
+      role="tabpanel"
+      aria-labelledby="tab-03"
+    >
+      ...
+    </div>
+  </div>
+      <a href="#" class="view-all">عرض الكل</a>
+
+</main>
+
+{% endblock %}

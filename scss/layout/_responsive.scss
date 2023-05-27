@@ -1,0 +1,390 @@
+// Start Media From 1200px To 0px
+@include media("<=desktop") {
+  .nav-tabs .nav-link {
+    width: 310px;
+  }
+  .platform-table td {
+    padding: 18px !important;
+  }
+  .order-table tbody td {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .order-table thead th {
+    font-size: 13px;
+    padding: 10px;
+    vertical-align: middle;
+  }
+  .works-status {
+    font-size: 20px;
+    width: 70px;
+  }
+  .login-bg {
+    width: 50%;
+    left: -10px;
+  }
+  .login-logo-new {
+    img {
+      max-width: 50%;
+    }
+  }
+
+  .login-card-new {
+    padding: 40px;
+  }
+  .about-spermarket i {
+    margin-left: 7px !important;
+  }
+  .about-spermarket a {
+    font-size: 12px;
+  }
+  .supermarket-detils {
+    padding: 20px;
+  }
+  .list-checkbox {
+    padding-left: 0;
+    height: auto;
+  }
+  .shop-list li {
+    font-size: 18px;
+  }
+  .types-food li a {
+    width: 140px;
+  }
+  .types-food li {
+    margin-left: 20px;
+  }
+  .customer-box {
+    padding: 15px;
+  }
+  .regions a {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .pilot-list li {
+    margin-bottom: 15px;
+    // width: 48%;
+  }
+  .pilot-btns {
+    flex-direction: column;
+    .btn-main {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }
+  .client-box h5 {
+    font-size: 20px;
+  }
+  .code-order {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nearby-orders a {
+    margin-bottom: 15px;
+  }
+  .btn-detils-laotop-show {
+    display: block !important;
+  }
+  .btn-detils-laotop-hide {
+    display: none !important;
+  }
+  .problem-order {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .order-infro .nav-tabs {
+    width: 100%;
+  }
+  .shipping-page {
+    .nav-item {
+      width: 100%;
+    }
+    .nav-link {
+      width: 100% !important;
+      margin-bottom: 15px;
+    }
+  }
+  .days input[type="checkbox"] + label {
+    width: 90px;
+  }
+  .messengers-list li {
+    padding: 18px;
+  }
+  .client-box-laptop,.options-btns-laptop,.order-item-laptop{
+    display: block;
+  }
+  .client-box-bigscreen,.options-btns-bigscren,.order-item-bigscreen{
+    display: none;
+  }
+ 
+
+} //End Media
+// Start Media From 992px To 1199px
+@include media(">=tablet", "<desktop") {
+  .nav-tabs .nav-link {
+    width: 250px;
+    margin-left: 20px;
+  }
+  .details-city .status {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .flyers {
+    flex-direction: column-reverse;
+  }
+  .image-box {
+    margin-bottom: 20px;
+  }
+  .box-header {
+    h5 {
+      font-size: 20px;
+    }
+  }
+  .btn-detils {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .chat-content {
+    padding: 0 40px;
+  }
+  .message-text {
+    max-width: 100%;
+    padding: 25px;
+  }
+  // .messengers-list li{
+  //   padding: 18px;
+  // }
+  .poilt-infro {
+    padding: 15px;
+  }
+} //End Media
+// Start Media 991
+
+@include media("<=tablet") {
+  .main-content {
+    margin-right: 0;
+  }
+  .nav-tabs .nav-link {
+    width: 200px;
+    margin-left: 20px;
+  }
+  .btn-search {
+    padding: 0 50px;
+  }
+  // .client-box {
+  //   margin-bottom: 40px;
+  // }
+  .main-sidebar {
+    display: none;
+  }
+  .sliedbar-show {
+    display: block !important;
+  }
+  .nav-tabs .nav-link {
+    font-size: 20px;
+  }
+  .days ul {
+    flex-direction: column;
+  }
+  .days input[type="checkbox"] + label {
+    width: 100%;
+    margin-right: 0;
+  }
+  .chat-content {
+    padding: 0 20px;
+  }
+  .owl-nav {
+    display: none !important;
+  }
+  .owl-dots {
+    display: block !important;
+    margin-top: 20px;
+  }
+  .owl-dot.active span {
+    background-color: #00488f !important;
+  }
+  .owl-nav.disabled {
+    display: none !important;
+  }
+  .client-box-laptop,.options-btns-laptop,.order-item-laptop{
+    display: none;
+  }
+  .client-box-bigscreen,.options-btns-bigscren,.order-item-bigscreen{
+    display: block;
+  }
+
+ 
+} //End Media
+
+// Start Media From 767px To 0px
+@include media("<=phablet") {
+  .code-form {
+    margin-bottom: 50px;
+  }
+  .nav-tabs .nav-link {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .nav-item {
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
+  .login-card {
+    width: 100%;
+  }
+  // .login-content {
+  //   padding: 30px;
+  // }
+  .picture {
+    max-width: 100%;
+    height: 275px !important ;
+  }
+
+  .proudcts-section .btn-search {
+    width: 100%;
+  }
+  .btn-search {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .shop-box {
+    margin-bottom: 40px;
+    height: auto;
+  }
+  .products-list .nav-tabs .nav-link {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .login-logo-new {
+    display: none;
+  }
+
+  .log-mobile {
+    display: block;
+  }
+  .login-content-new {
+    padding: 0;
+    margin-bottom: 100px;
+  }
+
+  // .login-page {
+  //   padding: 100px;
+  // }
+  .login-card-new {
+    max-width: 100%;
+  }
+  // .client-box {
+  //   height: 90%;
+  // }
+  .status-btn {
+    max-width: 100%;
+    flex-direction: column;
+    .btn-primary.btn-shadow {
+      margin-right: 0;
+    }
+  }
+  .types-food li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .types-food li a {
+    width: 100%;
+  }
+  .number-problem {
+    margin-right: 10px;
+  }
+  .problem-order {
+    padding: 0 20px;
+  }
+
+  .message-text {
+    max-width: 100%;
+    margin-right: 30px;
+    padding: 20px;
+  }
+  .recipient .message-text {
+    margin-left: 30px;
+  }
+  .image-chef img{
+    object-fit: contain;
+  }
+  .phone-style{
+    margin-top: 30px;
+  }
+  .works-time{
+    max-width: 100%;
+  }
+
+  //End Media
+}
+
+//Start Media From 0px To 550px
+@include media("<=550px") {
+  .user-icons {
+    margin-left: 30px !important;
+  }
+
+  .login-bg {
+    display: none;
+  }
+  .customer-numbers {
+    float: none;
+    margin-bottom: 20px;
+  }
+  .link-add {
+    display: block !important;
+  }
+  .digit-items .digit-item {
+    margin-left: 5px;
+  }
+}
+//End Media
+@include media("<=480px") {
+  .user-icons {
+    margin-left: 15px !important;
+  }
+  .user-icons .user-icon {
+    margin-left: 10px !important;
+  }
+  .login-card {
+    padding: 40px 30px;
+  }
+  .user-avatar {
+    span {
+      display: none;
+    }
+  }
+  .login-page {
+    padding: 30px;
+  }
+  .copyrights-new,
+  .copyrights {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .problem-order {
+    flex-direction: column;
+    height: auto;
+  }
+  .main-order {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .number-problem {
+    display: block;
+    width: 50px;
+    margin: auto;
+  }
+  .problem-order {
+    padding: 20px;
+  }
+  .about-spermarket{
+    min-height: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      height: 150px;
+  }
+  .checks-radio .form__label-radio{
+    font-size: 15px;
+  }
+} //End Media

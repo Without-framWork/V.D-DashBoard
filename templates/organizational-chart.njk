@@ -1,0 +1,68 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+
+  <div class="bg-gary">
+		<div class="buttons-area pr-3">
+			<button type="submit" class="btn-main btn-block">
+        <i class="icon-add"></i >اضافة  فرع جديد        </button>
+			<button type="submit" class="btn-main btn-block">
+        <i class="icon-edit"></i>	اعدادات الفروع
+			</button>
+		</div>
+    <table class="table table-style table-responsive-md">
+   
+      <thead>
+        <tr>
+          <th scope="col">رقم</th>
+          <th scope="col"> اسم الفرع</th>
+          <th scope="col">نوع الفرع </th>
+          <th scope="col">الموقع </th>
+          <th scope="col">مدير الفرع</th>
+          <th scope="col"> رقم التليفون</th>
+          <th scope="col"> البريد الالكتروني</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(0,6) -%}
+
+        <tr>
+          <th scope="row">1</th>
+          <td >مكتب ابعاد الرؤية للاستشارات الهندسية</td>
+          <td>رئيسي</td>
+          <td>الرياض</td>
+          <td>-</td>
+          
+          <td>
+						+20 111888388388
+          </td>
+
+          <td> youremail@domain.com</td>
+        </tr>
+        
+      
+        <tr>
+          <th scope="row">1</th>
+          <td >مكتب ابعاد الرؤية للاستشارات الهندسية</td>
+          <td>رئيسي</td>
+          <td>الرياض</td>
+          <td>-</td>
+          
+          <td>
+						+20 111888388388
+          </td>
+
+          <td> youremail@domain.com</td>
+        </tr>
+        
+      
+
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</main>
+
+{% endblock %}

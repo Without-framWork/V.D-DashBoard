@@ -1,0 +1,124 @@
+.form-group {
+  label {
+    font-size: 14px;
+    font-weight: 400;
+    color: $main-color;
+  }
+  .form-control {
+    height: 43px;
+    font-size: 16px;
+    text-align: right;
+
+    padding: 0 30px;
+    border-color: $main-color;
+    border-radius: $main-border-radius;
+    -webkit-border-radius: $main-border-radius;
+    -moz-border-radius: $main-border-radius;
+    -ms-border-radius: $main-border-radius;
+    -o-border-radius: $main-border-radius;
+  }
+  i {
+    position: absolute;
+    left: 20px;
+    top: 11px;
+    font-size: 20px;
+  }
+  textarea {
+    resize: inherit;
+  }
+}
+::placeholder {
+  color: $gray;
+}
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  //arrow-style
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("/dist/assets/images/arrow-down.png");
+    background-repeat: no-repeat, repeat;
+    background-position: left 36px top 50%, 0 0;
+    // background-size: 35px auto, 100%;
+    cursor: pointer;
+  }
+}
+//otp
+
+.otp-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.otp-inputs input {
+  width: 40px;
+  height: 40px;
+  margin-right: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid $main-color;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+  color: $main-color;
+  &:focus {
+    outline: none;
+  }
+}
+
+.otp-buttons button {
+  margin-top: 1rem;
+}
+//checkbox-style
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #fff;
+  border: 2px solid $main-color;
+  position: relative;
+  top: 4px;
+  margin-left: 16px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    top: 0;
+  }
+}
+input:checked {
+  border-color: #00488f;
+}
+
+input[type="checkbox"]:checked::before {
+  border-right: 2px solid #00488f;
+  border-top: 2px solid #00488f;
+  height: 35%;
+  width: 62%;
+  transform: rotate(130deg) translateY(18%) translateX(-14%);
+}
+select.form-control:not([size]):not([multiple]) {
+  height: 43px !important;
+}
+
+// select-2

@@ -1,0 +1,141 @@
+.wizard .form-control {
+  margin-bottom: 20px;
+}
+.wizard-btn{
+  display: flex;
+  justify-content: flex-end;
+  li:first-child{
+    margin-left: 12px;
+  }
+}
+
+.wizard .title  {
+  line-height: 40px;
+}
+.wizard .border-line {
+  height: 1px;
+  background-color: $main-color;
+  margin: 30px auto;
+}
+.wizard .nav-tabs {
+  position: relative;
+  margin-bottom: 0;
+  border-bottom-color: transparent;
+}
+.wizard .tab-content > .active {
+  background: transparent;
+}
+
+.wizard > div.wizard-inner {
+  position: relative;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.connecting-line {
+  height: 2px;
+  background: $main-color;
+  opacity: 0.5;
+  position: absolute;
+  margin: 0 135px;
+  left: 81px;
+  right: -4px;
+  top: 11px;
+  z-index: 1;
+}
+
+.wizard .nav-tabs > li.active > a,
+.wizard .nav-tabs > li.active > a:hover,
+.wizard .nav-tabs > li.active > a:focus {
+  color: #555555;
+  cursor: default;
+  border: 0;
+  border-bottom-color: transparent;
+}
+
+span.round-tab {
+  width: 35px;
+  height: 45px;
+  line-height: 30px;
+  display: inline-block;
+  border-radius: $main-border-radius;
+  background: $main-color-lighter;
+  z-index: 2;
+  position: absolute;
+  top: -14px;
+  left: -5px;
+  text-align: center;
+  font-size: 16px;
+  color: $white-color;
+  font-weight: 500;
+  border: 1px solid $main-color;
+  line-height: 44px;
+}
+
+.wizard li.active span.round-tab {
+  background: $main-color;
+  color: #fff;
+  border-color: $main-color;
+}
+
+.wizard .nav-tabs > li {
+  width: 16%;
+}
+
+.wizard .nav-tabs > li a {
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+  border-radius: 100%;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  top: 0;
+}
+
+.prev-step {
+  background-color: transparent;
+  color: $main-color;
+}
+.wizard .nav-tabs > li.active > a i {
+  color: $main-color;
+}
+.wizard .nav-tabs > li a i {
+  position: absolute;
+  top: 60px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 40;
+  color: $main-color-lighter;
+}
+
+// .step-head {
+//   font-size: 20px;
+//   text-align: center;
+//   font-weight: 500;
+//   margin-bottom: 20px;
+// }
+
+@media (max-width: 767px) {
+  .sign-content h3 {
+    font-size: 40px;
+  }
+  .wizard .nav-tabs > li a i {
+    display: none;
+  }
+  .signup-logo-header .navbar-toggle {
+    margin: 0;
+    margin-top: 8px;
+  }
+  .signup-logo-header .logo_area {
+    margin-top: 0;
+  }
+  .signup-logo-header .header-flex {
+    display: block;
+  }
+}

@@ -1,0 +1,38 @@
+{% extends "templates/layouts/app.html" %} {% block content %}
+
+<main class="main-page">
+<img class="bg-image" src="assets/images/bg-image.png" alt="bg-image">  <div class="form-style">
+    <div class="form-head text-center">
+      <figure>
+        <img src=" assets/images/logo.png" alt="logo" >
+      </figure>
+      <h1>بوابة الموظف</h1>
+    </div>
+    <div class="form-content text-right">
+      <h2 class="mb-0">تسجيل الدخول</h2>
+      <p>ادخل البريد الالكتروني المسجل لدينا</p>
+    </div>
+    <form action="#">
+      <div class="form-group">
+        <input
+          type="email"
+          class="form-control mb-5"
+          id="email"
+          name="email"
+          placeholder="برجاء ادخال البريد الالكتروني"
+          required
+        ><i class="icon-sms"></i>
+        
+        <div class="text-center">
+          <button type="submit" class="btn-main ">ارسال كود تحقيق </button>
+        </div>
+      </div>
+  
+    </form>
+
+
+   
+  </div>
+  <p class="copyright text-center">جميع الحقوق البرمجية محفوظة لمكتب ابعاد الرؤية للاستشارات الهندسية</p>
+</main>
+{% endblock %}

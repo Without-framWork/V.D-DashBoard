@@ -1,0 +1,265 @@
+$font-path: "/dist/assets/fonts/";
+
+@font-face {
+  font-family: "TheSans";
+  src: url("#{$font-path}TheSans-Bold.eot");
+  src: url("#{$font-path}TheSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}TheSans-Bold.woff2") format("woff2"),
+    url("#{$font-path}TheSans-Bold.woff") format("woff"),
+    url("#{$font-path}TheSans-Bold.ttf") format("truetype"),
+    url("#{$font-path}TheSans-Bold.svg#TheSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSans";
+  src: url("#{$font-path}TheSans-Plain.eot");
+  src: url("#{$font-path}TheSans-Plain.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}TheSans-Plain.woff2") format("woff2"),
+    url("#{$font-path}TheSans-Plain.woff") format("woff"),
+    url("#{$font-path}TheSans-Plain.ttf") format("truetype"),
+    url("#{$font-path}TheSans-Plain.svg#TheSans-Plain") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//icomoon font
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$font-path}icomoon.eot?tmwjgc');
+  src:  url('#{$font-path}icomoon.eot?tmwjgc#iefix') format('embedded-opentype'),
+    url('#{$font-path}icomoon.ttf?tmwjgc') format('truetype'),
+    url('#{$font-path}icomoon.woff?tmwjgc') format('woff'),
+    url('#{$font-path}icomoon.svg?tmwjgc#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+  content: "\e92f";
+  color: #fff;
+}
+.icon-arran-gevertical:before {
+  content: "\e900";
+  color: #004693;
+}
+.icon-arrow-down:before {
+  content: "\e901";
+  color: #004693;
+}
+.icon-arrow-left:before {
+  content: "\e902";
+  color: #004693;
+}
+.icon-category:before {
+  content: "\e903";
+  color: #004693;
+}
+.icon-chart:before {
+  content: "\e904";
+  color: #004693;
+}
+.icon-close-square:before {
+  content: "\e905";
+  color: #004693;
+}
+.icon-edit:before {
+  content: "\e906";
+  color: #004693;
+}
+.icon-fatrows:before {
+  content: "\e907";
+  color: #004693;
+}
+.icon-filter-square:before {
+  content: "\e908";
+  color: #004693;
+}
+.icon-folder:before {
+  content: "\e909";
+  color: #004693;
+}
+.icon-folder-open:before {
+  content: "\e90a";
+  color: #004693;
+}
+.icon-folder-open-ntf .path1:before {
+  content: "\e90b";
+  color: rgb(0, 70, 147);
+}
+.icon-folder-open-ntf .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(0, 70, 147);
+}
+.icon-folder-open-ntf .path3:before {
+  content: "\e90d";
+  margin-left: -1em;
+  color: rgb(203, 24, 24);
+}
+.icon-folder-open-ntf .path4:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-folder-open-ntf .path5:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-location-add:before {
+  content: "\e910";
+  color: #004693;
+}
+.icon-note-text:before {
+  content: "\e911";
+  color: #004693;
+}
+.icon-notification .path1:before {
+  content: "\e912";
+  color: rgb(0, 70, 147);
+}
+.icon-notification .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(0, 70, 147);
+}
+.icon-notification .path3:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(0, 70, 147);
+}
+.icon-notification .path4:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(203, 24, 24);
+}
+.icon-notification .path5:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(252, 252, 252);
+}
+.icon-profile-add:before {
+  content: "\e917";
+  color: #004693;
+}
+.icon-profile-add-orange:before {
+  content: "\e918";
+  color: #f19b02;
+}
+.icon-profile-tick:before {
+  content: "\e919";
+  color: #004693;
+}
+.icon-search:before {
+  content: "\e91a";
+  color: #004693;
+}
+.icon-setting:before {
+  content: "\e91b";
+  color: #004693;
+}
+.icon-shapes:before {
+  content: "\e91c";
+  color: #004693;
+}
+.icon-sms:before {
+  content: "\e91d";
+  color: #004693;
+}
+.icon-trash:before {
+  content: "\e91e";
+  color: #004693;
+}
+.icon-user:before {
+  content: "\e91f";
+  color: #004693;
+}
+.icon-user-octagon:before {
+  content: "\e920";
+  color: #004693;
+}
+.icon-user-icon-red .path1:before {
+  content: "\e921";
+  color: rgb(217, 217, 217);
+}
+.icon-user-icon-red .path2:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(203, 24, 24);
+}
+.icon-user-icon-red .path3:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-user-icon-green .path1:before {
+  content: "\e924";
+  color: rgb(217, 217, 217);
+}
+.icon-user-icon-green .path2:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: rgb(24, 203, 95);
+}
+.icon-user-icon-green .path3:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-user-icon-blue .path1:before {
+  content: "\e927";
+  color: rgb(217, 217, 217);
+}
+.icon-user-icon-blue .path2:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(0, 70, 147);
+}
+.icon-user-icon-blue .path3:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-user-icon-orange .path1:before {
+  content: "\e92a";
+  color: rgb(217, 217, 217);
+}
+.icon-user-icon-orange .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(241, 155, 2);
+}
+.icon-user-icon-orange .path3:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-user-icon-gray .path1:before {
+  content: "\e92d";
+  color: rgb(217, 217, 217);
+}
+.icon-user-icon-gray .path2:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

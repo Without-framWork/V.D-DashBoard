@@ -1,0 +1,40 @@
+{% extends "templates/layouts/app.html" %} {% block content %}
+
+<main class="main-page">
+  <img class="bg-image" src="assets/images/bg-image.png" alt="bg-image"> 
+  <div class="form-style" >
+    <div class="form-head text-center">
+      <figure>
+        <img src=" assets/images/logo.png" alt="logo" >
+      </figure>
+      <h1>بوابة الموظف</h1>
+    </div>
+    <div class="form-content text-right">
+      <h2 class="mb-0">تسجيل الدخول</h2>
+      <p>برجاء ادخال كود التحقق المرسل اليك على</p>
+      <h3>youremail@domain.com</h3>
+    </div>
+    <form action="#" autocomplete="off">
+      <div class="otp-form">
+        <div class="otp-inputs">
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+          <input type="text" maxlength="1" pattern="[0-9]" required />
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn-main mb-4">تأكيد</button>
+        <p class="massage-code blue">
+          لم يصلك كود التحقق؟ <a href="#">اعادة الارسال</a>
+        </p>
+      </div>
+    </form>
+  </div>
+
+  <p class="copyright text-center">
+    جميع الحقوق البرمجية محفوظة لمكتب ابعاد الرؤية للاستشارات الهندسية
+  </p>
+</main>
+{% endblock %}

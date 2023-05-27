@@ -1,0 +1,15 @@
+@import"_include-media.scss";
+
+.input-group > .custom-select:not(:last-child), .input-group > .form-control:not(:last-child) {
+	 border-top-right-radius: 12px !important; 
+	border-bottom-right-radius:  12px !important; 
+}
+.input-group-text{
+	background-color: transparent !important;
+	border: none;
+	padding: 0;
+}
+.fa-calendar:before,.fa-clock-o:before{
+	position: relative;
+	left: 20px;
+}

@@ -1,0 +1,140 @@
+.sidebar-logo {
+  text-align: center;
+  margin-bottom: 70px;
+  img {
+    width: 110px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    color: $white-color;
+  }
+}
+.main-sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  right: 0;
+  background: $main-color;
+  transition: left 0.4s ease;
+  z-index: 99999999;
+  padding: 32px 4px;
+  overflow-y: inherit;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  ul {
+    background: $main-color;
+
+    text-align: right;
+    li {
+      line-height: 60px;
+
+      a {
+        position: relative;
+        color: $white-color;
+        text-decoration: none;
+        font-size: 16px;
+        padding-right: 16px;
+        font-weight: bold;
+        display: block;
+        width: 100%;
+        border-left: 3px solid transparent;
+      }
+    }
+  }
+  a {
+    i:before {
+      color: $white-color;
+    }
+  }
+}
+
+nav ul li a.active {
+  color: $white-color !important;
+  background-color: $main-color-lighter;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+nav ul li a.active i:before {
+  color: $white-color !important;
+}
+
+nav ul ul {
+  position: static;
+  display: none;
+}
+nav ul .data-show.data-submenu {
+  display: block;
+}
+nav ul .structure-show.structure-submenu {
+  display: block;
+}
+nav ul .employees-show.employees-submenu {
+  display: block;
+}
+
+nav ul .structure-show.structure-submenu {
+  display: block;
+}
+nav ul .departure-show.departure-submenu {
+  display: block;
+}
+nav ul ul li {
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a {
+  font-size: 17px;
+  color: #e6e6e6;
+}
+nav ul ul li a i {
+  color: #e6e6e6;
+}
+
+nav ul li a i {
+  position: absolute;
+  top: 50%;
+  left: 49px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+nav ul li a i.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+  -moz-transform: translateY(-50%) rotate(-180deg);
+  -ms-transform: translateY(-50%) rotate(-180deg);
+  -o-transform: translateY(-50%) rotate(-180deg);
+}
+.user-image {
+  background-color: transparent;
+  padding-top: 200px;
+  text-align: center;
+  .user-avatar {
+    display: block;
+  }
+  img {
+    width: 136px !important;
+    height: 136px !important;
+    margin-bottom: 12px;
+  }
+  a {
+    font-size: 13px;
+    i:before {
+      color: $main-color;
+      position: relative;
+      top: 4px;
+    }
+  }
+}

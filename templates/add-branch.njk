@@ -1,0 +1,154 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/sidebar.njk" %}
+
+<main class="main-content">
+  <section class="item-box">
+    <h2 class="title">بيانات الفرع</h2>
+    <form action="#">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="branch_name"
+              name="branch_name"
+              placeholder="اسم الفرع"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="phone_number"
+              name="phone_number"
+              placeholder="رقم التليفون"
+            />
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <select class="form-control" id="country" name="country">
+                <option>الدولة</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="detect_location"
+              name="detect_location"
+              placeholder="تحديد الموقع "
+            />
+            <i class="icon-location-add"></i>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="branch_tybe"
+              name="branch_tybe"
+              placeholder=" نوع الفرع"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="البريد الالكتروني"
+            />
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <select class="form-control" id="city" name="city">
+                <option>المدينة</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <select
+                class="form-control"
+                id="branch_system"
+                name="branch_system"
+              >
+                <option>نظام الحضور في الفرع</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-baseline">
+        <div class="col-md-4">
+          <h2 class="title">الاوراق الرسمية</h2>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-9">
+              <button type="submit" class="btn-main mt-4 btn-block">
+                <i class="icon-add"></i> اضافة اوراق رسمية
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button type="submit" class="btn-main mt-4">حفظ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="table table-style table-responsive-md mt-5 bg-gary">
+        <thead>
+          <tr>
+            <th scope="col">الاسم</th>
+            <th scope="col">تاريخ الانتهاء</th>
+            <th scope="col">تاريخ الاشعار</th>
+            <th scope="col">الملف</th>
+            <th scope="col">الاعدادات</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0,12) -%}
+
+          <tr>
+            <th scope="row">رقم السجل التجاري</th>
+            <td>10/05/2023</td>
+
+            <td>05/05/2023</td>
+
+            <td>
+              الملف <a href="#"><i class="icon-folder-open"></i></a>
+            </td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          {%- endfor %}
+        </tbody>
+      </table>
+    </form>
+  </section>
+</main>
+
+{% endblock %}

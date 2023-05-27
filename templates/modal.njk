@@ -1,0 +1,1769 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/sidebar.njk" %}
+
+<div class="main-content">
+  <div class="modals">
+    <!-- 01 -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-1"
+    >
+      تم حفظ العميل رقم
+    </button>
+    <!-- 02 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-2"
+    >
+      اضافة عميل جديد
+    </button>
+    <!-- 03 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-3"
+    >
+      اضافة عميل جديد erreo
+    </button>
+    <!-- 04 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-4"
+    >
+      send massage
+    </button>
+    <!-- 05 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-5"
+    >
+      المرسلات
+    </button>
+    <!-- 06 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-6"
+    >
+      اضافة خبرة
+    </button>
+    <!-- 07 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-7"
+    >
+      اضافة دورة
+    </button>
+    <!-- 08 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-8"
+    >
+      مستحقات الموظف
+    </button>
+    <!-- 09 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-9"
+    >
+      حجز طيران
+    </button>
+    <!-- 10 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-10"
+    >
+      نقل كفالة
+    </button>
+    <!-- 11 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-11"
+    >
+      تأمين طبي
+    </button>
+    <!-- 12 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-12"
+    >
+      سيارة
+    </button>
+    <!-- 13 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-13"
+    >
+      تأمين اجتم
+    </button>
+    <!-- 014 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-14"
+    >
+      اتصالات
+    </button>
+    <!-- 15 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-15"
+    >
+      الاجازات
+    </button>
+    <!-- 16 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-16"
+    >
+      نظام الحضور في الفرع
+    </button>
+    <!-- 17 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-17"
+    >
+      اضافة اوراق رسمية
+    </button>
+    <!-- 18 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-18"
+    >
+      map
+    </button>
+    <!-- 01 -->
+
+    <div
+      class="modal fade"
+      id="modal-1"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">تم حفظ العميل رقم</h5>
+          </div>
+          <div class="modal-body">
+            <P>#1234567</P>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main" data-dismiss="modal">
+              رجوع
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 02 -->
+
+    <div
+      class="modal fade"
+      id="modal-2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة عميل جديد</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="اسم العميل"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" رقم التليفون"
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>الفرع</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  عنوان المراسلات"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="رقم الهوية "
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="البريد الالكتروني "
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>الوسيط</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="choose-image">
+                    <div class="picture">
+                      <img src="#" class="picture-src" />
+                    </div>
+                    <label class="select-image" for="image-upload">
+                      <p>لتحميل الصورة اضغط هنا</p>
+                      <span> حجم الصورة لا يزيد عن 10MB</span>
+
+                      <span class="icon-add"></span>
+                      <label class="add-icon"></label>
+                      <input
+                        type="file"
+                        id="image-upload"
+                        accept="image/*"
+                        style="display: none"
+                      />
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 03 -->
+
+    <div
+      class="modal fade"
+      id="modal-3"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة عميل جديد</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="اسم العميل"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" رقم التليفون"
+                  />
+                </div>
+                <div class="form-group">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>الفرع</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  عنوان المراسلات"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group error">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="رقم الهوية "
+                  />
+                  <p class="error">رقم الهوية مسجل لدينا</p>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="البريد الالكتروني "
+                  />
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>الوسيط</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <div class="choose-image">
+                    <div class="picture">
+                      <img src="#" class="picture-src" />
+                    </div>
+                    <div class="select-image">
+                      <p>لتحميل الصورة اضغط هنا</p>
+                      <span> حجم الصورة لا يزيد عن 10MB</span>
+                      <span class="add-icon">
+                        <span class="icon-add"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 04 -->
+
+    <div
+      class="modal fade"
+      id="modal-4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ارسال رسالة جديدة</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="اسم المشروع "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="الموضوع  "
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea
+                    class="form-control h-50"
+                    rows="3"
+                    placeholder="نص الرسالة "
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">ارسال</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 05 -->
+
+    <div
+      class="modal fade"
+      id="modal-5"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <ul class="breadcrumb">
+            <li><a href="#">المراسلات</a></li>
+
+            <li>محمد عبدالعزيز</li>
+          </ul>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="icon-close-square"></i></span>
+          </button>
+          <div class="modal-body">
+            <table class="table table-style table-responsive-md">
+              <thead>
+                <tr>
+                  <th scope="col">رقم</th>
+                  <th scope="col">التاريخ</th>
+                  <th scope="col">الوقت</th>
+                  <th scope="col">المشروع</th>
+                  <th scope="col">الرسالة</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in range(0,4) -%}
+
+                <tr>
+                  <th scope="row">1</th>
+                  <td>03/05/2023</td>
+
+                  <td>06:59 PM</td>
+
+                  <td>اسم المشروع</td>
+                  <td>هذه المساحة مخصصة لنص الرسالة يكتب هنا</td>
+                </tr>
+
+                {%- endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main" data-dismiss="modal">
+              ارسال رسالة جديدة
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 06 -->
+
+    <div
+      class="modal fade"
+      id="modal-6"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة خبرة</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="اسم الشركة "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>المسمى الوظيفي</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6>الفترة</h6>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker16"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker16"
+                      placeholder=" من"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker16"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" عدد السنوات "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker17"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker17"
+                      placeholder=" الي"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker17"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="choose-image">
+                    <div class="picture">
+                      <img src="#" class="picture-src" />
+                    </div>
+                    <div class="select-image">
+                      <p>لتحميل الصورة اضغط هنا</p>
+                      <span> حجم الصورة لا يزيد عن 10MB</span>
+                      <span class="add-icon">
+                        <span class="icon-add"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 07 -->
+
+    <div
+      class="modal fade"
+      id="modal-7"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة دورة</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" اسم الدورة "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="form-group">
+                    <select class="form-control">
+                      <option>جهة الاعتماد</option>
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" مدة الدورة  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker19"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker19"
+                      placeholder=" تاريخ الحصول"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker19"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="choose-image">
+                    <div class="picture">
+                      <img src="#" class="picture-src" />
+                    </div>
+                    <div class="select-image">
+                      <p>لتحميل الصورة اضغط هنا</p>
+                      <span> حجم الصورة لا يزيد عن 10MB</span>
+                      <span class="add-icon">
+                        <span class="icon-add"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 08 -->
+
+    <div
+      class="modal fade"
+      id="modal-8"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" بحث  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 09 -->
+
+    <div
+      class="modal fade"
+      id="modal-9"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" حجز طيران  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>حجز طيران</h6>
+
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li>
+                    <input type="checkbox" id="ch_9" name="ch_9" />
+                    <label for="ch_9"> ذهاب</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ch_10" name="ch_10" />
+                    <label for="ch_10"> عودة </label>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>القيمة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder=" القيمة   "
+                  />
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label>المدة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  المدة  "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 10 -->
+
+    <div
+      class="modal fade"
+      id="modal-10"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  نقل كفالة  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>نقل كفالة</h6>
+
+            <div class="row">
+              <div class="col-md-5">
+                <ul>
+                  <li>
+                    <input type="checkbox" id="ch_13" name="ch_13" />
+                    <label for="ch_13"> خروج نهائي</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ch_14" name="ch_14" />
+                    <label for="ch_14"> تسجيل فقط </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-7">
+                <div class="form-group">
+                  <label>المدة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  المدة  "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 11 -->
+
+    <div
+      class="modal fade"
+      id="modal-11"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="   تأمين طبي  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>تأمين طبي</h6>
+
+            <div class="row">
+              <div class="col-md-5">
+                <ul>
+                  <li>
+                    <input type="checkbox" id="ch_15" name="ch_15" />
+                    <label for="ch_15"> شخصي</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ch_16" name="ch_16" />
+                    <label for="ch_16"> عائلي </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-7">
+                <div class="form-group">
+                  <label>الحد الاقصى</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  الحد الاقصى  "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 12 -->
+
+    <div
+      class="modal fade"
+      id="modal-12"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="    سيارة  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>سيارة</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 13 -->
+
+    <div
+      class="modal fade"
+      id="modal-13"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="    تأمين اجتماعي  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>تأمين اجتماعي</h6>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>الحد الاقصى</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  الحد الاقصى  "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 14 -->
+
+    <div
+      class="modal fade"
+      id="modal-14"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">مستحقات الموظف</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="    اتصالات  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <button type="button" class="btn-main btn-block">بحث</button>
+              </div>
+            </div>
+            <h6>اتصالات</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 15 -->
+
+    <div
+      class="modal fade"
+      id="modal-15"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">الاجازات</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>اسم الاجازة</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  اسم الاجازة "
+                  />
+                </div>
+                <div class="form-group">
+                  <label>تاريخ التعيين</label>
+                  <div
+                    class="input-group date"
+                    id="datetimepicker20"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker20"
+                      placeholder="  تاريخ التعيين"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker20"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>نوع الاجازة</label>
+                  <select class="form-control">
+                    <option>نوع الاجازة</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>تاريخ استحقاق الاجازات</label>
+                  <div
+                    class="input-group date"
+                    id="datetimepicker21"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker21"
+                      placeholder="  تاريخ استحقاق الاجازات"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker21"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h6>الية الاجازات قبل المدة</h6>
+            <ul>
+              <li>
+                <input type="checkbox" id="ch_17" name="ch_17" />
+                <label for="ch_17"> خصم يومين</label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch_18" name="ch_18" />
+                <label for="ch_18"> خصم يوم </label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch_19" name="ch_19" />
+                <label for="ch_19"> خصم يوم ونصف </label>
+              </li>
+              <li>
+                <input type="checkbox" id="ch_20" name="ch_20" />
+                <label for="ch_20"> خصم من الرصيد </label>
+              </li>
+            </ul>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> رصيد الاجازات</label>
+                  <select class="form-control">
+                    <option>رصيد الاجازات</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> مدة العمل</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  مدة العمل  "
+                  />
+                </div>
+              </div>
+            </div>
+            <h6>اذن الاجازات</h6>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> خصم من الرصيد</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="   خصم من الرصيد  "
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> بدون انذار</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="   بدون انذار  "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">اضافة</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 16 -->
+
+    <div
+      class="modal fade"
+      id="modal-16"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">نظام الحضور في الفرع</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4">
+                <h6>تحديد ايام الاسبوع</h6>
+              </div>
+              <div class="col-md-4">
+                <h6>عدد ساعات العمل</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_1" name="ch_1" />
+                      <label for="ch_1"> السبت</label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_2" name="ch_2" />
+                      <label for="ch_2"> الجمعة </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_3" name="ch_3" />
+                      <label for="ch_3"> الخميس </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_4" name="ch_4" />
+                      <label for="ch_4"> الاربعاء </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_5" name="ch_5" />
+                      <label for="ch_5"> الثلاثاء </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_6" name="ch_6_" />
+                      <label for="ch_6"> الاثنين </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="form-group">
+                      <input type="checkbox" id="ch_7" name="ch_7" />
+                      <label for="ch_7"> الاحد </label>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="form-group work-hours">
+                      <label>من</label>
+
+                      <select class="form-control">
+                        <option>اختر الساعة</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <h6>نطاق الحضور</h6>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder=" 200م" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">التالي</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 17 -->
+
+    <div
+      class="modal fade"
+      id="modal-17"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة اوراق رسمية</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="  الاسم "
+                  />
+                </div>
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker22"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker22"
+                      placeholder=" تاريخ الانتهاء"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker22"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div
+                    class="input-group date"
+                    id="datetimepicker23"
+                    data-target-input="nearest"
+                  >
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker23"
+                      placeholder=" تاريخ الاشعار"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker23"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="choose-image">
+                    <div class="picture">
+                      <img src="#" class="picture-src" />
+                    </div>
+                    <div class="select-image">
+                      <p>لتحميل الصورة اضغط هنا</p>
+                      <span> حجم الصورة لا يزيد عن 10MB</span>
+                      <span class="add-icon">
+                        <span class="icon-add"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 18 -->
+    <div
+      class="modal fade"
+      id="modal-18"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">اضافة اوراق رسمية</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"><i class="icon-close-square"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div id="map" style="width: 100%; height: 400px"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-main" id="saveLocation">
+              حفظ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>

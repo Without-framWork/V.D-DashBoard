@@ -1,0 +1,193 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+= "offers" %} {% include "templates/components/header.njk" %}
+
+<main class="main-content">
+  <div class="wizard">
+    <div class="wizard-inner">
+      <div class="connecting-line"></div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a
+            href="#step1"
+            data-toggle="tab"
+            aria-controls="step1"
+            role="tab"
+            aria-expanded="true"
+            ><span class="round-tab">1 <i>البيانات الشخصية </i> </span>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a
+            href="#step2"
+            data-toggle="tab"
+            aria-controls="step2"
+            role="tab"
+            aria-expanded="false"
+            ><span class="round-tab">2 <i>البيانات الاكاديمية</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"
+            ><span class="round-tab">3 <i> البيانات الوظيفية </i></span>
+          </a>
+        </li>
+        <li role="presentation" class="active">
+          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"
+            ><span class="round-tab">4 <i> البيانات المالية والاجازات</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"
+            ><span class="round-tab">5 <i> سياسة الحضور</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"
+            ><span class="round-tab">6 <i> حفظ</i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <form role="form" action="#">
+      <div class="tab-content" id="main_form">
+        <div class="tab-pane" role="tabpanel" id="step1"></div>
+        <div class="tab-pane" role="tabpanel" id="step2"></div>
+        <div class="tab-pane" role="tabpanel" id="step3"></div>
+        <div class="tab-pane active" role="tabpanel" id="step4">
+          <h2 class="title">البيانات المالية</h2>
+
+          <div class="row">
+            <div class="col-md-11">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> المرتب الاساسي </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=" المرتب الاساسي"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> عدد ايام العمل في الاسبوع </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="  عدد ايام العمل في الاسبوع "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> عدد ساعات العمل </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=" عدد ساعات العمل"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1">
+              <ul>
+                <li>
+                  <input type="checkbox" id="ch_7" name="ch_7" />
+                  <label for="ch_7"> يوم</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="ch_8" name="ch_8" />
+                  <label for="ch_8"> اسبوع </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-11">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> البدلات المالية للموظف </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="  البدلات المالية للموظف"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label> قيمة الساعة </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="  البدلات المالية للموظف"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> قيمة السيارة </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="  عدد ايام العمل في الاسبوع "
+                    />
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label> اجمالي القيمة المالية </label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder=" عدد ساعات العمل"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dues">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="title mb-0">مستحقات الموظف</h2>
+              </div>
+              <div class="col-md-6 text-left">
+                <button type="button" class="btn-main">
+                  <i class="icon-add"></i> اضافة
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="title mb-0">الاجازات</h2>
+              </div>
+              <div class="col-md-6 text-left">
+                <button type="button" class="btn-main t">
+                  <i class="icon-add"></i> اضافة
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-line"></div>
+          <ul class="wizard-btn">
+            <li>
+              <button type="button" class="btn-main prev-step">رجوع</button>
+            </li>
+
+            <li>
+              <button type="button" class="btn-main next-step">التالي</button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane" role="tabpanel" id="step5"></div>
+        <div class="tab-pane" role="tabpanel" id="step6"></div>
+      </div>
+    </form>
+  </div>
+</main>
+
+{% endblock %}

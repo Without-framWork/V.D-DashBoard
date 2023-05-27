@@ -94,3 +94,18 @@
     }
   }
 }
+.btn-cancel{
+  background-color: $gray !important;
+  color: #ffffff !important;
+   border-color:$gray ;
+ 
+
+  &:hover {
+    border-color:$gray ;
+
+
+   
+  }
+   
+}
+

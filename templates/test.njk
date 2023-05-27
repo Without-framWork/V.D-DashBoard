@@ -1,0 +1,153 @@
+{% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
+	= "offers" %} {% include "templates/components/sidebar.njk" %}
+	
+	<div class="main-content">
+		<table class="table table-style table-responsive-md mt-5 bg-gary">
+			<thead>
+				<tr>
+					<th scope="col">الاسم</th>
+					<th scope="col">تاريخ الانتهاء</th>
+					<th scope="col">تاريخ الاشعار</th>
+					<th scope="col">الملف</th>
+					<th scope="col">الاعدادات</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in range(0, 8) %}
+				<tr id="row{{ i }}">
+					<td scope="row">رقم السجل التجاري</td>
+					<td>10/05/2023</td>
+					<td>05/05/2028</td>
+					<td>
+						الملف <a href="#"><i class="icon-folder-open"></i></a>
+					</td>
+					<td>
+						<ul class="setting-list">
+							<li>
+								<a href="#" class="edit-btn" data-toggle="modal" data-target="#modal-20" data-row-id="{{ i }}"><i class="icon-edit"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="icon-trash"></i></a>
+							</li>
+						</ul>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		
+		
+		<div class="modals">
+		
+			<!-- 20 -->
+	
+			<button
+				type="button"
+				class="btn btn-primary"
+				data-toggle="modal"
+				data-target="#modal-20"
+			>
+				تعديل الاوراق الرسميه
+			</button>
+			<!-- 01 -->
+	
+			<!-- 20 -->
+			<div class="modal fade" id="modal-20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg" role="document">
+					<div class="modal-content">
+						<div class="modal-body">
+						<div class="modal-haeder">
+							<h5>تعديل الاوراقه الرسمية</h5>
+
+						</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input
+											type="text"
+											class="form-control"
+											placeholder="  الاسم "
+										/>
+									</div>
+									<div class="form-group">
+										<div
+											class="input-group date"
+											id="datetimepicker22"
+											data-target-input="nearest"
+										>
+											<input
+												type="text"
+												class="form-control datetimepicker-input"
+												data-target="#datetimepicker22"
+												placeholder=" تاريخ الانتهاء"
+											/>
+											<div
+												class="input-group-append"
+												data-target="#datetimepicker22"
+												data-toggle="datetimepicker"
+											>
+												<div class="input-group-text">
+													<i class="icon-note-text"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<div
+											class="input-group date"
+											id="datetimepicker23"
+											data-target-input="nearest"
+										>
+											<input
+												type="text"
+												class="form-control datetimepicker-input"
+												data-target="#datetimepicker23"
+												placeholder=" تاريخ الاشعار"
+											/>
+											<div
+												class="input-group-append"
+												data-target="#datetimepicker23"
+												data-toggle="datetimepicker"
+											>
+												<div class="input-group-text">
+													<i class="icon-note-text"></i>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="choose-image">
+											<div class="picture">
+												<img src="#" class="picture-src" />
+											</div>
+											<div class="select-image">
+												<p>لتحميل الصورة اضغط هنا</p>
+												<span> حجم الصورة لا يزيد عن 10MB</span>
+												<span class="add-icon">
+													<span class="icon-add"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn-main">حفظ</button>
+						</div>
+					 
+					</div>
+				</div>
+			</div>
+	
+			{% endblock %}
+		</div>
+	
+	
+	
+	
+	
+	</div>
+	

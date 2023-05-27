@@ -300,6 +300,34 @@ $(document).ready(function () {
   $(window).on("load", function () {
     $("#myModal").modal("show");
   });
+
+  //add data in modal
+  $('.edit-btn').click(function () {
+    var rowId = $(this).data('row-id');
+    var rowData = getRowData(rowId);
+    populateModal(rowData);
+  });
+  function getRowData(rowId) {
+    var rowData = [];
+    $('#row' + rowId).find('td').each(function () {
+      rowData.push($(this).text());
+    });
+    return rowData;
+  }
+  function populateModal(rowData) {
+    var modal = $('#modal-20');
+    var inputFields = modal.find('.form-control');
+
+    // Populate the input fields with row data
+    $(inputFields[0]).val(rowData[0]); // الاسم
+    $(inputFields[1]).val(rowData[1]); // تاريخ الانتهاء
+    $(inputFields[2]).val(rowData[2]); // تاريخ الاشعار
+
+    // Show the modal
+    modal.modal('show');
+  }
+
+  // ...
 });
 
 /***/ }),

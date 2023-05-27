@@ -132,4 +132,8 @@ module.exports = [
     from: "templates/steps/step-06.njk",
     to: "step-06.html",
   },
+  {
+    from: "templates/test.njk",
+    to: "test.html",
+  }
 ];

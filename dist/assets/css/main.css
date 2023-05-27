@@ -789,6 +789,15 @@ header i, .btn-main i {
   .btn-disactive:hover i:before {
     color: #ffffff; }
 
+.btn-cancel {
+  background-color: #A7A7A7 !important;
+  color: #ffffff !important; }
+
+.btn-cancel {
+  border-color: #A7A7A7; }
+  .btn-cancel:hover {
+    border-color: #A7A7A7; }
+
 .form-group label {
   font-size: 14px;
   font-weight: 400;
@@ -993,7 +1002,7 @@ select.form-control:not([size]):not([multiple]) {
     padding: 0 20px; }
   .modal-body h3 {
     font-size: 25px;
-    color: #f7a21f;
+    color: #ff0000;
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 30px; }

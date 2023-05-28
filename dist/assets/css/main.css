@@ -817,7 +817,7 @@ header i, .btn-main i {
 
 .form-group i {
   position: absolute;
-  left: 20px;
+  left: 35px;
   top: 11px;
   font-size: 20px; }
 
@@ -1827,6 +1827,10 @@ ul.breadcrumb li a:hover {
     padding: 15px; } }
 
 @media (max-width: 992px) {
+  .header-content {
+    margin-right: 0 !important; }
+  .navbar-right {
+    padding-right: 0 !important; }
   .main-content {
     margin-right: 0; }
   .nav-tabs .nav-link {

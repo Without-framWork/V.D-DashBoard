@@ -1,11 +1,6 @@
-/* global alert */
-export function testme() {
-  alert("hi!");
-}
-
 $(document).ready(function () {
   "use strict";
-  // map
+  // modal-map
   var map;
   var marker;
 
@@ -26,23 +21,82 @@ $(document).ready(function () {
         map: map,
       });
     });
-  }
 
-  // Handle the "Save" button click event
-  $("#saveLocation").on("click", function () {
-    if (marker) {
-      var latitude = marker.getPosition().lat();
-      var longitude = marker.getPosition().lng();
-      console.log("Latitude:", latitude);
-      console.log("Longitude:", longitude);
+    // Get current location
+    function getCurrentLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            var currentLocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
 
-      // TODO: Save the latitude and longitude to your desired location
-      // You can send an AJAX request to your server or perform any other necessary action
+            // Add marker for current location
+            marker = new google.maps.Marker({
+              position: currentLocation,
+              map: map,
+              animation: google.maps.Animation.DROP,
+              icon: "https://maps.google.com/mapfiles/ms/icons/blue-dot.png", // Optional: Custom marker icon
+            });
+
+            // Center the map on the current location
+            map.setCenter(currentLocation);
+
+            // Get address for the current location
+            getAddressFromLatLng(currentLocation.lat, currentLocation.lng);
+          },
+          function (error) {
+            console.log("Error getting current location:", error);
+          }
+        );
+      } else {
+        console.log("Geolocation is not supported by this browser.");
+      }
     }
 
-    // Close the modal
-    $("#modal-18").modal("hide");
-  });
+    // Get address from latitude and longitude
+    function getAddressFromLatLng(latitude, longitude) {
+      var geocoder = new google.maps.Geocoder();
+      var latlng = { lat: latitude, lng: longitude };
+
+      geocoder.geocode({ location: latlng }, function (results, status) {
+        if (status === "OK") {
+          if (results[0]) {
+            console.log("Address:", results[0].formatted_address);
+          } else {
+            console.log("No address found for the provided coordinates.");
+          }
+        } else {
+          console.log("Geocoder failed due to:", status);
+        }
+      });
+    }
+
+    // Handle the "Save" button click event
+    $("#saveLocation").on("click", function () {
+      if (marker) {
+        var latitude = marker.getPosition().lat();
+        var longitude = marker.getPosition().lng();
+        console.log("Latitude:", latitude);
+        console.log("Longitude:", longitude);
+
+        // Get address for the saved location
+        getAddressFromLatLng(latitude, longitude);
+      }
+
+      // Close the modal
+      $("#modal-18").modal("hide");
+    });
+
+    // Handle the "Go to Current Location" button click event
+    $("#goToCurrentLocation").on("click", function () {
+      getCurrentLocation();
+    });
+
+    // Automatically go to current location on page load
+    getCurrentLocation();
+  }
 
   // Trigger the map initialization when the modal is shown
   $("#modal-18").on("shown.bs.modal", function () {
@@ -207,24 +261,26 @@ $(document).ready(function () {
     $("#myModal").modal("show");
   });
 
-//add data in modal
-  $('.edit-btn').click(function() {
-    var rowId = $(this).data('row-id');
+  //add data in modal
+  $(".edit-btn").click(function () {
+    var rowId = $(this).data("row-id");
     var rowData = getRowData(rowId);
     populateModal(rowData);
   });
 
   function getRowData(rowId) {
     var rowData = [];
-    $('#row' + rowId).find('td').each(function() {
-      rowData.push($(this).text());
-    });
+    $("#row" + rowId)
+      .find("td")
+      .each(function () {
+        rowData.push($(this).text());
+      });
     return rowData;
   }
 
   function populateModal(rowData) {
-    var modal = $('#modal-20');
-    var inputFields = modal.find('.form-control');
+    var modal = $("#modal-20");
+    var inputFields = modal.find(".form-control");
 
     // Populate the input fields with row data
     $(inputFields[0]).val(rowData[0]); // الاسم
@@ -232,13 +288,8 @@ $(document).ready(function () {
     $(inputFields[2]).val(rowData[2]); // تاريخ الاشعار
 
     // Show the modal
-    modal.modal('show');
+    modal.modal("show");
   }
 
   // ...
-  
-  
-  
-  
-  
 });

@@ -93,11 +93,7 @@
     color: #c2c2c2 !important;
   }
 
-  .status-image{
-    width: 70px;
-    height: 70px;
-    margin-bottom: 15px;
-  }
+ 
 
   .check {
     color: #00b427;
@@ -165,6 +161,11 @@
     color: #00488f;
     margin-bottom: 0;
   }
+}
+.status-image{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
 }
 .modal-footer {
   border-top: none;

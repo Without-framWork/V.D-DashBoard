@@ -1,5 +1,6 @@
 // Start Media From 1200px To 0px
 @include media("<=desktop") {
+
   .nav-tabs .nav-link {
     width: 310px;
   }
@@ -163,6 +164,12 @@
 // Start Media 991
 
 @include media("<=tablet") {
+  .header-content{
+    margin-right: 0 !important;
+  }
+  .navbar-right{
+    padding-right: 0 !important;
+  }
   .main-content {
     margin-right: 0;
   }

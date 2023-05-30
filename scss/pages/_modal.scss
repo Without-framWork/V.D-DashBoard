@@ -162,11 +162,7 @@
     margin-bottom: 0;
   }
 }
-.status-image{
-  width: 70px;
-  height: 70px;
-  margin-bottom: 15px;
-}
+
 .modal-footer {
   border-top: none;
   justify-content: center;
@@ -225,4 +221,10 @@ ul.breadcrumb li a:hover {
     font-size: 16px;
     font-weight: bold;
   }
+}
+
+.status-image{
+  width: 70px;
+  height: 70px;
+  margin-bottom: 15px;
 }

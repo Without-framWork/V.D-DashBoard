@@ -65,7 +65,12 @@
       <header>
   <div class="header-content">
     <div class="navbar-right">
-      <h1>التقرير البياني</h1>
+      <ul class="breadcrumb">
+        <li><a href="#">الهيكل التنظيمي</a></li>
+        <li><a href="#">الفروع</a></li>
+
+        <li>اضافة فرع</li>
+      </ul>
     </div>
     <div class="navbar-left">
       <div class="user-ntf">
@@ -158,6 +163,67 @@
       <li><a href="#">مكتبة النماذج</a></li>
     </ul>
   </nav>
+</div>
+
+<!-- mobile-sidebar -->
+
+<div class="sliedbar-show">
+  <div class="slidebar-mobile">
+    <nav>
+      <a href="/">
+        <figure class="sidebar-logo">
+          <img src="assets/images/logo.png" alt="logo" />
+          <figcaption>بوابة الموظف</figcaption>
+        </figure>
+      </a>
+      <ul>
+        <li><a class="active" href="/index.html">التقرير البياني </a></li>
+        <li><a href="#">ملفاتي</a></li>
+
+        <li>
+          <a href="#" class="data-btn">
+            مكتبة البيانات
+            <i class="icon-arrow-down one"></i>
+          </a>
+          <ul class="data-show">
+            <li>
+              <a href="#" class="structure-btn">
+                الهيكل التنظيمي
+                <i class="icon-arrow-down two"></i>
+              </a>
+              <ul class="structure-show">
+                <li><a href="/empty-branche.html">الفروع</a></li>
+                <li><a href="/administration.html">الادارة والاقسام</a></li>
+                <li>
+                  <a href="#" class="employees-btn">
+                    الموظفين
+                    <i class="icon-arrow-down there"></i>
+                  </a>
+                  <ul class="employees-show">
+                    <li><a href="#">التسلسل الوظيفي</a></li>
+                    <li><a href="#">بيانات الموظفين</a></li>
+                  </ul>
+                  <a href="#" class="departure-btn">
+                    الحضور والانصراف <i class="icon-arrow-down four"></i>
+                  </a>
+                  <ul class="departure-show">
+                    <li><a href="#"> محددات الحضور</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">مكتبة النماذج</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="overlay-slide"></div>
+
+  <div id="wrapper">
+    <a href="#" class="menu"> <i class="fa fa-bars"></i> </a>
+  </div>
 </div>
 
 
@@ -269,7 +335,7 @@
         </div>
       </div>
 
-      <table class="table table-style table-responsive-md mt-5 bg-gary">
+      <table class="table table-style table-responsive-sm mt-5 bg-gary">
         <thead>
           <tr>
             <th scope="col">الاسم</th>
@@ -560,6 +626,9 @@
 
     <!-- main.js -->
     <script src="assets/js/main.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdGv5cjpA0dMUCSolCf89tl_vgccGvsu0&libraries=drawing"></script>
+
 
    
 

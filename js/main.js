@@ -1,4 +1,8 @@
 $(document).ready(function () {
+
+
+
+
   "use strict";
   // modal-map
   var map;
@@ -122,6 +126,24 @@ $(document).ready(function () {
     $("nav ul .four").toggleClass("rotate");
   });
 
+
+  //slidebar-mobile
+
+  $(".menu,.overlay-slide,.sliding-panel-close").on(
+    "click touchstart",
+    function (e) {
+      $(".slidebar-mobile,.overlay-slide").toggleClass("is-visible");
+      $("#wrapper").toggleClass("is-obscured");
+      e.preventDefault();
+    }
+  );
+
+  //dropmenus-slidebar-mobile
+  // $(".sidebar-lists li").click(function () {
+  //   $(this).children(".sub-menu").slideToggle(500);
+  //   $(this).toggleClass("active");
+  //   event.preventDefault();
+  // });
   //data-picker
 
   $(".date-range").daterangepicker({

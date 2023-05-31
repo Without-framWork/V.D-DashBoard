@@ -1,8 +1,7 @@
 // Start Media From 1200px To 0px
 @include media("<=desktop") {
-
   .nav-tabs .nav-link {
-    width: 310px;
+    width: 300px;
   }
   .platform-table td {
     padding: 18px !important;
@@ -15,6 +14,14 @@
     font-size: 13px;
     padding: 10px;
     vertical-align: middle;
+  }
+
+  .empty-massage figcaption {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  img {
+    max-width: 100%;
   }
   .works-status {
     font-size: 20px;
@@ -113,20 +120,22 @@
   .messengers-list li {
     padding: 18px;
   }
-  .client-box-laptop,.options-btns-laptop,.order-item-laptop{
+  .client-box-laptop,
+  .options-btns-laptop,
+  .order-item-laptop {
     display: block;
   }
-  .client-box-bigscreen,.options-btns-bigscren,.order-item-bigscreen{
+  .client-box-bigscreen,
+  .options-btns-bigscren,
+  .order-item-bigscreen {
     display: none;
   }
- 
-
 } //End Media
 // Start Media From 992px To 1199px
 @include media(">=tablet", "<desktop") {
   .nav-tabs .nav-link {
-    width: 250px;
-    margin-left: 20px;
+    width: 380px;
+    margin-left: 15px;
   }
   .details-city .status {
     font-size: 13px;
@@ -161,28 +170,48 @@
     padding: 15px;
   }
 } //End Media
+// Start Media From 1098x To 990px
+@include media("<=1098px", ">=990px") {
+  .nav-tabs .nav-link {
+    font-size: 15px;
+    width: 320px !important;
+    margin-left: 15px;
+  }
+}
+// Start Media From 944px To 809px
+@include media("<=944px", ">=809px") {
+  .nav-tabs .nav-link {
+    width: 360px !important;
+    margin-left: 15px;
+  }
+}
+// Start Media From 991px To 767px
+@include media("<=809px", ">=767px") {
+  .nav-tabs .nav-link {
+    width: 330px !important;
+    margin-left: 15px;
+  }
+}
 // Start Media 991
 
 @include media("<=tablet") {
-  .header-content{
+  .nav-tabs {
+    margin-top: 30px;
+  }
+  .header-content {
     margin-right: 0 !important;
   }
-  .navbar-right{
-    padding-right: 0 !important;
-  }
+  // .navbar-right {
+  //   padding-right: 0 !important;
+  // }
   .main-content {
     margin-right: 0;
   }
   .nav-tabs .nav-link {
-    width: 200px;
-    margin-left: 20px;
+    width: 280px;
+    margin-left: 15px;
   }
-  .btn-search {
-    padding: 0 50px;
-  }
-  // .client-box {
-  //   margin-bottom: 40px;
-  // }
+
   .main-sidebar {
     display: none;
   }
@@ -190,7 +219,7 @@
     display: block !important;
   }
   .nav-tabs .nav-link {
-    font-size: 20px;
+    font-size: 15px;
   }
   .days ul {
     flex-direction: column;
@@ -199,34 +228,28 @@
     width: 100%;
     margin-right: 0;
   }
-  .chat-content {
-    padding: 0 20px;
-  }
-  .owl-nav {
-    display: none !important;
-  }
-  .owl-dots {
-    display: block !important;
-    margin-top: 20px;
-  }
-  .owl-dot.active span {
-    background-color: #00488f !important;
-  }
-  .owl-nav.disabled {
-    display: none !important;
-  }
-  .client-box-laptop,.options-btns-laptop,.order-item-laptop{
-    display: none;
-  }
-  .client-box-bigscreen,.options-btns-bigscren,.order-item-bigscreen{
-    display: block;
-  }
-
- 
 } //End Media
 
 // Start Media From 767px To 0px
 @include media("<=phablet") {
+  .btn-main {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .buttons-area {
+    width: 100%;
+    flex-direction: column;
+  }
+  .buttons-area .btn-main:first-child {
+    margin-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .table-style thead th {
+    font-size: 16px;
+  }
+  .view-all {
+    margin-left: 20px !important;
+  }
   .code-form {
     margin-bottom: 50px;
   }
@@ -237,6 +260,9 @@
   .nav-item {
     width: 100%;
     margin-bottom: 30px !important;
+  }
+  .table-style ul li {
+    margin-left: 8px !important;
   }
   .login-card {
     width: 100%;
@@ -314,13 +340,13 @@
   .recipient .message-text {
     margin-left: 30px;
   }
-  .image-chef img{
+  .image-chef img {
     object-fit: contain;
   }
-  .phone-style{
+  .phone-style {
     margin-top: 30px;
   }
-  .works-time{
+  .works-time {
     max-width: 100%;
   }
 
@@ -329,8 +355,21 @@
 
 //Start Media From 0px To 550px
 @include media("<=550px") {
-  .user-icons {
-    margin-left: 30px !important;
+  .table-style thead th {
+    font-size: 13px;
+    padding: 0 10px !important;
+  }
+  .table-style thead th {
+    font-size: 11px;
+  }
+  .setting-list {
+    padding: 0 15px;
+  }
+  .setting-list li:nth-child(2) .user-icons {
+    margin-left: 12px !important;
+  }
+  .table-style {
+    margin-top: 20px !important;
   }
 
   .login-bg {
@@ -349,49 +388,34 @@
 }
 //End Media
 @include media("<=480px") {
+  .user-ntf {
+    margin-right: 10px !important;
+  }
   .user-icons {
     margin-left: 15px !important;
   }
   .user-icons .user-icon {
     margin-left: 10px !important;
   }
-  .login-card {
-    padding: 40px 30px;
+  .main-page h1 {
+    font-size: 30px;
+  }
+  .form-style {
+    padding: 25px;
   }
   .user-avatar {
     span {
       display: none;
     }
   }
-  .login-page {
-    padding: 30px;
+  .copyright {
+    font-size: 12px;
   }
-  .copyrights-new,
-  .copyrights {
-    font-size: 15px;
-    font-weight: bold;
+  .otp-inputs input {
+    margin-right: 10px;
   }
-  .problem-order {
-    flex-direction: column;
-    height: auto;
-  }
-  .main-order {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .number-problem {
-    display: block;
-    width: 50px;
-    margin: auto;
-  }
-  .problem-order {
-    padding: 20px;
-  }
-  .about-spermarket{
-    min-height: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      height: 150px;
-  }
-  .checks-radio .form__label-radio{
+
+  .checks-radio .form__label-radio {
     font-size: 15px;
   }
 } //End Media

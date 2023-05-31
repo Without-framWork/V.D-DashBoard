@@ -160,6 +160,67 @@
   </nav>
 </div>
 
+<!-- mobile-sidebar -->
+
+<div class="sliedbar-show">
+  <div class="slidebar-mobile">
+    <nav>
+      <a href="/">
+        <figure class="sidebar-logo">
+          <img src="assets/images/logo.png" alt="logo" />
+          <figcaption>بوابة الموظف</figcaption>
+        </figure>
+      </a>
+      <ul>
+        <li><a class="active" href="/index.html">التقرير البياني </a></li>
+        <li><a href="#">ملفاتي</a></li>
+
+        <li>
+          <a href="#" class="data-btn">
+            مكتبة البيانات
+            <i class="icon-arrow-down one"></i>
+          </a>
+          <ul class="data-show">
+            <li>
+              <a href="#" class="structure-btn">
+                الهيكل التنظيمي
+                <i class="icon-arrow-down two"></i>
+              </a>
+              <ul class="structure-show">
+                <li><a href="/empty-branche.html">الفروع</a></li>
+                <li><a href="/administration.html">الادارة والاقسام</a></li>
+                <li>
+                  <a href="#" class="employees-btn">
+                    الموظفين
+                    <i class="icon-arrow-down there"></i>
+                  </a>
+                  <ul class="employees-show">
+                    <li><a href="#">التسلسل الوظيفي</a></li>
+                    <li><a href="#">بيانات الموظفين</a></li>
+                  </ul>
+                  <a href="#" class="departure-btn">
+                    الحضور والانصراف <i class="icon-arrow-down four"></i>
+                  </a>
+                  <ul class="departure-show">
+                    <li><a href="#"> محددات الحضور</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">مكتبة النماذج</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="overlay-slide"></div>
+
+  <div id="wrapper">
+    <a href="#" class="menu"> <i class="fa fa-bars"></i> </a>
+  </div>
+</div>
+
 
 <main class="main-content">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -229,7 +290,7 @@
         </div>
       </div>
 
-      <table class="table table-style table-responsive-md mt-5">
+      <table class="table table-style table-responsive-sm mt-5">
         <thead>
           <tr>
             <th scope="col">نوع الموظفين</th>
@@ -240,23 +301,14 @@
           </tr>
         </thead>
         <tbody>
-
           <tr>
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/cancel.svg" alt="cancel" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
+              <img src="assets/images/cancel.svg" alt="cancel" />محمد احمد
             </td>
+
+            <td>مهندس كهربائي</td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -277,18 +329,34 @@
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/completed.svg" alt="completed" />محمد احمد </td>
+              <img src="assets/images/completed.svg" alt="completed" />محمد احمد
+            </td>
 
+            <td>مصمم</td>
+
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
             <td>
-              <ul>
+              <ul class="setting-list">
                 <li>
-                  <a href="#">مهندس معماري (14)</a>
+                  <a href="#"><i class="icon-edit"></i></a>
                 </li>
                 <li>
-                  <a href="#">مهندس انشائي (54)</a>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
                 </li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <th scope="row">ادارية</th>
+
+            <td>
+              <img src="assets/images/confirmed.svg" alt="confirmed" />محمد احمد
+            </td>
+
+            <td>مهندس كهربائي</td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -309,18 +377,84 @@
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/confirmed.svg" alt="confirmed" />محمد احمد </td>
+              <img src="assets/images/completed.svg" alt="completed" />محمد احمد
+            </td>
 
+            <td>مصمم</td>
+
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
             <td>
-              <ul>
+              <ul class="setting-list">
                 <li>
-                  <a href="#">مهندس معماري (14)</a>
+                  <a href="#"><i class="icon-edit"></i></a>
                 </li>
                 <li>
-                  <a href="#">مهندس انشائي (54)</a>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
                 </li>
               </ul>
             </td>
+          </tr>
+          <tr>
+            <th scope="row">ادارية</th>
+
+            <td>
+              <img src="assets/images/normal.svg" alt="normal" />محمد احمد
+            </td>
+
+            <td>مهندس كهربائي</td>
+
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">ادارية</th>
+
+            <td>
+              <img src="assets/images/opening.svg" alt="opening" />محمد احمد
+            </td>
+
+            <td>مصمم</td>
+
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">ادارية</th>
+
+            <td>
+              <img src="assets/images/confirmed.svg" alt="confirmed" />محمد احمد
+            </td>
+
+            <td>
+              مهندس كهربائي              </td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -341,18 +475,10 @@
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/completed.svg" alt="completed" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
+              <img src="assets/images/completed.svg" alt="completed" />محمد احمد
             </td>
+
+            <td>مهندس كهربائي</td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -373,20 +499,12 @@
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/normal.svg" alt="normal" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
+              <img src="assets/images/normal.svg" alt="normal" />محمد احمد
             </td>
 
-            <td><p class="operation-status confirmed-status">نشط</p></td>
+            <td>مهندس معماري</td>
+
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
             <td>
               <ul class="setting-list">
                 <li>
@@ -405,18 +523,9 @@
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/opening.svg" alt="opening" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
+              <img src="assets/images/opening.svg" alt="opening" />محمد احمد
             </td>
+            <td>مصمم</td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -433,23 +542,15 @@
               </ul>
             </td>
           </tr>
-      
+
           <tr>
             <th scope="row">ادارية</th>
 
             <td>
-              <img src="assets/images/confirmed.svg" alt="confirmed" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
+              <img src="assets/images/opening.svg" alt="opening" />محمد احمد
             </td>
+
+            <td>مصمم</td>
 
             <td><p class="operation-status confirmed-status">نشط</p></td>
             <td>
@@ -466,138 +567,6 @@
               </ul>
             </td>
           </tr>
-          <tr>
-            <th scope="row">ادارية</th>
-
-            <td>
-              <img src="assets/images/completed.svg" alt="completed" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
-            </td>
-
-            <td><p class="operation-status confirmed-status">نشط</p></td>
-            <td>
-              <ul class="setting-list">
-                <li>
-                  <a href="#"><i class="icon-edit"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </li>
-                <li>
-                  <a href="#"> <i class="icon-arrow-left"></i></a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">ادارية</th>
-
-            <td>
-              <img src="assets/images/normal.svg" alt="normal" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
-            </td>
-
-            <td><p class="operation-status confirmed-status">نشط</p></td>
-            <td>
-              <ul class="setting-list">
-                <li>
-                  <a href="#"><i class="icon-edit"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </li>
-                <li>
-                  <a href="#"> <i class="icon-arrow-left"></i></a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">ادارية</th>
-
-            <td>
-              <img src="assets/images/opening.svg" alt="opening" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
-            </td>
-
-            <td><p class="operation-status confirmed-status">نشط</p></td>
-            <td>
-              <ul class="setting-list">
-                <li>
-                  <a href="#"><i class="icon-edit"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </li>
-                <li>
-                  <a href="#"> <i class="icon-arrow-left"></i></a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-      
-          <tr>
-            <th scope="row">ادارية</th>
-
-            <td>
-              <img src="assets/images/opening.svg" alt="opening" />محمد احمد </td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
-            </td>
-
-            <td><p class="operation-status confirmed-status">نشط</p></td>
-            <td>
-              <ul class="setting-list">
-                <li>
-                  <a href="#"><i class="icon-edit"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </li>
-                <li>
-                  <a href="#"> <i class="icon-arrow-left"></i></a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-      
-
-        
         </tbody>
       </table>
     </div>
@@ -661,6 +630,9 @@
 
     <!-- main.js -->
     <script src="assets/js/main.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdGv5cjpA0dMUCSolCf89tl_vgccGvsu0&libraries=drawing"></script>
+
 
    
 

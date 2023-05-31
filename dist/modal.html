@@ -113,6 +113,67 @@
   </nav>
 </div>
 
+<!-- mobile-sidebar -->
+
+<div class="sliedbar-show">
+  <div class="slidebar-mobile">
+    <nav>
+      <a href="/">
+        <figure class="sidebar-logo">
+          <img src="assets/images/logo.png" alt="logo" />
+          <figcaption>بوابة الموظف</figcaption>
+        </figure>
+      </a>
+      <ul>
+        <li><a class="active" href="/index.html">التقرير البياني </a></li>
+        <li><a href="#">ملفاتي</a></li>
+
+        <li>
+          <a href="#" class="data-btn">
+            مكتبة البيانات
+            <i class="icon-arrow-down one"></i>
+          </a>
+          <ul class="data-show">
+            <li>
+              <a href="#" class="structure-btn">
+                الهيكل التنظيمي
+                <i class="icon-arrow-down two"></i>
+              </a>
+              <ul class="structure-show">
+                <li><a href="/empty-branche.html">الفروع</a></li>
+                <li><a href="/administration.html">الادارة والاقسام</a></li>
+                <li>
+                  <a href="#" class="employees-btn">
+                    الموظفين
+                    <i class="icon-arrow-down there"></i>
+                  </a>
+                  <ul class="employees-show">
+                    <li><a href="#">التسلسل الوظيفي</a></li>
+                    <li><a href="#">بيانات الموظفين</a></li>
+                  </ul>
+                  <a href="#" class="departure-btn">
+                    الحضور والانصراف <i class="icon-arrow-down four"></i>
+                  </a>
+                  <ul class="departure-show">
+                    <li><a href="#"> محددات الحضور</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">مكتبة النماذج</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="overlay-slide"></div>
+
+  <div id="wrapper">
+    <a href="#" class="menu"> <i class="fa fa-bars"></i> </a>
+  </div>
+</div>
+
 
 <div class="main-content">
   <div class="modals">
@@ -303,7 +364,7 @@
       data-toggle="modal"
       data-target="#modal-19"
     >
-      deleted
+      صفحه الحذف
     </button>
     <!-- 20 -->
 
@@ -313,7 +374,17 @@
       data-toggle="modal"
       data-target="#modal-20"
     >
-      تعديل الاوراق الرسميه
+      لا يمكنك الحذف بسبب وجود موظفين
+    </button>
+    <!-- 21 -->
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#modal-21"
+    >
+      تم الحذف
     </button>
     <!-- 01 -->
 
@@ -1912,8 +1983,9 @@
             <button type="button" class="btn-main" id="saveLocation">
               حفظ
             </button>
-            <button type="button" class="btn-main" id="goToCurrentLocation">Go to Current Location</button>
-
+            <button type="button" class="btn-main" id="goToCurrentLocation">
+              Go to Current Location
+            </button>
           </div>
         </div>
       </div>
@@ -1930,35 +2002,83 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body text-center">
-            <svg viewBox="0 0 70 70">
-              <g data-name="Group 15714" transform="translate(-876 -529)">
-                <circle
-                  data-name="Ellipse 300"
-                  cx="35"
-                  cy="35"
-                  r="35"
-                  transform="translate(876 529)"
-                  fill="red"
-                />
-                <path
-                  d="M898.593 551.593a1.425 1.425 0 0 0 0 2.015L908.985 564l-10.392 10.391a1.425 1.425 0 0 0 2.015 2.015L911 566.015l10.391 10.391a1.425 1.425 0 0 0 2.015-2.015L913.015 564l10.391-10.392a1.425 1.425 0 0 0-2.015-2.015L911 561.985l-10.392-10.392a1.425 1.425 0 0 0-2.015 0Z"
-                  fill="#fff"
-                  stroke="#fff"
-                  stroke-width="2"
-                  data-name="Group 15712"
-                />
-              </g>
-            </svg>
-            <h3>حذف</h3>
+            <img
+              class="status-image"
+              src="assets/images/trash-image.svg"
+              alt="trash-image"
+            />
+
+            <h5>هل تريد الحذف؟</h5>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn-main ml-3">تاكيد</button>
-            <button type="button" class="btn-main btn-cancel">الغاء</button>
+            <button type="button" class="btn-main btn-ghost ml-3">نعم</button>
+            <button type="button" class="btn-main">لا</button>
           </div>
         </div>
       </div>
     </div>
     <!-- 20 -->
+    <div
+      class="modal fade"
+      id="modal-20"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="icon-close-square"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <img
+              class="status-image"
+              src="assets/images/trash-image.svg"
+              alt="trash-image"
+            />
+
+            <h5 class="pl-5 pr-5">لا يمكنك الحذف بسبب وجود موظفين</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 21 -->
+    <div
+      class="modal fade"
+      id="modal-21"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true"><i class="icon-close-square"></i></span>
+          </button>
+          <div class="modal-body text-center">
+            <img
+              class="status-image"
+              src="assets/images/succse-image.svg"
+              alt="succse-image"
+            />
+
+            <h5>تم الحذف</h5>
+          </div>
+        </div>
+      </div>
+    </div>
 
     
     <!-- jquery-main -->

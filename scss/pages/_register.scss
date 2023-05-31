@@ -18,7 +18,7 @@
   background-color: $white-color;
   position: relative;
   z-index: 999999;
-  width: 470px;
+  max-width: 470px;
   margin: auto;
   padding: 50px 90px;
   margin-bottom: 150px;
@@ -33,7 +33,7 @@
     img{
       width: 100px;
       height: 64px;
-      object-fit: cover;
+      object-fit: contain;
 
     }
   }

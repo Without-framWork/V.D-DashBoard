@@ -5,7 +5,6 @@ header {
   width: 100%;
   top: 0;
   z-index: 9999;
- 
 }
 
 .header-content {
@@ -115,16 +114,73 @@ header {
   h1 {
     font-size: 18px;
     line-height: 45px;
+    margin-bottom: 0;
+  }
+}
+.navbar-left {
+  display: inline-flex;
+}
+
+.ntf {
+  position: relative;
+  cursor: pointer;
+  margin-left: 32px;
+  &:hover {
+    .ntf-menu {
+      display: block;
+    }
+  }
+}
+.ntf-menu {
+  display: none;
+  h4 {
+    color: #003566;
+  }
+  position: absolute;
+  width: 400px;
+  background: #ffffff;
+  left: 0;
+  border-radius: $main-border-radius;
+  border: 1px solid #e9ecef;
+  padding: 20px 25px;
+  z-index: 9;
+  top: 50px;
+  .ntf-item {
+    border-bottom: 1px solid #ced4da;
+    padding: 10px 0;
+    margin-bottom: 0;
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .ntf-status {
+      left: 0;
+    }
+  }
+  &:hover {
+    display: block;
   }
 }
 
-.user-ntf {
-  display: inline-block;
-  margin-right: 80px;
-  .icon-ntf {
-    margin-left: 30px;
-    i {
-      font-size: 20px;
-    }
+.ntf-item {
+  position: relative;
+  margin-bottom: 20px;
+  .ntf-desc {
+    max-width: 90%;
+    margin-bottom: 5px;
+  }
+  .ntf-time {
+    color: $gray;
+    font-size: 12px;
+  }
+  .ntf-status {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 24px;
+    right: -15px;
+    display: inline-block;
+    background: $main-color;
+    border-radius: 10px;
   }
 }

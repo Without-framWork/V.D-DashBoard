@@ -357,10 +357,10 @@ $(document).ready(function () {
       }
     }
   });
-  $(".js-example-tags").select2({
-    tags: true,
-    maximumSelectionLength: 2
-  });
+  // $(".js-example-tags").select2({
+  //   tags: true,
+  //   maximumSelectionLength: 2,
+  // });
 
   // $('[data-toggle="datepicker"]').datepicker();
 

@@ -1275,6 +1275,9 @@ ul.breadcrumb li a:hover {
     font-size: 20px;
     font-weight: 500; }
 
+.bold-text {
+  font-weight: bold; }
+
 .buttons-area {
   width: 500px;
   padding: 26px 0;
@@ -1757,11 +1760,8 @@ ul.breadcrumb li a:hover {
   .works-status {
     font-size: 20px;
     width: 70px; }
-  .login-bg {
-    width: 50%;
-    left: -10px; }
-  .login-logo-new img {
-    max-width: 50%; }
+  .connecting-line {
+    margin: 0 50px !important; }
   .login-card-new {
     padding: 40px; }
   .about-spermarket i {
@@ -1790,42 +1790,7 @@ ul.breadcrumb li a:hover {
     flex-direction: column; }
     .pilot-btns .btn-main {
       width: 100%;
-      margin-bottom: 15px; }
-  .client-box h5 {
-    font-size: 20px; }
-  .code-order {
-    flex-direction: column;
-    align-items: center; }
-  .nearby-orders a {
-    margin-bottom: 15px; }
-  .btn-detils-laotop-show {
-    display: block !important; }
-  .btn-detils-laotop-hide {
-    display: none !important; }
-  .problem-order {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px; }
-  .order-infro .nav-tabs {
-    width: 100%; }
-  .shipping-page .nav-item {
-    width: 100%; }
-  .shipping-page .nav-link {
-    width: 100% !important; }
-  .shipping-page .nav-link {
-    margin-bottom: 15px; }
-  .days input[type="checkbox"] + label {
-    width: 90px; }
-  .messengers-list li {
-    padding: 18px; }
-  .client-box-laptop,
-  .options-btns-laptop,
-  .order-item-laptop {
-    display: block; }
-  .client-box-bigscreen,
-  .options-btns-bigscren,
-  .order-item-bigscreen {
-    display: none; } }
+      margin-bottom: 15px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .nav-tabs .nav-link {
@@ -2190,7 +2155,7 @@ nav ul li a i.rotate {
 #wrapper {
   transition: all 0.25s linear;
   position: fixed;
-  top: 33px;
+  top: 40px;
   right: 10px;
   z-index: 999999;
   font-size: 20px; }
@@ -2310,15 +2275,62 @@ header {
   padding-right: 30px; }
   .navbar-right h1 {
     font-size: 18px;
-    line-height: 45px; }
+    line-height: 45px;
+    margin-bottom: 0; }
 
-.user-ntf {
-  display: inline-block;
-  margin-right: 80px; }
-  .user-ntf .icon-ntf {
-    margin-left: 30px; }
-    .user-ntf .icon-ntf i {
-      font-size: 20px; }
+.navbar-left {
+  display: inline-flex; }
+
+.ntf {
+  position: relative;
+  cursor: pointer;
+  margin-left: 32px; }
+  .ntf:hover .ntf-menu {
+    display: block; }
+
+.ntf-menu {
+  display: none;
+  position: absolute;
+  width: 400px;
+  background: #ffffff;
+  left: 0;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  padding: 20px 25px;
+  z-index: 9;
+  top: 50px; }
+  .ntf-menu h4 {
+    color: #003566; }
+  .ntf-menu .ntf-item {
+    border-bottom: 1px solid #ced4da;
+    padding: 10px 0;
+    margin-bottom: 0; }
+    .ntf-menu .ntf-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0; }
+    .ntf-menu .ntf-item .ntf-status {
+      left: 0; }
+  .ntf-menu:hover {
+    display: block; }
+
+.ntf-item {
+  position: relative;
+  margin-bottom: 20px; }
+  .ntf-item .ntf-desc {
+    max-width: 90%;
+    margin-bottom: 5px; }
+  .ntf-item .ntf-time {
+    color: #A7A7A7;
+    font-size: 12px; }
+  .ntf-item .ntf-status {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 24px;
+    right: -15px;
+    display: inline-block;
+    background: #004693;
+    border-radius: 10px; }
 
 .wizard .form-control {
   margin-bottom: 20px; }

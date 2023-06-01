@@ -27,15 +27,11 @@
     font-size: 20px;
     width: 70px;
   }
-  .login-bg {
-    width: 50%;
-    left: -10px;
+  .connecting-line {
+    margin: 0 50px !important;
+
   }
-  .login-logo-new {
-    img {
-      max-width: 50%;
-    }
-  }
+ 
 
   .login-card-new {
     padding: 40px;
@@ -81,55 +77,7 @@
       margin-bottom: 15px;
     }
   }
-  .client-box h5 {
-    font-size: 20px;
-  }
-  .code-order {
-    flex-direction: column;
-    align-items: center;
-  }
-  .nearby-orders a {
-    margin-bottom: 15px;
-  }
-  .btn-detils-laotop-show {
-    display: block !important;
-  }
-  .btn-detils-laotop-hide {
-    display: none !important;
-  }
-  .problem-order {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-  .order-infro .nav-tabs {
-    width: 100%;
-  }
-  .shipping-page {
-    .nav-item {
-      width: 100%;
-    }
-    .nav-link {
-      width: 100% !important;
-      margin-bottom: 15px;
-    }
-  }
-  .days input[type="checkbox"] + label {
-    width: 90px;
-  }
-  .messengers-list li {
-    padding: 18px;
-  }
-  .client-box-laptop,
-  .options-btns-laptop,
-  .order-item-laptop {
-    display: block;
-  }
-  .client-box-bigscreen,
-  .options-btns-bigscren,
-  .order-item-bigscreen {
-    display: none;
-  }
+ 
 } //End Media
 // Start Media From 992px To 1199px
 @include media(">=tablet", "<desktop") {

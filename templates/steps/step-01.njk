@@ -1,308 +1,338 @@
 {% extends "templates/layouts/app.html" %} {% block content %} {% set page_title
-= "offers" %} {% include "templates/components/header.njk" %}
-{% include "templates/components/profile-image.njk" %}
-
-
+= "offers" %} {% include "templates/components/header.njk" %} {% include
+"templates/components/profile-image.njk" %}
 
 <main class="main-content">
-
   <div class="wizard">
-  <div class="wizard-inner">
-    <div class="connecting-line"></div>
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active">
-        <a
-          href="#step1"
-          data-toggle="tab"
-          aria-controls="step1"
-          role="tab"
-          aria-expanded="true"
-          ><span class="round-tab">1 <i>البيانات الشخصية </i> </span>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a
-          href="#step2"
-          data-toggle="tab"
-          aria-controls="step2"
-          role="tab"
-          aria-expanded="false"
-          ><span class="round-tab">2 <i>البيانات الاكاديمية</i></span>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"
-          ><span class="round-tab">3 <i>  البيانات الوظيفية </i></span>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"
-          ><span class="round-tab">4 <i> البيانات المالية والاجازات</i></span>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"
-          ><span class="round-tab">5 <i> سياسة الحضور</i></span>
-        </a>
-      </li>
-      <li role="presentation" class="disabled">
-        <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"
-          ><span class="round-tab">6 <i> حفظ</i></span>
-        </a>
-      </li>
-    </ul>
-  </div>
+    <div class="wizard-inner">
+      <div class="connecting-line"></div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a
+            href="#step1"
+            data-toggle="tab"
+            aria-controls="step1"
+            role="tab"
+            aria-expanded="true"
+            ><span class="round-tab">1 <i>البيانات الشخصية </i> </span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a
+            href="#step2"
+            data-toggle="tab"
+            aria-controls="step2"
+            role="tab"
+            aria-expanded="false"
+            ><span class="round-tab">2 <i>البيانات الاكاديمية</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab"
+            ><span class="round-tab">3 <i> البيانات الوظيفية </i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab"
+            ><span class="round-tab">4 <i> البيانات المالية والاجازات</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step5" data-toggle="tab" aria-controls="step5" role="tab"
+            ><span class="round-tab">5 <i> سياسة الحضور</i></span>
+          </a>
+        </li>
+        <li role="presentation" class="disabled">
+          <a href="#step6" data-toggle="tab" aria-controls="step6" role="tab"
+            ><span class="round-tab">6 <i> حفظ</i></span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <form role="form" action="#">
-    <div class="tab-content" id="main_form">
-      <div class="tab-pane active" role="tabpanel" id="step1">
-        <h2 class="title">البيانات الشخصية</h2>
+    <form role="form" action="#">
+      <div class="tab-content" id="main_form">
+        <div class="tab-pane active" role="tabpanel" id="step1">
+          <h2 class="title">البيانات الشخصية</h2>
+          <div class="user-image pt-0 text-right mb-5 d-lg-none  d-md-block">
+            <div class="user-avatar">
+              <img src="assets/images/profile-image.png" alt="avatar image" />
+            </div>
+            <a class="pr-5" href="#"> <i class="icon-edit"></i> تعديل</a>
+          </div>
 
-        <div class="row">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الاسم الاول </label>
-              <input type="text" class="form-control" placeholder="الاسم الاول" />
-            </div>
-            <div class="form-group">
-              <label> رقم التليفون </label>
-              <input type="text" class="form-control" placeholder="رقم التليفون" />
-            </div>
-            <div class="form-group">
-              <label> رقم الحدود </label>
-              <input type="text" class="form-control" placeholder="رقم الحدود" />
-        
-              <div class="choose-image">
-                <div class="picture">
-                  <img src="assets/images/download.jpg" class="picture-src" />
-                </div>
-                <div class="select-image">
-                  <p>لتحميل الصورة اضغط هنا</p>
-                  <span> حجم الصورة لا يزيد عن 10MB</span>
-                  <span class="add-icon">
-                    <span class="icon-add"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label> الجنسية </label>
-              <input type="text" class="form-control" placeholder="الجنسية" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الاسم الثاني </label>
-              <input type="text" class="form-control" placeholder="الاسم الثاني" />
-            </div>
-            <div class="form-group">
-              <label> البريد الالكتروني </label>
-              <input type="text" class="form-control" placeholder="البريد الالكتروني" />
-            </div>
-            <div class="form-group">
-              <label> رقم جواز السفر </label>
-              <input type="text" class="form-control" placeholder="رقم جواز السفر" />
-              <div class="choose-image">
-                <div class="picture">
-                  <img src="assets/images/download.jpg" class="picture-src" />
-                </div>
-                <div class="select-image">
-                  <p>لتحميل الصورة اضغط هنا</p>
-                  <span> حجم الصورة لا يزيد عن 10MB</span>
-                  <span class="add-icon">
-                    <span class="icon-add"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label> الجنس </label>
+          <div class="row">
+            <div class="col-md-4">
               <div class="form-group">
-                <select class="form-control">
-                  <option>الجنس</option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                </select>
+                <label> الاسم الاول </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الاسم الاول"
+                />
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الاسم الاخير </label>
-              <input type="text" class="form-control" placeholder="الاسم الاخير" />
-            </div>
-            <div class="form-group">
-              <label> رقم الهوية </label>
-              <input type="text" class="mb-4 form-control" placeholder="رقم الهوية" />
-            </div>
-            <div class="form-group">
-              <label> الرقم القومي </label>
-              <input type="text" class="form-control" placeholder="الرقم القومي" />
-              <div class="choose-image">
-                <div class="picture">
-                  <img src="assets/images/download.jpg" class="picture-src" />
-                </div>
-                <div class="select-image">
-                  <p>لتحميل الصورة اضغط هنا</p>
-                  <span> حجم الصورة لا يزيد عن 10MB</span>
-                  <span class="add-icon">
-                    <span class="icon-add"></span>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label> تاريخ الميلاد </label>
               <div class="form-group">
-                <div
-                  class="input-group date"
-                  id="datetimepicker4"
-                  data-target-input="nearest"
-                >
-                  <input
-                    type="text"
-                    class="form-control datetimepicker-input"
-                    data-target="#datetimepicker4"
-                    placeholder="تاريخ الميلاد"
-                  />
+                <label> رقم التليفون </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="رقم التليفون"
+                />
+              </div>
+              <div class="form-group">
+                <label> رقم الحدود </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="رقم الحدود"
+                />
+
+                <div class="choose-image">
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" class="picture-src" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span> حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="add-icon">
+                      <span class="icon-add"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> الجنسية </label>
+                <input type="text" class="form-control" placeholder="الجنسية" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> الاسم الثاني </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الاسم الثاني"
+                />
+              </div>
+              <div class="form-group">
+                <label> البريد الالكتروني </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="البريد الالكتروني"
+                />
+              </div>
+              <div class="form-group">
+                <label> رقم جواز السفر </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="رقم جواز السفر"
+                />
+                <div class="choose-image">
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" class="picture-src" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span> حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="add-icon">
+                      <span class="icon-add"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> الجنس </label>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>الجنس</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> الاسم الاخير </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الاسم الاخير"
+                />
+              </div>
+              <div class="form-group">
+                <label> رقم الهوية </label>
+                <input
+                  type="text"
+                  class="mb-4 form-control"
+                  placeholder="رقم الهوية"
+                />
+              </div>
+              <div class="form-group">
+                <label> الرقم القومي </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الرقم القومي"
+                />
+                <div class="choose-image">
+                  <div class="picture">
+                    <img src="assets/images/download.jpg" class="picture-src" />
+                  </div>
+                  <div class="select-image">
+                    <p>لتحميل الصورة اضغط هنا</p>
+                    <span> حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="add-icon">
+                      <span class="icon-add"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label> تاريخ الميلاد </label>
+                <div class="form-group">
                   <div
-                    class="input-group-append"
-                    data-target="#datetimepicker4"
-                    data-toggle="datetimepicker"
+                    class="input-group date"
+                    id="datetimepicker4"
+                    data-target-input="nearest"
                   >
-                    <div class="input-group-text">
-                      <i class="icon-note-text"></i>
+                    <input
+                      type="text"
+                      class="form-control datetimepicker-input"
+                      data-target="#datetimepicker4"
+                      placeholder="تاريخ الميلاد"
+                    />
+                    <div
+                      class="input-group-append"
+                      data-target="#datetimepicker4"
+                      data-toggle="datetimepicker"
+                    >
+                      <div class="input-group-text">
+                        <i class="icon-note-text"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        
-        <h2 class="title">العنوان الحالي</h2>
-        
-        <div class="row">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الدولة </label>
-              <input type="text" class="form-control" placeholder="الدولة" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> المحافظة </label>
-              <input type="text" class="form-control" placeholder="العنوان الحالي" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> العنوان </label>
-              <input
-                type="text"
-                class="mb-4 form-control"
-                placeholder="العنوان بالتفصيل"
-              />
-            </div>
-          </div>
-        </div>
-        <h2 class="title">العنوان في الدولة الام</h2>
-        
-        <div class="row">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الدولة </label>
-              <input type="text" class="form-control" placeholder="الدولة" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> المحافظة </label>
-              <input type="text" class="form-control" placeholder=" المحافظة" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> العنوان </label>
-              <input
-                type="text"
-                class="mb-4 form-control"
-                placeholder="العنوان بالتفصيل"
-              />
-            </div>
-          </div>
-        </div>
-        <h2 class="title">بيانات الاقارب</h2>
-        
-        <div class="row">
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> الاسم بالكامل </label>
-              <input type="text" class="form-control" placeholder="الاسم بالكامل" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> رقم التليفون </label>
-              <input type="text" class="form-control" placeholder="العنوان الحالي" />
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-              <label> صلة القرابة </label>
+
+          <h2 class="title">العنوان الحالي</h2>
+
+          <div class="row">
+            <div class="col-md-4">
               <div class="form-group">
-                <select class="form-control">
-                  <option>صلة القرابة</option>
-                  <option></option>
-                  <option></option>
-                  <option></option>
-                </select>
+                <label> الدولة </label>
+                <input type="text" class="form-control" placeholder="الدولة" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> المحافظة </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="العنوان الحالي"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> العنوان </label>
+                <input
+                  type="text"
+                  class="mb-4 form-control"
+                  placeholder="العنوان بالتفصيل"
+                />
               </div>
             </div>
           </div>
+          <h2 class="title">العنوان في الدولة الام</h2>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> الدولة </label>
+                <input type="text" class="form-control" placeholder="الدولة" />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> المحافظة </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=" المحافظة"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> العنوان </label>
+                <input
+                  type="text"
+                  class="mb-4 form-control"
+                  placeholder="العنوان بالتفصيل"
+                />
+              </div>
+            </div>
+          </div>
+          <h2 class="title">بيانات الاقارب</h2>
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> الاسم بالكامل </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="الاسم بالكامل"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> رقم التليفون </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="العنوان الحالي"
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label> صلة القرابة </label>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>صلة القرابة</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border-line"></div>
+
+          <ul class="wizard-btn">
+            <li>
+              <button type="button" class="btn-main next-step">التالي</button>
+            </li>
+          </ul>
         </div>
-        <div class="border-line"></div>
-        
-        <ul class="wizard-btn">
-          <li>
-            <button type="button" class="btn-main next-step">
-           التالي
-            </button>
-          </li>
-        </ul>
+        <div class="tab-pane" role="tabpanel" id="step2"></div>
+        <div class="tab-pane" role="tabpanel" id="step3"></div>
+        <div class="tab-pane" role="tabpanel" id="step4"></div>
+        <div class="tab-pane" role="tabpanel" id="step5"></div>
+        <div class="tab-pane" role="tabpanel" id="step6"></div>
       </div>
-      <div class="tab-pane" role="tabpanel" id="step2">
-     
-
-      
-      </div>
-      <div class="tab-pane" role="tabpanel" id="step3">
-        
-    
-      </div>
-      <div class="tab-pane" role="tabpanel" id="step4">
-       
-
-       
-      </div>
-      <div class="tab-pane" role="tabpanel" id="step5">
-       
-
-      
-      </div>
-      <div class="tab-pane" role="tabpanel" id="step6">
-
-        
-      </div>
-    </div>
-  </form>
-</div>
-
- 
-
-
-
+    </form>
+  </div>
 </main>
 
 {% endblock %}

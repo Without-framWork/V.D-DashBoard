@@ -64,14 +64,28 @@
   }
 }
 .setting-list-two {
-  img{
+  position: relative;
+  img {
     margin-left: 0 !important;
   }
-  li:nth-child(2) a i:before {
+  li > a i:before {
     color: $main-color !important;
+    border: 1.5px solid $main-color;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 5px 10px;
   }
-  li:first-child a i:before {
-    color: $main-color !important;
+  li:first-child::before {
+    content: " ";
+    background-color: $gray;
+    position: absolute;
+    left: 53%;
+    top: 0;
+    height: 30px;
+    width: 2px;
   }
 }
 #step4 {

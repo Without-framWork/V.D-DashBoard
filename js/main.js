@@ -1,8 +1,4 @@
 $(document).ready(function () {
-
-
-
-
   "use strict";
   // modal-map
   var map;
@@ -125,7 +121,6 @@ $(document).ready(function () {
     $("nav ul .departure-show").toggleClass("departure-submenu");
     $("nav ul .four").toggleClass("rotate");
   });
-
 
   //slidebar-mobile
 
@@ -272,12 +267,23 @@ $(document).ready(function () {
       },
     },
   });
-  // $(".js-example-tags").select2({
-  //   tags: true,
-  //   maximumSelectionLength: 2,
-  // });
+  //menue-show in table
+  $(".menu-show").each(function () {
+    var $menuIcon = $(this);
+    var $menu = $menuIcon.siblings(".emmployee-menu");
 
-  // $('[data-toggle="datepicker"]').datepicker();
+    $menuIcon.on("click", function (e) {
+      e.preventDefault();
+
+      if ($menu.hasClass("show")) {
+        $menu.removeClass("show");
+      } else {
+        $(".emmployee-menu").removeClass("show"); // Hide other open menus
+        $menu.addClass("show");
+      }
+    });
+  });
+  
 
   $(window).on("load", function () {
     $("#myModal").modal("show");
@@ -313,5 +319,33 @@ $(document).ready(function () {
     modal.modal("show");
   }
 
-  // ...
+//auto-complete
+    // Define the data for autocomplete
+    const availableTags = [
+      "مصمم",
+      "مهندس",
+      "مهندس كهربائي",
+      "مصمم",
+     
+    ];
+    
+    // Initialize the autocomplete widget with custom styling
+    $("#Job-title").autocomplete({
+      source: availableTags,
+      appendTo: "#autocomplete-container", // Append the autocomplete list to a specific container
+      open: function(event, ui) {
+        $("#autocomplete-container").addClass("custom-autocomplete"); // Add a custom class to the autocomplete container
+      }
+    });
+});
+
+//calculate left
+const menuShowButtons = document.querySelectorAll(".menu-show");
+
+menuShowButtons.forEach((button) => {
+  button.addEventListener("mouseenter", () => {
+    const menu = button.nextElementSibling;
+    const buttonRect = button.getBoundingClientRect();
+    menu.style.left = `${buttonRect.left}px`; /* Set the left position based on the button's position */
+  });
 });

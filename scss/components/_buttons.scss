@@ -108,4 +108,16 @@
   }
    
 }
+.btn-action{
+  background-color: $lighter-blue;
+  font-weight: bold;
+  color: $main-color;
+  border-color: $lighter-blue;
+  &:hover {
+    color:   $main-color;
+    border-color:  $lighter-blue;
+    background-color:$lighter-blue ;
+    
+  }
+}
 

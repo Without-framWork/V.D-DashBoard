@@ -1,0 +1,28 @@
+.emmployee-menu {
+  a {
+    color: $main-color;
+    text-decoration: none !important;
+  }
+  display: none;
+  width: 200px;
+  background-color: $white-color;
+  padding: 15px 20px;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+
+  font-size: 16px;
+  margin-bottom: 12px;
+  position: absolute;
+  top:20%; 
+  left:0;
+}
+.menu-container{
+	position: relative;
+
+}
+.show {
+  display: block;
+}

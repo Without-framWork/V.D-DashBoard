@@ -2,52 +2,54 @@
 <html class="no-js" lang="en">
   <head>
     <!-- meta-tags -->
-    <meta charset="utf-8" >
-    <meta http-equiv="x-ua-compatible" content="ie=edge" >
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title></title>
-    <meta name="description" content="Lorem description" >
+    <meta name="description" content="Lorem description" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    >
-    <meta name="format-detection" content="telephone=no" >
+    />
+    <meta name="format-detection" content="telephone=no" />
     <!-- font awesome -->
     <!-- <link rel="stylesheet" href="assets/css/all.css" > -->
-
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    >
+    />
 
     <!-- owl.carousel-css -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" >
-    <link rel="stylesheet" href="assets/css/owl.theme.default.css" >
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
 
     <!-- select2.css -->
-    <link rel="stylesheet" href="assets/css/select2.min.css" >
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
 
     <!-- animation.css -->
-    <link rel="stylesheet" href="assets/css/animate.css" >
+    <link rel="stylesheet" href="assets/css/animate.css" />
 
     <!-- parsley.css -->
-    <link rel="stylesheet" href="assets/css/parsley.css" >
+    <link rel="stylesheet" href="assets/css/parsley.css" />
 
     <!-- daterangepicker.css -->
-    <link rel="stylesheet" href="assets/css/daterangepicker.css" >
+    <link rel="stylesheet" href="assets/css/daterangepicker.css" />
 
     <!-- tempusdominus-bootstrap.css -->
     <link
       rel="stylesheet"
       href="assets/css/tempusdominus-bootstrap-4.min.css"
-    >
+    />
     <!-- dateable.css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css" >
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css" />
 
     <!-- bootstrap-4 -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
-    <link rel="stylesheet" href="assets/css/custom-select2.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
+    <!--jquery.css -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" />
+
+    <link rel="stylesheet" href="assets/css/custom-select2.css" />
 
     <!-- bootstrap-rtl -->
     <!-- <link rel="stylesheet" href="assets/css/bootstrap-rtl.css" />  -->
@@ -55,8 +57,7 @@
     <!-- bootstrap-rlt -->
 
     <!-- main.style -->
-    <link rel="stylesheet" href="assets/css/main.css"  >
-
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <!-- main-rtl.style -->
     <!-- <link rel="stylesheet" href="assets/css/main-rtl.css" /> -->
@@ -227,29 +228,20 @@
 
 <main class="main-content">
   <div class="employee-data">
-    <form action="#">
-  <div class="row">
-    <div class="col-md-6">
       <div class="row">
-        <div class="col-md-6">
-          <button type="button" class="btn-main btn-block">
-            <i class="icon-add"></i> اضافة موظف
-          </button>
-        </div>
-        <div class="col-md-3">
-            <button type="button" class="btn-main btn-ghost btn-block">
-							<i class="icon-edit"></i>	تعديل		        </button>
-          </div>
-        <div class="col-md-3">
-            <button type="button" class="btn-main btn-ghost btn-block">
-							<i class="icon-folder-open"></i>     المسودة
-            </button>
-						</div>
-      </div>
-    </div>
-		</div>
+    <div class="col-md-12">
+      <button type="button" class="btn-main ml-3 ">
+        <i class="icon-add"></i> اضافة موظف
+      </button>
+      <button type="button" class="btn-main btn-ghost px-10  ml-3">
+        <i class="icon-edit"></i> تعديل
+      </button>
+      <button type="button" class="btn-main btn-ghost px-10">
+        <i class="icon-folder-open"></i> المسودة
+      </button>
   
-</form>
+    </div>
+  </div>
 
     <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
       <li class="nav-item">
@@ -357,7 +349,11 @@
           <tbody>
             <tr>
               <th scope="row">
-								<img src="assets/images/completed.svg" alt="completed" />محمد احمد
+                <img
+                  class="user-picture completed"
+                  src="assets/images/user-picture.png"
+                  alt="user-picture"
+                />محمد احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -367,14 +363,53 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
+              </td>
+            </tr>
+
+            <tr>
+              <th>
+                <img
+                class="user-picture opening"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
+              <th>المسمى الوظيفي</th>
+
+              <td>12345</td>
+              <td>جدة</td>
+              <td>+20 111888388388</td>
+              <td>youremail@domain.com</td>
+
+              <td><p class="operation-status confirmed-status">نشط</p></td>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
               <th>
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
-              </th>
+                <img
+                class="user-picture cancel"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -383,29 +418,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
-              </th>
-              <th>المسمى الوظيفي</th>
-
-              <td>12345</td>
-              <td>جدة</td>
-              <td>+20 111888388388</td>
-              <td>youremail@domain.com</td>
-
-              <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <th >
-								<img src="assets/images/completed.svg" alt="completed" />محمد احمد
+              <th>
+                <img
+                class="user-picture "
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              /> احمد                احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -415,14 +446,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
-              </th>
+              <th>
+                <img
+                class="user-picture confirmed"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -431,29 +473,26 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
+        
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
-              </th>
-              <th>المسمى الوظيفي</th>
-
-              <td>12345</td>
-              <td>جدة</td>
-              <td>+20 111888388388</td>
-              <td>youremail@domain.com</td>
-
-              <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
-              </td>
-            </tr>
-            <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
+              <th scope="row">
+                <img
+                  class="user-picture completed"
+                  src="assets/images/user-picture.png"
+                  alt="user-picture"
+                />محمد احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -463,14 +502,26 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
+
             <tr>
-              <th >
-								<img src="assets/images/confirmed.svg" alt="confirmed" />محمد احمد
-              </th>
+              <th>
+                <img
+                class="user-picture opening"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -479,13 +530,52 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-								<img src="assets/images/normal.svg" alt="normal" />محمد احمد
+              <th>
+                <img
+                class="user-picture cancel"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
+              <th>المسمى الوظيفي</th>
+
+              <td>12345</td>
+              <td>جدة</td>
+              <td>+20 111888388388</td>
+              <td>youremail@domain.com</td>
+
+              <td><p class="operation-status confirmed-status">نشط</p></td>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <img
+                class="user-picture "
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              /> احمد                احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -495,14 +585,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
-              </th>
+              <th>
+                <img
+                class="user-picture confirmed"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -511,13 +612,26 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
+           
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
+              <th>
+                <img
+                class="user-picture "
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              /> احمد                احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -527,14 +641,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-								<img src="assets/images/normal.svg" alt="normal" />محمد احمد
-              </th>
+              <th>
+                <img
+                class="user-picture confirmed"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -543,13 +668,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-                <img src="assets/images/opening.svg" alt="opening" />محمد احمد
+              <th>
+                <img
+                class="user-picture "
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              /> احمد                احمد
               </th>
               <th>المسمى الوظيفي</th>
 
@@ -559,14 +696,25 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status cancelled-status">غير نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
             <tr>
-              <th >
-								<img src="assets/images/cancel.svg" alt="cancel" />محمد احمد
-              </th>
+              <th>
+                <img
+                class="user-picture confirmed"
+                src="assets/images/user-picture.png"
+                alt="user-picture"
+              />محمد احمد              </th>
               <th>المسمى الوظيفي</th>
 
               <td>12345</td>
@@ -575,10 +723,28 @@
               <td>youremail@domain.com</td>
 
               <td><p class="operation-status confirmed-status">نشط</p></td>
-              <td>
-                <a href="#"><i class="icon-setting"></i></a>
+              <td class="menu-container">
+                <a class="menu-show" href="#"><i class="icon-setting"></i></a>
+                <ul class="emmployee-menu">
+                  <li><a href="#">عرض بيانات الموظف</a></li>
+                  <li><a href="#">رصيد اجازات الموظف</a></li>
+                  <li><a href="#">اضافة\تعديل مهام</a></li>
+                  <li><a href="#">تعديل بيانات</a></li>
+                  <li><a href="#">الغاء التنشيط</a></li>
+                  <li><a href="#"> حساب الاضافي</a></li>
+                </ul>
               </td>
             </tr>
+        
+          
+
+          
+        
+           
+          
+           
+            
+           
           </tbody>
         </table>
       </div>
@@ -629,6 +795,8 @@
 
     <!-- jquery-main -->
     <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- jquery-ui -->
+    <script src="assets/js/jquery-ui.min.js"></script>
 
     <!-- jquery-main -->
 
@@ -649,18 +817,18 @@
 
     <!-- .daterangepicker.js -->
     <script src="assets/js/daterangepicker.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script ></script>
-    
-  
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
 
     <!-- tempusdominus-bootstrap-js -->
     <script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- jquery.repeater -->
     <script src="assets/js/jquery.repeater.min.js"></script>
-    
 
     <!-- .dateable.js -->
     <script src="assets/js/datatables.js"></script>
@@ -668,14 +836,9 @@
     <!-- <script src="assets/js/jszip.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-
     <!-- main.js -->
     <script src="assets/js/main.js"></script>
-    
+
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdGv5cjpA0dMUCSolCf89tl_vgccGvsu0&libraries=drawing"></script> -->
-
-
-   
-
   </body>
 </html>

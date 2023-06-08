@@ -71,6 +71,11 @@ span.round-tab {
   border: 1px solid $main-color;
   line-height: 44px;
 }
+@-moz-document url-prefix() {
+  span.round-tab {
+    top: 0;
+  }
+}
 
 .wizard li.active span.round-tab {
   background: $main-color;

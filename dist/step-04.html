@@ -234,7 +234,8 @@
                   <div class="form-group">
                     <label class="bold-text"> قيمة الساعة </label>
                     <button type="button" class="btn-main btn-action btn-block">
-                      150 SR / hr                    </button>
+                      150 SR / hr
+                    </button>
                   </div>
                 </div>
                 <div class="col-md-4">
@@ -243,7 +244,7 @@
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="  عدد ايام العمل في الاسبوع "
+                      placeholder="  قيمة السيارة     "
                     />
                   </div>
                 </div>
@@ -251,7 +252,8 @@
                   <div class="form-group">
                     <label class="bold-text"> اجمالي القيمة المالية </label>
                     <button type="button" class="btn-main btn-action btn-block">
-                      معادلة حسابية                    </button>
+                      معادلة حسابية
+                    </button>
                   </div>
                 </div>
               </div>
@@ -263,7 +265,8 @@
                 <h2 class="title mb-0">مستحقات الموظف</h2>
               </div>
               <div class="col-md-6 text-left">
-                <button type="button" class="btn-main">
+                <button type="button" class="btn-main"   data-toggle="modal"
+                data-target="#modal-8">
                   <i class="icon-add"></i> اضافة
                 </button>
               </div>
@@ -273,7 +276,12 @@
                 <h2 class="title mb-0">الاجازات</h2>
               </div>
               <div class="col-md-6 text-left">
-                <button type="button" class="btn-main t">
+                <button
+                  type="button"
+                  class="btn-main"
+                  data-toggle="modal"
+                  data-target="#modal-15"
+                >
                   <i class="icon-add"></i> اضافة
                 </button>
               </div>
@@ -297,6 +305,213 @@
     </form>
   </div>
 </main>
+<!-- modals -->
+<div
+  class="modal fade"
+  id="modal-15"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">الاجازات</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"><i class="icon-close-square"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>اسم الاجازة</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="  اسم الاجازة "
+              />
+            </div>
+            <div class="form-group">
+              <label>تاريخ التعيين</label>
+              <div
+                class="input-group date"
+                id="datetimepicker20"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker20"
+                  placeholder="  تاريخ التعيين"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker20"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label>نوع الاجازة</label>
+              <select class="form-control">
+                <option>نوع الاجازة</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>تاريخ استحقاق الاجازات</label>
+              <div
+                class="input-group date"
+                id="datetimepicker21"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker21"
+                  placeholder="  تاريخ استحقاق الاجازات"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker21"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6>الية الاجازات قبل المدة</h6>
+        <ul>
+          <li>
+            <input type="checkbox" id="ch_17" name="ch_17" />
+            <label for="ch_17"> خصم يومين</label>
+          </li>
+          <li>
+            <input type="checkbox" id="ch_18" name="ch_18" />
+            <label for="ch_18"> خصم يوم </label>
+          </li>
+          <li>
+            <input type="checkbox" id="ch_19" name="ch_19" />
+            <label for="ch_19"> خصم يوم ونصف </label>
+          </li>
+          <li>
+            <input type="checkbox" id="ch_20" name="ch_20" />
+            <label for="ch_20"> خصم من الرصيد </label>
+          </li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label> رصيد الاجازات</label>
+              <select class="form-control">
+                <option>رصيد الاجازات</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label> مدة العمل</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="  مدة العمل  "
+              />
+            </div>
+          </div>
+        </div>
+        <h6>اذن الاجازات</h6>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label> خصم من الرصيد</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="   خصم من الرصيد  "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label> بدون انذار</label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="   بدون انذار  "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-main">اضافة</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+class="modal fade"
+id="modal-8"
+tabindex="-1"
+role="dialog"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-md" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">مستحقات الموظف</h5>
+      <button
+        type="button"
+        class="close"
+        data-dismiss="modal"
+        aria-label="Close"
+      >
+        <span aria-hidden="true"><i class="icon-close-square"></i></span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder=" بحث  "
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <button type="button" class="btn-main btn-block">بحث</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 
     <!-- jquery-main -->
@@ -319,16 +534,10 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- moment.min.js -->
-    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/js/moment.js"></script>
 
     <!-- .daterangepicker.js -->
     <script src="assets/js/daterangepicker.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script></script>
 
     <!-- tempusdominus-bootstrap-js -->
     <script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -338,9 +547,6 @@
 
     <!-- .dateable.js -->
     <script src="assets/js/datatables.js"></script>
-
-    <!-- <script src="assets/js/jszip.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- main.js -->
     <script src="assets/js/main.js"></script>

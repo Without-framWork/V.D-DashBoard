@@ -100,17 +100,22 @@
                   class="form-control"
                   placeholder=" المؤهل "
                 />
-                <div class="choose-image">
+                <div class="choose-image mt-5">
                   <div class="picture">
-                    <img src="assets/images/download.jpg" class="picture-src" />
+                    <img src="#" class="picture-src" />
                   </div>
-                  <div class="select-image">
+                  <label class="select-image">
                     <p>لتحميل الصورة اضغط هنا</p>
-                    <span> حجم الصورة لا يزيد عن 10MB</span>
-                    <span class="add-icon">
-                      <span class="icon-add"></span>
-                    </span>
-                  </div>
+                    <span>حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="icon-add"></span>
+                    <label class="add-icon"></label>
+                    <input
+                      type="file"
+                      class="image-upload"
+                      accept="image/*"
+                      style="display: none"
+                    />
+                  </label>
                 </div>
               </div>
             </div>
@@ -120,7 +125,10 @@
                 <input type="text" class="form-control" placeholder=" التخصص" />
               </div>
 
-              <button type="button" class="btn-main  btn-disactive btn-block">
+              <button
+                type="button"
+                class="btn-main btn-disactive btn-block mt-3"
+              >
                 اضافة درجة علمية اخرى
               </button>
             </div>
@@ -130,7 +138,12 @@
               <h2 class="title mb-0">الخبرات</h2>
             </div>
             <div class="col-md-6 text-left">
-              <button type="button" class="btn-main t">
+              <button
+                type="button"
+                class="btn-main t"
+                data-toggle="modal"
+                data-target="#modal-6"
+              >
                 <i class="icon-add"></i> اضافة خبرة
               </button>
             </div>
@@ -212,7 +225,12 @@
               <h2 class="title mb-0">الدورات والكورسات الذاتية</h2>
             </div>
             <div class="col-md-6 text-left">
-              <button type="button" class="btn-main t">
+              <button
+                type="button"
+                class="btn-main"
+                data-toggle="modal"
+                data-target="#modal-7"
+              >
                 <i class="icon-add"></i> اضافة دورة
               </button>
             </div>
@@ -236,7 +254,7 @@
 
                   <td>01/2022</td>
                   <td>
-                    <ul class="setting-list ">
+                    <ul class="setting-list">
                       <li>
                         <a href="#"
                           ><img
@@ -249,11 +267,11 @@
                   </td>
 
                   <td>
-                    <ul class="setting-list ">
-                      <li >
+                    <ul class="setting-list">
+                      <li>
                         <a href="#"><i class="icon-edit"></i></a>
                       </li>
-                      <li >
+                      <li>
                         <a href="#"><i class="icon-trash"></i></a>
                       </li>
                     </ul>
@@ -266,7 +284,7 @@
 
                   <td>01/2022</td>
                   <td>
-                    <ul class="setting-list ">
+                    <ul class="setting-list">
                       <li>
                         <a href="#"
                           ><img
@@ -312,5 +330,252 @@
     </form>
   </div>
 </main>
+
+<!-- modals -->
+
+<!-- اضافه خبره -->
+<div
+  class="modal fade"
+  id="modal-6"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">اضافة خبرة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"><i class="icon-close-square"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="اسم الشركة "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>المسمى الوظيفي</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h6>الفترة</h6>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker16"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker16"
+                  placeholder=" من"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker16"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=" عدد السنوات "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker17"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker17"
+                  placeholder=" الي"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker17"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="choose-image">
+                <div class="picture">
+                  <img src="#" class="picture-src" />
+                </div>
+                <label class="select-image">
+                  <p>لتحميل الصورة اضغط هنا</p>
+                  <span>حجم الصورة لا يزيد عن 10MB</span>
+                  <span class="icon-add"></span>
+                  <label class="add-icon"></label>
+                  <input
+                    type="file"
+                    class="image-upload"
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-main">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- اضافه دور -->
+<div
+  class="modal fade"
+  id="modal-7"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">اضافة دورة</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"><i class="icon-close-square"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=" اسم الدورة "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="form-group">
+                <select class="form-control">
+                  <option>جهة الاعتماد</option>
+                  <option></option>
+                  <option></option>
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=" مدة الدورة  "
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <div
+                class="input-group date"
+                id="datetimepicker19"
+                data-target-input="nearest"
+              >
+                <input
+                  type="text"
+                  class="form-control datetimepicker-input"
+                  data-target="#datetimepicker19"
+                  placeholder=" تاريخ الحصول"
+                />
+                <div
+                  class="input-group-append"
+                  data-target="#datetimepicker19"
+                  data-toggle="datetimepicker"
+                >
+                  <div class="input-group-text">
+                    <i class="icon-note-text"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <div class="choose-image">
+                <div class="picture">
+                  <img src="#" class="picture-src" />
+                </div>
+                <label class="select-image">
+                  <p>لتحميل الصورة اضغط هنا</p>
+                  <span>حجم الصورة لا يزيد عن 10MB</span>
+                  <span class="icon-add"></span>
+                  <label class="add-icon"></label>
+                  <input
+                    type="file"
+                    class="image-upload"
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-main">حفظ</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}

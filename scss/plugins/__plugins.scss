@@ -17,39 +17,35 @@
   position: relative;
   left: 20px;
 }
-// autocomplete 
-.ui-autocomplete  {
-	z-index: 99999;
-	border-radius:$main-border-radius;
-	-webkit-border-radius:$main-border-radius;
-	-moz-border-radius:$main-border-radius;
-	-ms-border-radius:$main-border-radius;
-	-o-border-radius:$main-border-radius;
-	margin-top:  10px !important;
-	padding: 15px 0;
-	
+// autocomplete
+.ui-autocomplete {
+  z-index: 99999;
+  border-radius: $main-border-radius;
+  -webkit-border-radius: $main-border-radius;
+  -moz-border-radius: $main-border-radius;
+  -ms-border-radius: $main-border-radius;
+  -o-border-radius: $main-border-radius;
+  margin-top: 10px !important;
+  padding: 15px 0;
 }
 
-
 .custom-autocomplete .ui-menu-item {
-	padding: 4px;
-	color: $main-color;
+  padding: 4px;
+  color: $main-color;
 }
 
 .custom-autocomplete .ui-menu-item:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 #ui-id-1 {
-	top: 45px !important;
-	
-	
+  top: 45px !important;
+  display: block;
 }
 
 .ui-menu .ui-menu-item-wrapper {
-	font-size: 20px;
-	
+  font-size: 20px;
 }
 
 .custom-autocomplete .ui-helper-hidden-accessible {
-	display: none;
+  display: none;
 }

@@ -145,17 +145,12 @@ $(document).ready(function () {
     singleDatePicker: true,
   });
 
-  //upload-imaeg
-  $(".select-image").on("click", function () {
-    $("#image-upload").click();
-  });
+  //upload-imaege
 
-  //map
-
-  $("#image-upload").on("change", function (event) {
+  $(".image-upload").on("change", function (event) {
     const file = event.target.files[0];
-    const picture = $(".picture");
-    const pictureSrc = $(".picture-src");
+    const picture = $(this).closest(".choose-image").find(".picture");
+    const pictureSrc = picture.find(".picture-src");
 
     if (file) {
       const reader = new FileReader();
@@ -174,7 +169,7 @@ $(document).ready(function () {
   //datepicker
 
   $(
-    "#datetimepicker4,#datetimepicker17,#datetimepicker20,#datetimepicker22,#datetimepicker23"
+    "#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23"
   ).datetimepicker({
     // format: "L",
     format: "YYYY-MM-DD",
@@ -283,7 +278,6 @@ $(document).ready(function () {
       }
     });
   });
-  
 
   $(window).on("load", function () {
     $("#myModal").modal("show");
@@ -310,7 +304,6 @@ $(document).ready(function () {
     var modal = $("#modal-20");
     var inputFields = modal.find(".form-control");
 
-    // Populate the input fields with row data
     $(inputFields[0]).val(rowData[0]); // الاسم
     $(inputFields[1]).val(rowData[1]); // تاريخ الانتهاء
     $(inputFields[2]).val(rowData[2]); // تاريخ الاشعار
@@ -319,24 +312,17 @@ $(document).ready(function () {
     modal.modal("show");
   }
 
-//auto-complete
-    // Define the data for autocomplete
-    const availableTags = [
-      "مصمم",
-      "مهندس",
-      "مهندس كهربائي",
-      "مصمم",
-     
-    ];
-    
-    // Initialize the autocomplete widget with custom styling
-    $("#Job-title").autocomplete({
-      source: availableTags,
-      appendTo: "#autocomplete-container", // Append the autocomplete list to a specific container
-      open: function(event, ui) {
-        $("#autocomplete-container").addClass("custom-autocomplete"); // Add a custom class to the autocomplete container
-      }
-    });
+  //auto-complete
+
+  const availableTags = ["مصمم", "مهندس", "مهندس كهربائي", "مصمم"];
+
+  $("#Job-title").autocomplete({
+    source: availableTags,
+    appendTo: "#autocomplete-container",
+    open: function (event, ui) {
+      $("#autocomplete-container").addClass("custom-autocomplete");
+    },
+  });
 });
 
 //calculate left

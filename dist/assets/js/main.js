@@ -243,17 +243,12 @@ $(document).ready(function () {
     singleDatePicker: true
   });
 
-  //upload-imaeg
-  $(".select-image").on("click", function () {
-    $("#image-upload").click();
-  });
+  //upload-imaege
 
-  //map
-
-  $("#image-upload").on("change", function (event) {
+  $(".image-upload").on("change", function (event) {
     var file = event.target.files[0];
-    var picture = $(".picture");
-    var pictureSrc = $(".picture-src");
+    var picture = $(this).closest(".choose-image").find(".picture");
+    var pictureSrc = picture.find(".picture-src");
     if (file) {
       var reader = new FileReader();
       reader.onload = function () {
@@ -268,7 +263,7 @@ $(document).ready(function () {
   });
   //datepicker
 
-  $("#datetimepicker4,#datetimepicker17,#datetimepicker20,#datetimepicker22,#datetimepicker23").datetimepicker({
+  $("#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23").datetimepicker({
     // format: "L",
     format: "YYYY-MM-DD",
     icons: {
@@ -391,8 +386,6 @@ $(document).ready(function () {
   function populateModal(rowData) {
     var modal = $("#modal-20");
     var inputFields = modal.find(".form-control");
-
-    // Populate the input fields with row data
     $(inputFields[0]).val(rowData[0]); // الاسم
     $(inputFields[1]).val(rowData[1]); // تاريخ الانتهاء
     $(inputFields[2]).val(rowData[2]); // تاريخ الاشعار
@@ -402,16 +395,13 @@ $(document).ready(function () {
   }
 
   //auto-complete
-  // Define the data for autocomplete
-  var availableTags = ["مصمم", "مهندس", "مهندس كهربائي", "مصمم"];
 
-  // Initialize the autocomplete widget with custom styling
+  var availableTags = ["مصمم", "مهندس", "مهندس كهربائي", "مصمم"];
   $("#Job-title").autocomplete({
     source: availableTags,
     appendTo: "#autocomplete-container",
-    // Append the autocomplete list to a specific container
     open: function open(event, ui) {
-      $("#autocomplete-container").addClass("custom-autocomplete"); // Add a custom class to the autocomplete container
+      $("#autocomplete-container").addClass("custom-autocomplete");
     }
   });
 });

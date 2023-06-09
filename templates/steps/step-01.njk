@@ -54,7 +54,7 @@
       <div class="tab-content" id="main_form">
         <div class="tab-pane active" role="tabpanel" id="step1">
           <h2 class="title">البيانات الشخصية</h2>
-          <div class="user-image pt-0 text-right mb-5 d-lg-none  d-md-block">
+          <div class="user-image pt-0 text-right mb-5 d-lg-none d-md-block">
             <div class="user-avatar">
               <img src="assets/images/profile-image.png" alt="avatar image" />
             </div>
@@ -89,17 +89,21 @@
 
                 <div class="choose-image">
                   <div class="picture">
-                    <img src="assets/images/download.jpg" class="picture-src" />
+                    <img src="#" class="picture-src" />
                   </div>
-                  <div class="select-image">
+                  <label class="select-image">
                     <p>لتحميل الصورة اضغط هنا</p>
-                    <span> حجم الصورة لا يزيد عن 10MB</span>
-                    <span class="add-icon">
-                      <span class="icon-add"></span>
-                    </span>
-                  </div>
-                </div>
-              </div>
+                    <span>حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="icon-add"></span>
+                    <label class="add-icon"></label>
+                    <input
+                      type="file"
+                      class="image-upload"
+                      accept="image/*"
+                      style="display: none"
+                    />
+                  </label>
+                </div>              </div>
               <div class="form-group">
                 <label> الجنسية </label>
                 <input type="text" class="form-control" placeholder="الجنسية" />
@@ -131,16 +135,22 @@
                 />
                 <div class="choose-image">
                   <div class="picture">
-                    <img src="assets/images/download.jpg" class="picture-src" />
+                    <img src="#" class="picture-src" />
                   </div>
-                  <div class="select-image">
+                  <label class="select-image">
                     <p>لتحميل الصورة اضغط هنا</p>
-                    <span> حجم الصورة لا يزيد عن 10MB</span>
-                    <span class="add-icon">
-                      <span class="icon-add"></span>
-                    </span>
-                  </div>
+                    <span>حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="icon-add"></span>
+                    <label class="add-icon"></label>
+                    <input
+                      type="file"
+                      class="image-upload"
+                      accept="image/*"
+                      style="display: none"
+                    />
+                  </label>
                 </div>
+                
               </div>
               <div class="form-group">
                 <label> الجنس </label>
@@ -180,16 +190,23 @@
                 />
                 <div class="choose-image">
                   <div class="picture">
-                    <img src="assets/images/download.jpg" class="picture-src" />
+                    <img src="#" class="picture-src" />
                   </div>
-                  <div class="select-image">
+                  <label class="select-image">
                     <p>لتحميل الصورة اضغط هنا</p>
-                    <span> حجم الصورة لا يزيد عن 10MB</span>
-                    <span class="add-icon">
-                      <span class="icon-add"></span>
-                    </span>
-                  </div>
+                    <span>حجم الصورة لا يزيد عن 10MB</span>
+                    <span class="icon-add"></span>
+                    <label class="add-icon"></label>
+                    <input
+                      type="file"
+                      class="image-upload"
+                      accept="image/*"
+                      style="display: none"
+                    />
+                  </label>
                 </div>
+                
+                
               </div>
               <div class="form-group">
                 <label> تاريخ الميلاد </label>

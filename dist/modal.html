@@ -395,7 +395,8 @@
       data-toggle="modal"
       data-target="#modal-22"
     >
-    اضافة مسمى وظيفي    </button>
+      اضافة مسمى وظيفي
+    </button>
     <!-- 01 -->
 
     <div
@@ -454,8 +455,6 @@
                     placeholder="اسم العميل"
                     id="fruits"
                   />
-                
-                  
                 </div>
                 <div class="form-group">
                   <input
@@ -511,20 +510,20 @@
                     <div class="picture">
                       <img src="#" class="picture-src" />
                     </div>
-                    <label class="select-image" for="image-upload">
+                    <label class="select-image">
                       <p>لتحميل الصورة اضغط هنا</p>
-                      <span> حجم الصورة لا يزيد عن 10MB</span>
-
+                      <span>حجم الصورة لا يزيد عن 10MB</span>
                       <span class="icon-add"></span>
                       <label class="add-icon"></label>
                       <input
                         type="file"
-                        id="image-upload"
+                        class="image-upload"
                         accept="image/*"
                         style="display: none"
                       />
                     </label>
                   </div>
+                  
                 </div>
               </div>
             </div>
@@ -2104,7 +2103,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title"> اضافة مسمى وظيفي </h5>
+            <h5 class="modal-title">اضافة مسمى وظيفي</h5>
             <button
               type="button"
               class="close"
@@ -2123,14 +2122,11 @@
                     class="form-control"
                     placeholder=" المسمى الوظيفي "
                     id="Job-title"
-
                   />
-                    <div id="autocomplete-container"></div> <!-- Container for the autocomplete list -->
-
-                
-                  
+                  <div id="autocomplete-container"></div>
+                  <!-- Container for the autocomplete list -->
                 </div>
-                
+
                 <div class="form-group">
                   <div class="form-group">
                     <select class="form-control">
@@ -2141,11 +2137,8 @@
                     </select>
                   </div>
                 </div>
-             
               </div>
               <div class="col-md-6">
-                
-             
                 <div class="form-group">
                   <select class="form-control">
                     <option>نوع الوظيفة</option>
@@ -2161,9 +2154,6 @@
                     placeholder=" وصف الوظيفة "
                   />
                 </div>
-              
-               
-              
               </div>
             </div>
           </div>
@@ -2195,16 +2185,10 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <!-- moment.min.js -->
-    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/js/moment.js"></script>
 
     <!-- .daterangepicker.js -->
     <script src="assets/js/daterangepicker.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script></script>
 
     <!-- tempusdominus-bootstrap-js -->
     <script src="assets/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -2214,9 +2198,6 @@
 
     <!-- .dateable.js -->
     <script src="assets/js/datatables.js"></script>
-
-    <!-- <script src="assets/js/jszip.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- main.js -->
     <script src="assets/js/main.js"></script>

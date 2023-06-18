@@ -1,4 +1,4 @@
-@import "_include-media.scss";
+@import "include-media";
 
 // datapicker
 
@@ -49,3 +49,11 @@
 .custom-autocomplete .ui-helper-hidden-accessible {
   display: none;
 }
+// .form-group{
+//   .icon-note-text{
+//     position: absolute;
+//     top: 34px !important;
+//   }
+
+// }
+

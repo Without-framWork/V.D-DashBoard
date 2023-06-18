@@ -7,7 +7,7 @@
   }
 
   .nav-link {
-    color:$gray;
+    color: $gray;
     border-radius: 12px 12px 0 0;
     font-size: 18px;
     background: #ffffff;
@@ -26,27 +26,32 @@
   }
 }
 
+
+
 .tab-content {
   & > .active {
     background-color: $light-gray;
     min-height: 100vh;
     padding: 20px;
-    border-radius:0  0 12px 12px;
-    -webkit-border-radius:0  0 12px 12px;
-    -moz-border-radius:0  0 12px 12px;
-    -ms-border-radius:0  0 12px 12px;
-    -o-border-radius:0  0 12px 12px;
-}
+    border-radius: 0 0 12px 12px;
+    -webkit-border-radius: 0 0 12px 12px;
+    -moz-border-radius: 0 0 12px 12px;
+    -ms-border-radius: 0 0 12px 12px;
+    -o-border-radius: 0 0 12px 12px;
+  }
 
   h5 {
     font-size: 18px;
-		font-weight: bold;
-    
+    font-weight: bold;
   }
 }
 // employee-data
-.employee-data{
-  .nav-tabs .nav-link{
+.employee-data {
+  .nav-tabs .nav-link {
     width: 100px;
+  }
+}
+ul {
+  li {
   }
 }

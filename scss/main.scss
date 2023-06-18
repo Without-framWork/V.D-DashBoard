@@ -1,20 +1,19 @@
 //utilities
 @import "utilities/__utilities";
 //plugin's
-@import "plugins/__plugins.scss";
+@import "plugins/__plugins";
 
 //base
-@import "base/__base.scss";
+@import "base/__base";
 //components
-@import "components/__components.scss";
-
+@import "components/__components";
 
 //pages
 
-@import "pages/__pages.scss";
+@import "pages/__pages";
 
 //responsive
-@import "layout/_responsive.scss";
+@import "layout/_responsive";
 //layout
 @import "layout/__layout";
 

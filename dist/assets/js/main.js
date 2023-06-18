@@ -261,9 +261,31 @@ $(document).ready(function () {
       pictureSrc.attr("src", "#");
     }
   });
+
+  //user-image
+  $(".choose-image").on("click", function () {
+    $(".picture-upload").click();
+  });
+  $(".picture-upload").on("change", function (event) {
+    var file = event.target.files[0];
+    var picture = $(".user-avatar");
+    var pictureSrc = picture.find("img");
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function () {
+        picture.css("display", "block");
+        pictureSrc.attr("src", reader.result);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      picture.css("display", "none");
+      pictureSrc.attr("src", "assets/images/profile-image.png");
+    }
+  });
+
   //datepicker
 
-  $("#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23").datetimepicker({
+  $("#datetimepicker3,#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23").datetimepicker({
     // format: "L",
     format: "YYYY-MM-DD",
     icons: {
@@ -273,7 +295,6 @@ $(document).ready(function () {
       // down: "fa fa-arrow-down"
     }
   });
-  // timepicker
 
   $("#datetimepicker3,#datetimepicker2,#datetimepicker1,#datetimepicker").datetimepicker({
     // format: "LT",
@@ -423,9 +444,9 @@ menuShowButtons.forEach(function (button) {
   !*** ./scss/main.scss ***!
   \************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-// extracted by mini-css-extract-plugin
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: File to import not found or unreadable: modal..\n        on line 1 of scss/pages/__pages.scss\n        from line 13 of scss/main.scss\n>> @import \"modal.\";\r\n   ^\n\n    at C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.callback (C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\sass-loader\\dist\\index.js:62:7)\n    at Object.done [as callback] (C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\neo-async\\async.js:8069:18)\n    at options.error (C:\\Users\\Mohamed\\Desktop\\vision-html\\node_modules\\node-sass\\lib\\index.js:293:32)");
 
 /***/ }),
 

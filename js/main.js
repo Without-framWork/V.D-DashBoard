@@ -166,10 +166,36 @@ $(document).ready(function () {
       pictureSrc.attr("src", "#");
     }
   });
+
+  //user-image
+  $(".choose-image").on("click", function () {
+    $(".picture-upload").click();
+  });
+
+  $(".picture-upload").on("change", function (event) {
+    const file = event.target.files[0];
+    const picture = $(".user-avatar");
+    const pictureSrc = picture.find("img");
+
+    if (file) {
+      const reader = new FileReader();
+
+      reader.onload = function () {
+        picture.css("display", "block");
+        pictureSrc.attr("src", reader.result);
+      };
+
+      reader.readAsDataURL(file);
+    } else {
+      picture.css("display", "none");
+      pictureSrc.attr("src", "assets/images/profile-image.png");
+    }
+  });
+
   //datepicker
 
   $(
-    "#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23"
+    "#datetimepicker3,#datetimepicker12,#datetimepicker4,#datetimepicker5,#datetimepicker6,#datetimepicker7,#datetimepicker16,#datetimepicker17,#datetimepicker19,#datetimepicker20,#datetimepicker21,#datetimepicker22,#datetimepicker23"
   ).datetimepicker({
     // format: "L",
     format: "YYYY-MM-DD",
@@ -180,7 +206,6 @@ $(document).ready(function () {
       // down: "fa fa-arrow-down"
     },
   });
-  // timepicker
 
   $(
     "#datetimepicker3,#datetimepicker2,#datetimepicker1,#datetimepicker"

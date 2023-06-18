@@ -30,6 +30,11 @@
   ul {
     display: flex;
   }
+  .icon-note-text{
+
+    top: 11px !important;
+  }
+
 }
 #modal-6,
 #modal-7,
@@ -64,6 +69,10 @@
   }
   ul {
     margin-bottom: 50px;
+  }
+  .icon-note-text{
+
+    top: 34px !important;
   }
 }
 .modal-md {

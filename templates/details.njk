@@ -3,6 +3,10 @@
 "templates/components/sidebar.njk" %}
 
 <main class="main-content">
+  <div class="employee-details">
+    <h5 class="title mb-0">مهندس معماري</h5>
+    <p class="operation-status confirmed-status">نشط</p>
+  </div>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
       <a
@@ -14,7 +18,8 @@
         aria-controls="content-01"
         aria-selected="true"
       >
-التفاصيل      </a>
+        التفاصيل
+      </a>
     </li>
 
     <li class="nav-item">
@@ -27,119 +32,133 @@
         aria-controls="content-02"
         aria-selected="true"
       >
-      الموظفين      </a>
+        الموظفين
+      </a>
     </li>
-
-   
   </ul>
   <div class="tab-content" id="myTabContent">
     <div
-      class="tab-pane fade show active position-relative"
+      class="tab-pane fade show active h-230"
       id="content-01"
       role="tabpanel"
       aria-labelledby="tab-01"
     >
-    <h5>الوصف</h5>
-    
-    
-    
-    <p>    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى</div>
-    </p>
-    
-    
+      <div class="desc-text">
+        <h5>الوصف</h5>
+
+        <p>
+          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+          النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
+          النصوص الأخرى
+        </p>
+      </div>
+    </div>
+
     <div
       class="tab-pane fade"
       id="content-02"
       role="tabpanel"
       aria-labelledby="tab-02"
-    > <div class="row">
-      <div class="col-md-6">
-        <div class="buttons-area">
-          <button type="submit" class="btn-main">
-            <i class="icon-add"></i>
-            اضافة درجة وظيفية
-          </button>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <button type="submit" class="btn-main btn-ghost float-left mt-5">
-          <i class="icon-filter-square"></i>
-          فلتر
-        </button>
-      </div>
+    >
+        <ul class="employee-setting">
+          <li>
+            <div class="form-group mb-0">
+              <select class="form-control">
+                <option>نشط</option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <button type="submit" class="btn-main btn-ghost  ">
+              <i class="icon-edit"></i>
+              تعديل
+            </button>
+          </li>
+          <li>
+            <button
+              type="submit"
+              class="btn-main btn-disactive "
+            >
+              <i class="icon-trash"></i>
+              حذف
+            </button>
+          </li>
+        </ul>
+
+      <table class="table table-style table-responsive-md mt-5">
+        <thead>
+          <tr>
+            <th scope="col">الاسم</th>
+            <th scope="col">المسمى الوظيفي</th>
+            <th scope="col">نوع الوظيفة</th>
+            <th scope="col">الرتبة</th>
+            <th scope="col">اسم الادارة</th>
+            <th scope="col">الفرع</th>
+            <th scope="col">الحالة</th>
+            <th scope="col">الاعدادات</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in range(0,5) -%}
+
+          <tr>
+            <th scope="row">محمد احمد</th>
+
+            <td>مهندس معماري</td>
+
+            <td>ادارية</td>
+
+            <td>الاولى</td>
+            <td>ادارة الرخص</td>
+            <td>جدة</td>
+            <td><p class="operation-status confirmed-status">نشط</p></td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">محمد احمد</th>
+
+            <td>مهندس معماري</td>
+
+            <td>ادارية</td>
+
+            <td>الاولى</td>
+            <td>ادارة الرخص</td>
+            <td>جدة</td>
+            <td><p class="operation-status cancelled-status">غير نشط</p></td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+                <li>
+                  <a href="#"> <i class="icon-arrow-left"></i></a>
+                </li>
+              </ul>
+            </td>
+          </tr>
+
+          {%- endfor %}
+        </tbody>
+      </table>
     </div>
-
-    <table class="table table-style table-responsive-md mt-5">
-      <thead>
-        <tr>
-          <th scope="col">الاسم</th>
-          <th scope="col">المسمى الوظيفي</th>
-          <th scope="col">نوع الوظيفة</th>
-          <th scope="col">الرتبة</th>
-          <th scope="col">اسم الادارة</th>
-          <th scope="col">الفرع</th>
-          <th scope="col">الحالة</th>
-          <th scope="col">الاعدادات</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for i in range(0,5) -%}
-
-        <tr>
-          <th scope="row">محمد احمد</th>
-
-          <td>مهندس معماري</td>
-
-          <td>ادارية</td>
-
-          <td>الاولى</td>
-          <td>ادارة الرخص</td>
-          <td>جدة</td>
-          <td><p class="operation-status confirmed-status">نشط</p></td>
-          <td>
-            <ul class="setting-list">
-              <li>
-                <a href="#"><i class="icon-edit"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="icon-trash"></i></a>
-              </li>
-              <li>
-                <a href="#"> <i class="icon-arrow-left"></i></a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <th scope="row">محمد احمد</th>
-
-          <td>مهندس معماري</td>
-
-          <td>ادارية</td>
-
-          <td>الاولى</td>
-          <td>ادارة الرخص</td>
-          <td>جدة</td>
-          <td><p class="operation-status cancelled-status"> غير نشط  </p></td>
-          <td>
-            <ul class="setting-list">
-              <li>
-                <a href="#"><i class="icon-edit"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="icon-trash"></i></a>
-              </li>
-              <li>
-                <a href="#"> <i class="icon-arrow-left"></i></a>
-              </li>
-            </ul>
-          </td>
-        </tr>
-
-        {%- endfor %}
-      </tbody>
-    </table></div>
-    
   </div>
 </main>
 

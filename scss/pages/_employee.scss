@@ -16,13 +16,48 @@
   font-size: 16px;
   margin-bottom: 12px;
   position: absolute;
-  top:20%; 
-  left:0;
+  top: 20%;
+  left: 0;
 }
-.menu-container{
-	position: relative;
-
+.menu-container {
+  position: relative;
 }
 .show {
   display: block;
+}
+.desc-text {
+  max-width: 420px;
+  color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  P {
+    font-size: 16px !important;
+   line-height: 30px !important;
+  }
+}
+.employee-setting{
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  li:first-child{
+    width: 200px;
+  }
+}
+.employee-details{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  .operation-status{
+    width: 150px;
+  text-align: center;}
+  
 }

@@ -13,7 +13,7 @@
     background: #ffffff;
     text-align: center;
     font-weight: bold;
-    width: 250px;
+    padding: 10px 30px ;
 
     &.active {
       background: $light-gray;
@@ -43,15 +43,5 @@
   h5 {
     font-size: 18px;
     font-weight: bold;
-  }
-}
-// employee-data
-.employee-data {
-  .nav-tabs .nav-link {
-    width: 100px;
-  }
-}
-ul {
-  li {
   }
 }

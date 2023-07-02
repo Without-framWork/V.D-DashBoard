@@ -1,22 +1,28 @@
-.bg-gary{
-	background-color: $light-gray;
+.bg-gary {
+  background-color: $light-gray;
 }
-.mb-64{
-	margin-bottom: 64px;
+.mb-64 {
+  margin-bottom: 64px;
 }
-.br-12{
-	border-radius: 12px;
-	-webkit-border-radius: 12px;
-	-moz-border-radius: 12px;
-	-ms-border-radius: 12px;
-	-o-border-radius: 12px;
+.br-12 {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
-.bold-text{
+.bold-text {
   font-weight: bold !important;
 }
-.px-10{
-	padding:  0 15px !important ;
+.px-10 {
+  padding: 0 15px !important ;
 }
-.h-230{
-min-height:230px !important
+.h-230 {
+  min-height: 230px !important;
 }
+// .text-length {
+//   max-width: 200px; 
+//   white-space: nowrap;
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+// }

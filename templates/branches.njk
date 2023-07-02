@@ -3,7 +3,7 @@
 "templates/components/sidebar.njk" %}
 
 <main class="main-content">
-    {% include "templates/components/search/branches-seach.njk" %}
+  {% include "templates/components/search/branches-seach.njk" %}
 
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item">
@@ -55,10 +55,10 @@
       aria-labelledby="tab-01"
     >
       <div class="buttons-area">
-        <a  href="/add-branch.html" class="btn-main btn-block">
+        <a href="/add-branch.html" class="btn-main btn-block">
           <i class="icon-add"></i> اضافة فرع جديد
         </a>
-        <a  href="/branch-settings.html" class="btn-main btn-block">
+        <a href="/branch-settings.html" class="btn-main btn-block">
           <i class="icon-setting"></i> اعدادات الفروع
         </a>
       </div>
@@ -73,6 +73,7 @@
             <th scope="col">مدير الفرع</th>
             <th scope="col">رقم التليفون</th>
             <th scope="col">البريد الالكتروني</th>
+            <th scope="col">الاعدادات</th>
           </tr>
         </thead>
         <tbody>
@@ -80,25 +81,53 @@
 
           <tr>
             <th scope="row">1</th>
-            <td><span class="bold-text">مكتب ابعاد الرؤية للاستشارات الهندسية</span>    </td>
-            <td><span class="bold-text"> رئيسي   </span></td>
+            <td>
+              <span class="bold-text"
+                >مكتب ابعاد الرؤية للاستشارات الهندسية</span
+              >
+            </td>
+            <td><span class="bold-text"> رئيسي </span></td>
 
             <td>الرياض</td>
             <td>سعد مشعل</td>
 
-            <td>رقم التليفون</td>
+            <td class="text-length">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium, quod? Error vero nisi autem voluptates.
+            </td>
             <td>youremail@domain.com</td>
-          </tr>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+              </ul>
+            </td>          </tr>
           <tr>
             <th scope="row">1</th>
-            <td><span class="bold-text">مكتب ابعاد الرؤية للاستشارات الهندسية</span>    </td>
+            <td>
+              <span class="bold-text">مكتب ابعاد الرؤية للاستشارات </span>
+            </td>
             <td>فرعي</td>
 
             <td>الرياض</td>
             <td>سعد مشعل</td>
 
-            <td>رقم التليفون</td>
+            <td> +20 111888388388</td>
             <td>youremail@domain.com</td>
+            <td>
+              <ul class="setting-list">
+                <li>
+                  <a href="#"><i class="icon-edit"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="icon-trash"></i></a>
+                </li>
+              </ul>
+            </td>
           </tr>
 
           {%- endfor %}
@@ -122,8 +151,7 @@
       ...
     </div>
   </div>
-      <a href="#" class="view-all">عرض الكل</a>
-
+  <a href="#" class="view-all">عرض الكل</a>
 </main>
 
 {% endblock %}

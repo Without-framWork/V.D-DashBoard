@@ -3,6 +3,8 @@
 "templates/components/sidebar.njk" %}
 
 <main class="main-content">
+    {% include "templates/components/search/employees-page.njk" %}
+
   <div class="employee-data">
     {% include "templates/components/search/employee-data.njk" %}
     <ul class="nav nav-tabs mt-5" id="myTab" role="tablist">
@@ -115,7 +117,7 @@
                   class="user-picture completed"
                   src="assets/images/user-picture.png"
                   alt="user-picture"
-                />محمد احمد
+                />محمد احمدد
               </th>
               <th>المسمى الوظيفي</th>
 

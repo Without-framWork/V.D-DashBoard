@@ -69,8 +69,6 @@
           </button>
         </div>
       </div>
-     
-
       <table class="table table-style table-responsive-md mt-5">
         <thead>
           <tr>
@@ -83,24 +81,23 @@
         </thead>
         <tbody>
           {% for i in range(0,5) -%}
-
           <tr>
             <th scope="row">ادارية</th>
-
             <td>300</td>
-
             <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
+              <ul class="job-titles">
+                <li><a href="#">مهندس معماري (14)</a></li>
+                <li><a href="#">مهندس انشائي (54)</a></li>
+              </ul>
+
+              <ul class="jobs-names hidden">
+                <li><a href="#"> مهندس معماري (14)</a></li>
+                <li><a href="#"> مهندس معماري (14)</a></li>
               </ul>
             </td>
-
-            <td><p class="operation-status confirmed-status">نشط</p></td>
+            <td>
+              <p class="operation-status confirmed-status">نشط</p>
+            </td>
             <td>
               <ul class="setting-list">
                 <li>
@@ -115,38 +112,6 @@
               </ul>
             </td>
           </tr>
-          <tr>
-            <th scope="row">ادارية</th>
-
-            <td>300</td>
-
-            <td>
-              <ul>
-                <li>
-                  <a href="#">مهندس معماري (14)</a>
-                </li>
-                <li>
-                  <a href="#">مهندس انشائي (54)</a>
-                </li>
-              </ul>
-            </td>
-
-            <td><p class="operation-status cancelled-status">غير نشط</p></td>
-            <td>
-              <ul class="setting-list">
-                <li>
-                  <a href="#"><i class="icon-edit"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="icon-trash"></i></a>
-                </li>
-                <li>
-                  <a href="#"> <i class="icon-arrow-left"></i></a>
-                </li>
-              </ul>
-            </td>
-          </tr>
-
           {%- endfor %}
         </tbody>
       </table>

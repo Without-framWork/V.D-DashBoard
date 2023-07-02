@@ -5,61 +5,59 @@
 <main class="main-content">
   {% include "templates/components/search/employees-page.njk" %}
 
- 
-	<section class="employees-section bg-gary p-4">
-		<div class="buttons-area">
-			<button type="submit" class="btn-main ">
-				<i class="icon-add"></i>   اضافة موظف 			</button>
-			
-		</div>
-		<table class="table table-style table-responsive-sm mt-5 ">
-			<thead>
-				<tr>
-					<th scope="col"> الاسم</th>
-					<th scope="col"> المهنة</th>
-					<th scope="col">الموظفين </th>
-					<th scope="col">الفرع </th>
-					<th scope="col">النوع </th>
-					<th scope="col">القسم  </th>
-					<th scope="col">الحالة </th>
-				</tr>
-			</thead>
-			<tbody>
-				{% for i in range(0,12) -%}
-	
-				<tr>
-					<th scope="row">محمد احمد</th>
-					<td>مهندس مدني  </td>
-	
-					<td>مدير المشروع</td>
-	
-					<td>جدة</td>
-	
-					<td>الرخص </td>
-					<td> النص</td>
-					<td>              <p class="operation-status confirmed-status">نشط </p>
-					</td>
-				</tr>
-				<tr>
-					<th scope="row">محمد احمد</th>
-					<td>مهندس مدني  </td>
-	
-					<td>مدير المشروع</td>
-	
-					<td>جدة</td>
-	
-					<td>الرخص </td>
-					<td> النص</td>
-					<td>              <p class="operation-status cancelled-status" >غير نشط  </p>
-					</td>
-				</tr>
-	
-				{%- endfor %}
-			</tbody>
-		</table>
-	</section>
+  <section class="employees-section bg-gary p-4">
+    <div class="buttons-area">
+      <button type="submit" class="btn-main">
+        <i class="icon-add"></i> اضافة موظف
+      </button>
+    </div>
+    <table class="table table-style table-responsive-sm mt-5">
+      <thead>
+        <tr>
+          <th scope="col">الاسم</th>
+          <th scope="col">المهنة</th>
+          <th scope="col">الموظفين</th>
+          <th scope="col">الفرع</th>
+          <th scope="col">النوع</th>
+          <th scope="col">القسم</th>
+          <th scope="col">الحالة</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(0,12) -%}
 
+        <tr>
+          <th scope="row">
+            <img src="assets/images/completed.svg" alt="completed" />محمداحمد
+            احمد احمد احمد احمد احمد احمداحمد
+          </th>
+          <td>مهندس مدني</td>
 
+          <td>مدير المشروع</td>
+
+          <td>جدة</td>
+
+          <td>الرخص</td>
+          <td>النص</td>
+          <td><p class="operation-status confirmed-status">نشط</p></td>
+        </tr>
+        <tr>
+          <th scope="row">محمد احمد</th>
+          <td>مهندس مدني</td>
+
+          <td>مدير المشروع</td>
+
+          <td>جدة</td>
+
+          <td>الرخص</td>
+          <td>النص</td>
+          <td><p class="operation-status cancelled-status">غير نشط</p></td>
+        </tr>
+
+        {%- endfor %}
+      </tbody>
+    </table>
+  </section>
 </main>
 
 {% endblock %}

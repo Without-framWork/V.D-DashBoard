@@ -188,6 +188,7 @@ ul.breadcrumb li {
   display: inline;
   font-size: 18px;
   font-weight: bold;
+  color: $main-color;
 }
 ul.breadcrumb li + li:before {
   padding: 8px;

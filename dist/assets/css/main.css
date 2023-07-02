@@ -1124,7 +1124,8 @@ ul.breadcrumb {
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #004693; }
 
 ul.breadcrumb li + li:before {
   padding: 8px;
@@ -1219,7 +1220,8 @@ ul.breadcrumb li a:hover {
   color: #004693; }
   .massage-code a {
     font-weight: bold;
-    text-decoration: underline; }
+    text-decoration: underline;
+    color: #004693; }
     .massage-code a:hover {
       color: #004693; }
 
@@ -1240,9 +1242,9 @@ ul.breadcrumb li a:hover {
   padding: 5px 20px 5px  0px; }
 
 .icon-sms {
-  position: absolute;
-  top: 11px;
-  right: 6px; }
+  position: absolute !important;
+  top: 11px !important;
+  right: 6px !important; }
 
 .nav-tabs {
   padding: 0;
@@ -1256,7 +1258,7 @@ ul.breadcrumb li a:hover {
     background: #ffffff;
     text-align: center;
     font-weight: bold;
-    width: 250px; }
+    padding: 10px 30px; }
     .nav-tabs .nav-link.active {
       background: #F3F5F7;
       color: #004693;
@@ -1277,9 +1279,6 @@ ul.breadcrumb li a:hover {
 .tab-content h5 {
   font-size: 18px;
   font-weight: bold; }
-
-.employee-data .nav-tabs .nav-link {
-  width: 100px; }
 
 .table-style {
   color: #034a90;
@@ -1335,7 +1334,8 @@ ul.breadcrumb li a:hover {
     .table-style ul li:first-child {
       margin-left: 15px; }
     .table-style ul li a {
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: #004693; }
   .table-style i {
     font-size: 20px;
     font-weight: 500; }
@@ -1643,6 +1643,9 @@ ul.breadcrumb li a:hover {
   font-size: 16px;
   font-weight: 700; }
 
+.item-box {
+  max-width: 500px; }
+
 .bootstrap-datetimepicker-widget {
   width: 100% !important; }
 
@@ -1719,7 +1722,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 33px;
+  top: 20px;
   left: 30px; }
   .employee-setting li:first-child {
     width: 200px; }
@@ -1733,18 +1736,12 @@ ul.breadcrumb li a:hover {
     width: 150px;
     text-align: center; }
 
+.hidden {
+  display: none !important; }
+
 @media (max-width: 1200px) {
   .nav-tabs .nav-link {
-    width: 300px; }
-  .platform-table td {
-    padding: 18px !important; }
-  .order-table tbody td {
-    font-size: 12px;
-    font-weight: bold; }
-  .order-table thead th {
-    font-size: 13px;
-    padding: 10px;
-    vertical-align: middle; }
+    padding: 10px 50px; }
   .empty-massage figcaption {
     font-size: 20px;
     line-height: 30px; }
@@ -1758,103 +1755,39 @@ ul.breadcrumb li a:hover {
     right: 20px !important; }
   .wizard .nav-tabs > li a i {
     font-size: 10px !important;
-    font-weight: bold !important; }
-  .login-card-new {
-    padding: 40px; }
-  .about-spermarket i {
-    margin-left: 7px !important; }
-  .about-spermarket a {
-    font-size: 12px; }
-  .supermarket-detils {
-    padding: 20px; }
-  .list-checkbox {
-    padding-left: 0;
-    height: auto; }
-  .shop-list li {
-    font-size: 18px; }
-  .types-food li a {
-    width: 140px; }
-  .types-food li {
-    margin-left: 20px; }
-  .customer-box {
-    padding: 15px; }
-  .regions a {
-    line-height: 20px;
-    margin-bottom: 20px; }
-  .pilot-list li {
-    margin-bottom: 15px; }
-  .pilot-btns {
-    flex-direction: column; }
-    .pilot-btns .btn-main {
-      width: 100%;
-      margin-bottom: 15px; } }
+    font-weight: bold !important; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .nav-tabs .nav-link {
-    width: 380px;
-    margin-left: 15px; }
-  .details-city .status {
-    font-size: 13px;
-    font-weight: bold; }
-  .flyers {
-    flex-direction: column-reverse; }
-  .image-box {
-    margin-bottom: 20px; }
-  .box-header h5 {
-    font-size: 20px; }
-  .btn-detils {
-    font-size: 14px;
-    font-weight: bold; }
-  .chat-content {
-    padding: 0 40px; }
   .message-text {
     max-width: 100%;
-    padding: 25px; }
-  .poilt-infro {
-    padding: 15px; } }
-
-@media (max-width: 1098px) and (min-width: 990px) {
-  .nav-tabs .nav-link {
-    width: 320px !important; }
-  .nav-tabs .nav-link {
-    font-size: 15px;
-    margin-left: 15px; } }
-
-@media (max-width: 944px) and (min-width: 809px) {
-  .nav-tabs .nav-link {
-    width: 360px !important; }
-  .nav-tabs .nav-link {
-    margin-left: 15px; } }
-
-@media (max-width: 809px) and (min-width: 767px) {
-  .nav-tabs .nav-link {
-    width: 330px !important; }
-  .nav-tabs .nav-link {
-    margin-left: 15px; } }
+    padding: 25px; } }
 
 @media (max-width: 992px) {
+  .form-group select {
+    background-position: left 20px top 50%, 0 0; }
   .nav-tabs {
     margin-top: 30px; }
   .header-content {
     margin-right: 0 !important; }
-  .navbar-right {
-    padding-right: 0 !important; }
   .main-content {
     margin-right: 0; }
   .nav-tabs .nav-link {
-    width: 280px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    font-size: 15px;
+    padding: 10px 60px; }
   .main-sidebar {
     display: none; }
   .sliedbar-show {
     display: block !important; }
-  .nav-tabs .nav-link {
-    font-size: 15px; }
   .days ul {
     flex-direction: column; }
   .days input[type="checkbox"] + label {
     width: 100%;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .employee-setting {
+    position: relative;
+    top: 0;
+    left: 0; } }
 
 @media (max-width: 768px) {
   .btn-main {
@@ -1877,7 +1810,7 @@ ul.breadcrumb li a:hover {
     width: 100%;
     margin-bottom: 0; }
   .nav-item {
-    margin-bottom: 30px !important; }
+    margin-bottom: 20px !important; }
   .nav-item {
     width: 100%; }
   .table-style ul li {
@@ -1887,7 +1820,17 @@ ul.breadcrumb li a:hover {
   .picture {
     max-width: 100%; }
   .dues {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .table-style tbody td {
+    font-size: 14px; }
+  ul.breadcrumb li,
+  ul.breadcrumb li a {
+    font-size: 13px;
+    font-weight: bold; }
+  .employee-setting {
+    width: 100%; }
+  .box-title {
+    display: none; } }
 
 @media (max-width: 550px) {
   .table-style thead th {
@@ -1912,7 +1855,16 @@ ul.breadcrumb li a:hover {
   .digit-items .digit-item {
     margin-left: 5px; }
   .connecting-line {
-    margin: 0 -6px !important; } }
+    margin: 0 -6px !important; }
+  .table-style tbody td {
+    font-size: 12px; }
+  .breadcrumb {
+    display: none; }
+  .employee-setting {
+    flex-direction: column; }
+  .employee-setting li:first-child {
+    width: 100%;
+    margin-bottom: 15px; } }
 
 @media (max-width: 480px) {
   .user-ntf {
@@ -1934,7 +1886,17 @@ ul.breadcrumb li a:hover {
   .checks-radio .form__label-radio {
     font-size: 15px; }
   .connecting-line {
-    margin: 0 -15px !important; } }
+    margin: 0 -15px !important; }
+  .form-content {
+    text-align: center; }
+  .user-menu {
+    right: auto !important; }
+  .user-menu {
+    left: 0; }
+  .ntf-menu {
+    left: -56px !important; }
+  .navbar-right h1 {
+    font-size: 15px !important; } }
 
 .sidebar-logo {
   text-align: center;
@@ -2049,7 +2011,8 @@ nav ul li a i.rotate {
 .user-image {
   background-color: transparent;
   padding-top: 200px;
-  text-align: center; }
+  text-align: center;
+  position: absolute; }
   .user-image .user-avatar {
     display: block; }
   .user-image img {

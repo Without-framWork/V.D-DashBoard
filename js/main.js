@@ -1,5 +1,18 @@
 $(document).ready(function () {
-  "use strict";
+  ("use strict");
+
+  //text length in table
+  $(".text-length").each(function () {
+    var td = $(this);
+    var maxLength = 50;
+
+    var content = td.text().trim();
+    if (content.length > maxLength) {
+      var truncatedContent = content.substring(0, maxLength) + "...";
+      td.text(truncatedContent);
+    }
+  });
+
   // modal-map
   var map;
   var marker;
@@ -347,6 +360,16 @@ $(document).ready(function () {
     open: function (event, ui) {
       $("#autocomplete-container").addClass("custom-autocomplete");
     },
+  });
+
+  //jobs-names
+  $(".job-titles").click(function () {
+    var jobTitles = $(this);
+    var additionalNames = jobTitles.siblings(".jobs-names");
+
+    additionalNames.toggleClass("hidden");
+
+    $(".job-titles").not(jobTitles).siblings(".jobs-names").addClass("hidden");
   });
 });
 

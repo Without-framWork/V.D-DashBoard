@@ -96,7 +96,6 @@ module.exports = [
     from: "templates/modal.njk",
     to: "modal.html",
   },
- 
 
   {
     from: "templates/details.njk",
@@ -135,5 +134,13 @@ module.exports = [
   {
     from: "templates/test.njk",
     to: "test.html",
-  }
+  },
+  {
+    from: "templates/increase-names.njk",
+    to: "increase-names.html",
+  },
+  {
+    from: "templates/ntf.njk",
+    to: "ntf.html",
+  },
 ];
